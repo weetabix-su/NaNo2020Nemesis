@@ -96,18 +96,15 @@ style frame:
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 screen say(who, what):
-    style_prefix "say"
 
+    style_prefix "say"
     window:
         id "window"
-
         if who is not None:
-
             window:
                 id "namebox"
                 style "namebox"
                 text who id "who"
-
         text what id "what"
 
 
@@ -121,7 +118,6 @@ screen say(who, what):
 init python:
     config.character_id_prefixes.append('namebox')
 
-style window is default
 style say_label is default
 style say_dialogue is default
 style say_thought is say_dialogue
@@ -133,6 +129,7 @@ style namebox_label is say_label
 style window:
     xalign 0.5
     xfill True
+    yfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
@@ -250,7 +247,7 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.765
             yalign 1.0
 
             textbutton _("Back") action Rollback()
