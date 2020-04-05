@@ -94,3 +94,5 @@ label Day19_MC:
 
     weeb "...That sounds rather grim."
     mc "Yeah, kinda does."
+
+    return

@@ -1,6 +1,6 @@
 
 
-label day17_MC:
+label Day17_MC:
     #show Kat, Caren and Anuja at the door of the classroom
     think "Wha-"
     "For some reason, Kat, Caren and Anuja were here before I could get out of my classroom."
@@ -249,3 +249,5 @@ label day17_MC:
     mc "Just... It's, uh... Private..."
 
     pg "Tch, fine. Keep your secrets then."
+
+    return

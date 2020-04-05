@@ -42,14 +42,14 @@ label Day2_Rumi:
 
     r "{i}Sigh...{/i} I should better get moving, huh..."
 
-    scene black
+    scene black with fade
 
     "To top it all off, he only had three pairs of uniforms... How does he live like this?"
     "Two pairs were still clean, and I told Ms. Davis to clean the used uniform as soon as possible."
     "It almost felt like having talking to your own maid, but your maid is your mom instead. Weird."
     "I put on one of the spare uniforms, which was way easier to do than the girl's uniform."
 
-    #Kitchen BG
+    scene kitchen with fade
 
     "Afterwards, I made it down to the kitchen, which still was like, nothing, compared to ours."
     "I could take comfort in the fact that I wasn't pressed for time. Having to schill out time to make mc look good with combed hair or some shit was something I totally was never, ever, going to do voluntarily."
@@ -127,6 +127,8 @@ label Day2_Rumi:
     "I decided to just do it. There is no way that I can't live as mc Davis, I may be one of luxury and status, but that does not mean that I am unable to do these mundane things that he can."
     "Even then, I despised having to do this, but Ms. Davis would probably flip completely if I didn't do it."
 
+    return
+
 label Day2_MC:
 
     #Entrance BG
@@ -155,7 +157,7 @@ label Day2_MC:
 
     mc "I'm serious, don't worry about me."
 
-    #scene garden
+    scene bg garden with fade
 
     "Before long I got pulled so much out of the way, I couldn't see or hear PG anymore."
     "She let go her grip by pushing me away from her. We were once more in the garden behind the school."
@@ -452,12 +454,12 @@ label Day2_MC:
 
     mc "Don't girls norma- Whatever, don't wait for me!"
 
-    scene black
+    scene black with fade
 
     "I had to confront Rumi about this cheerleading crap and the lunch incident."
     "Fortunately, all seniors seem to have their own little section of the school for themselves, so all I would have to do is look into the rooms that were in use and hopefully drag her outside quickly."
 
-    #scene bg hallway
+    scene bg hallway with fade
 
     "That being said, finding her turned out to be easier than expected."
     "For whatever reason, she was just standing in the hall outside one of the classrooms. We both met eyes right then."
@@ -516,6 +518,8 @@ label Day2_MC:
     "The only things I had heard her parents say were six sentences at most in two entire days."
     "This house was like a frozen home. Completely cold with no love. And I deducted this within two days! That's how bad it is!"
 
+    return
+
 label Day2_Rumi2:
 
     think "{size=+5}UGH!{/size} It's all just stupid fetish porn on these sites!"
@@ -566,6 +570,8 @@ label Day2_Rumi2:
     "I have to admit, at least his mom pays attention to me like this, but having to deal with people who are buddy-buddy all the time is a pain in the ass."
     "I... wouldn't mind replacing her with my bore of a mom, but..."
 
-    #something with both MC's and Rimu's room
+    #something with both MC's and Rumi's room
 
     both "I really hope we can swap back soon..."
+
+    return

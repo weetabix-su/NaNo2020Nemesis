@@ -1,7 +1,6 @@
 
-
 label Day139:
-    #christmas three
+    #christmas tree?
     mc "..."
 
     think "They promised..."
@@ -190,3 +189,5 @@ label Day139:
     "She had noticed that something was off long ago, and hesitated a bit when we told her."
     "But she really believed us at the end."
     "It turned out to be a good christmas night after all, and I never looked back on those excuses of parents that were now my biological one."
+
+    return

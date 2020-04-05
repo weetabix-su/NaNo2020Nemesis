@@ -1,6 +1,4 @@
-
-
-label Day4_MC:
+label Day4_MC1:
     pg "-and no matter what, you have to put make-up on tomorrow! Got it? You are {i}not{/i} embarrassing yourself anymore."
 
     pg "I'll make sure of it!"
@@ -191,6 +189,8 @@ label Day4_MC:
     weeb "{size=-5}R-Gal...? No... Girl R maybe?{/size}"
     tea "Mike, please choose someone so we can start talking about something else."
 
+    return
+
 label Day4_Rumi:
     #classroom
 
@@ -369,6 +369,8 @@ label Day4_Rumi:
     stop music fadeout 2
     scene black with dissolve
     pause 0.5
+
+    return
 
 label Day4_MC2:
 
@@ -688,6 +690,7 @@ label Day4_MC2:
     mc "What the fuck is the fingerprint-place of the finger?!"
 
     r "Pinch it between your fingers! How hard can it be?!"
+    return
 
 label Day4_May:
     #Switch to.. May's PoV?
@@ -734,6 +737,7 @@ label Day4_May:
     r "{size=-7}Now take out the other one.{/size}"
     mc "{size=-7}...There's another one?!{/size}"
     r "{size=-7}You have two eyes you fucking idiot!{/size}"
+    return
 
 label Day4_MC3:
     $ screenfilter.blur = 5
@@ -1124,9 +1128,10 @@ label Day4_MC3:
     pg "Jeez, are you living in the last year or something?"
 
     mc "It would seem I still have much to learn about this world."
+    return
 
 label Day4_Rumi2:
-    $ screenfilter.blur = 0
+    #$ screenfilter.blur = 0
     #MC's room with Weeb
 
     "Yeah... So this is me in a situation I never thought I'd find myself in."
@@ -1362,3 +1367,4 @@ label Day4_Rumi2:
     r "I'd love to. And if there is still some of your fruit salad left, we totally should have some while watching. That stuff was just delish."
 
     mcmom "Now that's a promise."
+    return

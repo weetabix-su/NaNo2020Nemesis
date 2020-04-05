@@ -591,6 +591,8 @@ label Year9_Day1_MC:
 
     r "We're not {b}that{/b} drunk."
 
+    return
+
 label Year9_Day2_MC:
     #scene livingroom
     mc "Name five dog breeds."
@@ -797,6 +799,8 @@ label Year9_Day2_MC:
     "PG raised a brow, but didn't look further into it."
 
     r "But really, it does make me curious. What on earth really happened back then to cause all of this..."
+
+    return
 
 label Day2_Unknown:
     unknownA "S- Sister...?"

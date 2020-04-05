@@ -158,3 +158,5 @@ label Day18_MC:
     "And at the end of the day, that hope was the only thing that really kept me going right now."
     "I didn't want to live my remaining life as Rumi Sato."
     "I knew it in my very being that I did not want to."
+
+    return

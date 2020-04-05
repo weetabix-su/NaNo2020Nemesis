@@ -1,5 +1,3 @@
-
-
 label Day3_MC:
 
     #Lunch BG, with every popular girls
@@ -286,6 +284,8 @@ label Day3_MC:
 
     mc "Oh, nothing... Just nothing..."
 
+    return
+
 label Day3_Rumi:
     #scene bg library
 
@@ -362,3 +362,5 @@ label Day3_Rumi:
     think "..."
 
     r "Nah, fuck it, he deserves it."
+
+    return

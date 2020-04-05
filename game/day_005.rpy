@@ -1,5 +1,4 @@
 
-
 label Day5_Rumi:
     #add glasses scene
     "When there was nobody else in sight, she released her grip from our clothes and stood in place for a few seconds."
@@ -425,3 +424,5 @@ label Day5_Rumi:
     "And for some reason, it kinda felt good?"
 
     "Don't tell me..."
+
+    return

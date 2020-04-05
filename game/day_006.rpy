@@ -58,6 +58,8 @@ label Day6_Rumi:
 
     pg "Yeah, no."
 
+    return
+
 label Day6_MC:
 
     mc "{size=-7}Ow ow ow- Hey, hold up, why are we- {/size}"
@@ -373,3 +375,5 @@ label Day6_MC:
     mc "Right..."
 
     think "Geez, she'd rip my hair out if I missed an obvious placement for these blocks."
+
+    return

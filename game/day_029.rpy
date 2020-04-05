@@ -1,5 +1,4 @@
 
-
 label Day29_MC:
     #hallway
     "And then, A week later..."
@@ -266,3 +265,5 @@ label Day29_MC:
     m "Don't run away from me! mc!"
 
     #followed by May
+
+    return

@@ -82,3 +82,5 @@ label Day16_PGWeeb:
     mc "And she filled out her own form for it and everything. But!"
 
     mc "What the hell does she mean with {i}{q}I want to be the loving wife of a billionaire in the future{/q}{/i}?!"
+
+    return

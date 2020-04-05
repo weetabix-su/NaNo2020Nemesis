@@ -1,5 +1,3 @@
-
-
 label Day7_MC:
     #Rumi's room
 
@@ -593,3 +591,5 @@ label Day7_MC:
     think "Huh, she even said {q}see you{/q} in her own roundabout way."
     "Today really was weird. Rumi seemed to tolerate me at the end there. A real world first."
     mc "Hm, maybe things are starting to look better between us, somehow."
+
+    return

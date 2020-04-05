@@ -2,13 +2,13 @@
 
 label Day1_MC1:
 
-    #add room scene
+    scene bg room with fade
 
     #add alarm sound
 
     mc "United States of..."
 
-    #add breaking alarm sound
+    scene bg room with vpunch
 
     mc "SMASH!"
 
@@ -32,7 +32,7 @@ label Day1_MC1:
 
     think "Where the hell am I?"
 
-    #show black sprite
+    show david silhouette with fade
 
     "The alarm was still ringing, and I sat myself up in the bed I was in, which was in any way mine, starting to panick."
 
@@ -54,7 +54,7 @@ label Day1_MC1:
 
     think "A mirror... I need a mirror..."
 
-    #black screen
+    scene black with fade
 
     "I opened the closest closet I could find."
 
@@ -86,16 +86,17 @@ label Day1_MC1:
 
     "As I began to understand this wasn't just a dream, and that I was currently one of the best lookings girls in school, I blushed."
 
-    #go back to the room with MC going out of the closet
+    show david normal
 
     "I pushed all of this aside for later. {s}My{/s} Rumi's alarm had been ringing since I woke up."
 
-    think "It's really..."
+    menu:
+        think "It's really..."
 
-    #add custom choice
-
-    #if "Incredible!" selected, use a smug face
-    #if "Weird!" selected, use a sad face
+        "Incredible!":
+            show david smug
+        "Weird!":
+            show david sad
 
     think "Come to think of this, if I am her..."
 
@@ -119,7 +120,8 @@ label Day1_MC1:
 
     "I couldn't check the time because I had no phone or watch on me, but as a sudden flood of people appeared, I knew it was close to ten minutes left until we had to meet at the ceremony."
 
-    #Saw Rumi in MC's body, angry
+    show david normal at two_left
+    show rumi angry at two_right
 
     think "Great..."
 
@@ -135,7 +137,7 @@ label Day1_MC1:
 
     "She had grabbed me by my hand and straight up yoinked me in the opposite direction of where all the other students were headed."
 
-    #scene garden
+    scene bg garden
 
     "She lead me to the garden of the school. With everyone soon attending the entrance ceremony, there was nobody around."
     "And she made sure of that before erupting at me like a volcano."
@@ -319,7 +321,7 @@ label Day1_Rumi:
     r "{size=-5} Ugh, I can only shudder at having to live like a guy.{/size}"
     think "But I can fix this. Everything is going to work my way eventually. If it can happen once, it can happen twice."
 
-    #scene school hallway
+    scene bg school_hallway with fade
 
     "I got angry when some people just crossed right past without letting me through. Normally I'd assert my dominance, but the only dominance I could establish like this would be dominance over a chicken coop."
 
@@ -333,7 +335,7 @@ label Day1_Rumi:
 
     tea "Follow me and I'll show you our homeroom."
 
-    #transition to garden
+    scene bg garden with easeinright
 
     "When lunch finally came around, I managed to go to the garden."
 

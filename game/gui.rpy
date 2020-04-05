@@ -4,14 +4,12 @@
 
 ## The init offset statement causes the initialization statements in this file
 ## to run before init statements in any other file.
-init offset = -2
+init offset = -3
 
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
 init python:
     gui.init(1280, 720)
-
-
 
 ################################################################################
 ## GUI Configuration Variables
@@ -64,7 +62,7 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 22
+define gui.text_size = 18
 
 ## The size of character names.
 define gui.name_text_size = 30
@@ -104,8 +102,8 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 150
-define gui.name_ypos = -13
+define gui.name_xpos = 178
+define gui.name_ypos = 0
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -129,7 +127,7 @@ define gui.namebox_tile = False
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
 define gui.dialogue_xpos = 220
-define gui.dialogue_ypos = 54
+define gui.dialogue_ypos = 64
 
 ## The maximum width of dialogue text, in pixels.
 define gui.dialogue_width = 840
