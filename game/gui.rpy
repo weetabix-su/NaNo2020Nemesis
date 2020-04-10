@@ -242,9 +242,9 @@ define gui.file_slot_rows = 2
 ## These variables control the positioning and spacing of various user interface
 ## elements.
 
-## The position of the left side of the navigation buttons, relative to the left
+## The position of the left side of the navigation buttons, relative to the right
 ## side of the screen.
-define gui.navigation_xpos = 40
+define gui.navigation_xpos = 1.0
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 10
@@ -256,7 +256,7 @@ define gui.notify_ypos = 45
 define gui.choice_spacing = 22
 
 ## Buttons in the navigation section of the main and game menus.
-define gui.navigation_spacing = 4
+define gui.navigation_spacing = 1
 
 ## Controls the amount of spacing between preferences.
 define gui.pref_spacing = 10
