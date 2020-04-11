@@ -8,7 +8,7 @@ label Day1_MC1:
 
     mc "United States of..."
 
-    scene bg room with vpunch
+    scene bg room_dawn with vpunch
 
     mc "SMASH!"
 
@@ -120,11 +120,11 @@ label Day1_MC1:
 
     "I couldn't check the time because I had no phone or watch on me, but as a sudden flood of people appeared, I knew it was close to ten minutes left until we had to meet at the ceremony."
 
-    show david normal at two_left
+
     show rumi angry at two_right
 
     think "Great..."
-
+    show rumi think at one
     "I thought of how to approach {i}me{/i}, but the moment my own body saw me, it sprinted towards me."
 
     r "{b}{i}YOU!{/i}{/b}"
@@ -137,20 +137,21 @@ label Day1_MC1:
 
     "She had grabbed me by my hand and straight up yoinked me in the opposite direction of where all the other students were headed."
 
-    scene bg garden
+    scene bg park_no_fence_day
+    with wipeleft
 
     "She lead me to the garden of the school. With everyone soon attending the entrance ceremony, there was nobody around."
     "And she made sure of that before erupting at me like a volcano."
 
-    r "Explain. Right now! Are you that bitch's pet mc?!"
+    r "Explain. Right now! Are you that bitch's pet David?!"
 
     mc "Rumi, calm down."
 
     r "Calm down?! Are you for real?! How am I supposed to be calm when you're trying to steal my fucking life right in front of me!"
 
     mc "Steal your life?"
-
-    r "I've been calling my phone for half a fucking hour now and it went to {i}MY OWN{/i} voicemail {b}EVERY TIME!{/b}"
+    
+    r cry "I've been calling my phone for half a fucking hour now and it went to {i}MY OWN{/i} voicemail {b}EVERY TIME!{/b}"
 
     think "Well, I already thought as much, but she isn't the cause for this swap between us then?"
 
@@ -158,7 +159,7 @@ label Day1_MC1:
 
     mc "But it sure sounds like you didn't have anything to do with it either."
 
-    r "Oh, please. Someone like you would be begging to be me. Of course you have something to do with this!"
+    r think "Oh, please. Someone like you would be begging to be me. Of course you have something to do with this!"
 
     #pissed MC
 
@@ -166,11 +167,13 @@ label Day1_MC1:
 
     mc "Yeah, so what if you look good? But you are still rotten to the core."
 
-    r "Hohohoh, okay, someone like you tries to badmouth me? Of course that's the only thing you're good for like the absolute bottom feeder you are. You probably spend your life, like, playing video games and doing absolutely nothing all day."
+    r laugh "Hohohoh, okay, someone like you tries to badmouth me? Of course that's the only thing you're good for like the absolute bottom feeder you are. You probably spend your life, like, playing video games and doing absolutely nothing all day."
 
     r "I bet if laughter really is the best medicine there is, then reading your life story could be curing the world right now as we are {b}fucking speaking!{/b}"
 
     think "Why did I ever think I could cooperate with this woman."
+
+    show rumi think
 
     mc "Fuck you too. If you like insulting me so much, then how about we just stay like this until dear mc over yonder my sight goes ahead and apologizes to the tyrannical bitch."
 
@@ -178,9 +181,11 @@ label Day1_MC1:
 
     r "You wouldn't even dare. You're fucking dead if you attempt anythi-"
 
+    show rumi scared
+
     "She stopped in her tracks as if realizing something."
 
-    r "Did you touch me?"
+    r think "Did you touch me?"
 
     mc "Did I wha-"
 
@@ -206,6 +211,8 @@ label Day1_MC1:
 
     "And when I say \"a few seconds\", I mean, she sure took her sweet time."
 
+    show rumi scared
+
     "When she was finally done, she took a deep breath."
 
     r "{size=-7}Okay. Relax, Rumi. You're the one in control. You're the queen of this stupid school. Good things are to come.{/size}"
@@ -214,7 +221,7 @@ label Day1_MC1:
 
     mc "Good, now if-"
 
-    r "And if you're lying to me, then kiss goodbye to everything you love. Get it?"
+    r think "And if you're lying to me, then kiss goodbye to everything you love. Get it?"
 
     mc "Ow, fuck! Calm your tits, I'm not lying! And it's clear as day that you aren't either. So someone must have done this!"
 
@@ -266,7 +273,7 @@ label Day1_MC1:
 
     r "As if you could understand how it is to be the alpha. Having loads of jealous vixens after me is part of the job, after all."
 
-    mc "Yeah, no, you're just a d-bag towards everyone."
+    mc "Yeah, no, you're just a douchebag towards everyone."
 
     mc "But you're saying that more people would be after you than me?"
 
@@ -274,7 +281,7 @@ label Day1_MC1:
 
     mc "Could you {i}not{/i} try to bully people when trying to talk?"
 
-    #scared Rumi
+    show rumi scared
 
     r "..."
 
@@ -296,7 +303,7 @@ label Day1_MC1:
 
     mc "Shit, we're going to be late on the one day we can't be late on."
 
-    r "Meet me here at lunch again. And you better fucking show up."
+    r think "Meet me here at lunch again. And you better fucking show up."
 
     mc "Alright, alright."
 
@@ -321,7 +328,7 @@ label Day1_Rumi:
     r "{size=-5} Ugh, I can only shudder at having to live like a guy.{/size}"
     think "But I can fix this. Everything is going to work my way eventually. If it can happen once, it can happen twice."
 
-    scene bg school_hallway with fade
+    scene bg corridor with fade
 
     "I got angry when some people just crossed right past without letting me through. Normally I'd assert my dominance, but the only dominance I could establish like this would be dominance over a chicken coop."
 
@@ -335,11 +342,11 @@ label Day1_Rumi:
 
     tea "Follow me and I'll show you our homeroom."
 
-    scene bg garden with easeinright
+    scene bg park_no_fence_day with easeinright
 
     "When lunch finally came around, I managed to go to the garden."
 
-    "I've been in the garden for five minutes now, but MC still wasn't here."
+    "I've been in the garden for five minutes now, but David still wasn't here."
 
     think "Oh, he better not be creeping himself out with my body right now..."
 
@@ -351,6 +358,8 @@ label Day1_Rumi:
 
     #show MC walking
 
+    show mc think at one
+
     r "About fucking time you came."
 
     mc "Hey. Sorry, I had to take care of something first."
@@ -359,7 +368,7 @@ label Day1_Rumi:
 
     mc "Don't gross me out here, your mutt kept on clinging on to me until I told her to screw off. Seriously, how do you get rid of her?"
 
-    "Oh, of course. She existed. I had to rub myself on my forehead since I knew Corny would become a pain in the ass at some point."
+    "Oh, of course. She existed. I had to rub myself on my forehead since I knew Angela would become a pain in the ass at some point."
 
     r "{i}Sigh... {/i} That bitch does everything except fuck off when I tell her to."
 
@@ -405,15 +414,21 @@ label Day1_Rumi:
 
     r "Watch me care for how active you are in your boring life. Just tell already."
 
+    show mc happy
+
     "He rolled his eyes as if trying to play smart."
 
     mc "First off, you're hungry, right?"
 
     r "I am {i}not{/i} going to act as your pathetic girlfriend and go buy lunch with you if that is what you're hoping."
 
+    show mc think
+
     mc "I just bought two sandwiches before coming here, so can you calm the fuck down with your assumptions?"
 
     "He took out the food he purchased {i}with MY{/i} money and handed me one."
+
+    show mc happy
 
     think "What guy isn't going to take advantage of me like this anyways? He might be lying to himself, but he isn't going to lie to me."
 
@@ -422,7 +437,9 @@ label Day1_Rumi:
     return
 
 label Day1_MC2:
-
+    scene park_no_fence_day
+    with fade
+    show rumi happy
     think "Phew, if she found out I was checking her out in the mirror before going here..."
 
     "Yeah, the story was fake, so what? I look like some girl out of a dream, and confessing to myself in a mirror is something I'm in my full right to do."
@@ -435,11 +452,9 @@ label Day1_MC2:
 
     mc "So anyways, you asked about what I did the day before, right?"
 
-    #Show MC in his body and in his room
-
     mc "{i}Hm, I started by getting out of bed of course, I think that was at about twelve in the morning.{/i}"
 
-    r "{i}Twelve? You call that in the morning? Seriously? I can't imagine you're the kind of guy to go to parties.{/i}"
+    r laugh "{i}Twelve? You call that in the morning? Seriously? I can't imagine you're the kind of guy to go to parties.{/i}"
 
     mc "{i}I, uh, was staying up late playing games.{/i}"
 
@@ -450,7 +465,7 @@ label Day1_MC2:
     mc "{i}Yeah, real funny. I thought you wanted to know what I did yesterday, but here you are interrupting the short time we have to talk.{/i}"
     r "{i}~ahaah, yeah. I think you may be right for once.{/i}"
     "I intentionally waited until she was completely silent. I hoped it would send her a message."
-
+    show rumi happy
     #Kitchen BG
 
     mc "{i}So, as I was saying, I got up, ate breakfast, then-{/i}"
@@ -480,14 +495,14 @@ label Day1_MC2:
 
     #Frustrated Rumi
 
-    r "{b}{size=+5}AGH!{/size}{/b} That has {i}NOTHING{/i} in common with what I did!"
+    r scared "{b}{size=+5}AGH!{/size}{/b} That has {i}NOTHING{/i} in common with what I did!"
 
     "Seeing Rumi frustrated was a weird feeling, she was usually so asserting and hard-headed."
 
     think "Wait, I'm not actually giving her credit, am I?"
     think "I have to remember this is still Rumi, the number one bitch in this school."
 
-    r "What about the people?"
+    r think "What about the people?"
 
     mc "Rumi, I don't keep tabs on {i}everyone{/i} I see on the streets. I can't remember any familiar faces aside from them and my sister. Kyoko's parents weren't even home."
 
@@ -527,7 +542,7 @@ label Day1_MC2:
 
     r "..."
 
-    r "You know what? Fuck that. Fuck you mc. Yeah, you get to enjoy the me-time that is supposed to be only for me. But if I even get a hint of suspicion that you did something that {i}wasn't{/i} written in these notes..."
+    r "You know what? Fuck that. Fuck you David. Yeah, you get to enjoy the me-time that is supposed to be only for me. But if I even get a hint of suspicion that you did something that {i}wasn't{/i} written in these notes..."
 
     mc "Then I'm dead. I get it."
 

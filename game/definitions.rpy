@@ -18,7 +18,7 @@ define popgirl = Character("Anna")
 
 define rfriend = Character("Some ass kissing bitch")
 
-define teacher = Character("Teacher")
+define tea = Character("Teacher")
 
 
 # Position Definitions
@@ -62,6 +62,11 @@ image rumi happy = "images/sprites/rumi/mc_happy.png"
 image rumi laugh = "images/sprites/rumi/mc_laugh.png"
 image rumi scared = "images/sprites/rumi/mc_scared.png"
 image rumi think = "images/sprites/rumi/mc_thinking.png"
+# With pink hair
+image rumi 2 happy = "images/sprites/rumi/mc2_happy.png"
+image rumi 2 laugh = "images/sprites/rumi/mc2_laugh.png"
+image rumi 2 scared = "images/sprites/rumi/mc2_scared.png"
+image rumi 2 think = "images/sprites/rumi/mc2_thinking.png"
 
 # Weeb sprites
 image weeb cry = "images/sprites/weeb/weeb_crying.png"
@@ -90,11 +95,11 @@ image mc 3 scared = "images/sprites/mc/rumi3_scared.png"
 image mc 3 think = "images/sprites/mc/rumi3_thinking.png"
 
 # PG sprites
-image pg cry= "images/sprites/loli_crying.png"
-image pg happy= "images/sprites/loli_happy.png"
-image pg laugh= "images/sprites/loli_laugh.png"
-image pg scared= "images/sprites/loli_scared.png"
-image pg think= "images/sprites/loli_thinking.png"
+image pg cry= "images/sprites/pg/loli_crying.png"
+image pg happy= "images/sprites/pg/loli_happy.png"
+image pg laugh= "images/sprites/pg/loli_laugh.png"
+image pg scared= "images/sprites/pg/loli_scared.png"
+image pg think= "images/sprites/pg/loli_thinking.png"   
 
 # BG Definitions
 
@@ -138,6 +143,12 @@ image bg street = im.Scale("images/bg/Street Background.jpg", 1280, 720)
 image bg street_2 = im.Scale("images/bg/street_background_01.jpg", 1280, 720)
 image bg street_3 = im.Scale("images/bg/street_background_04.jpg", 1280, 720)
 image bg street_4 = im.Scale("images/bg/this_better_be_good_because_the_render_time_for_this_bg_is_horrendous_despite_having_a_render_farm.jpg", 1280, 720)
+
+
+
+image bg_room = im.Scale("images/bg/room.jpg", 1280, 720)
+image bg_room_dusk_light = im.Scale("images/bg/room_dusk_light_on.jpg", 1280, 720)
+
 
 
 

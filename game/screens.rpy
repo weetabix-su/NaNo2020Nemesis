@@ -634,12 +634,55 @@ screen preferences():
     use game_menu():
 
         add "gui/overlay/game_menu_options.png"
+        add "gui/overlay/game_menu_options_labels.png"
 
-        hbox:
+        bar:
+            value Preference("music volume")
+            xsize 330
+            xpos 380
+            ypos 137
 
-            vbox:
+        bar:
+            value Preference("sound volume")
+            xsize 330
+            xpos 385
+            ypos 290
 
-                bar value Preference("sound volume")
+        bar:
+            value Preference("text speed")
+            xsize 330
+            xpos 368
+            ypos 454
+
+        bar:
+            value Preference("auto-forward time")
+            xsize 330
+            xpos 311
+            ypos 613
+
+        vbox:
+            xpos 721
+            ypos 278
+            imagebutton auto "gui/button/enable_%s.png" action Preference("transitions", "all")
+            imagebutton auto "gui/button/disable_%s.png" action Preference("transitions", "none")
+
+        vbox:
+            xpos 721
+            ypos 440
+            imagebutton auto "gui/button/contskip_%s.png" action Preference("after choices", "skip")
+            imagebutton auto "gui/button/stopskip_%s.png" action Preference("after choices", "stop")
+
+        vbox:
+            xpos 1018
+            ypos 278
+            imagebutton auto "gui/button/windowed_%s.png" action Preference("display", "window")
+            imagebutton auto "gui/button/fullscreen_%s.png" action Preference("display", "fullscreen")
+
+        vbox:
+            xpos 1018
+            ypos 440
+            imagebutton auto "gui/button/skipread_%s.png" action Preference("skip", "seen")
+            imagebutton auto "gui/button/skipall_%s.png" action Preference("skip", "all")
 
 
 ################################################################################

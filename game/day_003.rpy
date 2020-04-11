@@ -1,8 +1,9 @@
 label Day3_MC:
 
     #Lunch BG, with every popular girls
-
+    scene black
     mc "Here."
+    show pg happy at one
     #MC go to PG
     "I handed her one of the sandwiches I bought for lunch."
 
@@ -16,8 +17,8 @@ label Day3_MC:
 
     "Who would have thought that showing kindness to someone would make them feel awkward."
 
-    "PG was really insistent on not having been used by Rumi, which is probably worse than knowingly being used."
-    "Being a bit more level-headed now and not acting on the spur of the moment that unfolded two days ago, I realized that being nice to pg probably wasn't going to result in payback towards Rumi for what she did at all."
+    "Angela was really insistent on not having been used by Rumi, which is probably worse than knowingly being used."
+    "Being a bit more level-headed now and not acting on the spur of the moment that unfolded two days ago, I realized that being nice to Angela probably wasn't going to result in payback towards Rumi for what she did at all."
     "I doubted that she'd even care to be honest."
     "But I might as well try to establish a friendly relationship with her if things aren't changing anytime soon."
     "She is a nice girl anyways, at least when she isn't being an asshole with Rumi nearby."
@@ -57,7 +58,7 @@ label Day3_MC:
 
     mc "Anyways, I have to go talk to someone, so I'll be leaving."
 
-    pg "Don't tell me you're going to be talking with MC again."
+    pg "Don't tell me you're going to be talking with David again."
 
     mc "No, I'm not. And why do you care about me talking with him?"
 
@@ -87,14 +88,18 @@ label Day3_MC:
 
     pg "Fine..."
 
+    scene black
+    with fade
     "Who would have thought that she was this protective of Rumi."
     think "I wonder if the love is mutual the other way around?"
 
     think "Nah, who am I kidding, Rumi would leave that girl on the pavement in the rain if she could."
 
-    "PG didn't even get angry at me for skipping out on the cheerleading I was supposedly the captain of now either."
+    "Angela didn't even get angry at me for skipping out on the cheerleading I was supposedly the captain of now either."
     "It did, however, make her worry at least twice as much about whether something was going on with Rumi's life behind the scenes."
     "Which in turn kind of makes her more of a pain to deal with. But at least it's well-meant pain."
+    scene park
+    with fade
 
     "Anyhow, my goal was to try and approach someone I knew would consider this swap a possible thing that could happen."
     "There is a solution for every problem, however. And my solution in this case would be Mike."
@@ -123,14 +128,14 @@ label Day3_MC:
 
     mc "I'll make it quick. I need you to do me a favor."
     mike "Name it."
-    mc "Can you bring me Weeb?"
+    mc "Can you bring me Rick?"
 
     "Once more he had a surprised look on his face, which quickly turned to a more annoyed one."
     mike "I could, and probably would..."
     mike "But does this have anything to do with your attitude towards that girl?"
     mc "Uh?"
     mike "We all know your relationship with that group."
-    mc "Mike, I'm not trying to be mean-spirited at all, I know I've been an absolute bitch towards her, but I genuinely need to talk to her, and ideally Weeb too."
+    mc "Mike, I'm not trying to be mean-spirited at all, I know I've been an absolute bitch towards her, but I genuinely need to talk to her, and ideally Rick too."
     mike "Hmm..."
     "He thought it through for a good minute. I couldn't really blame him either, no way he wanted to get caught up in this mess."
     mike "Alright. But if you're lying, you know what happens. Be right back."
@@ -141,16 +146,18 @@ label Day3_MC:
     #Weeb comes here
     "And sure enough, he appeared a minute later."
     "When they realized that it was me who had sent Brad, it startled them both a bit."
+    show weeb happy at one
     mc "Hey. Can we talk for a sec?"
 
-    weeb "I cannot believe it. Could it be that you finally realize my love towa-"
+    weeb laugh "I cannot believe it. Could it be that you finally realize my love towa-"
     mc "Okay, stuff it. I just want to talk with you."
     "One after another, I got surprised looks from them. This must be so unlike Rumi to them."
     mc "Sorry to pull you out from mealtime."
 
-    weeb "Anything for you."
+    weeb laugh "Anything for you."
 
     weeb "It would be my honor to accept your confession after a long fought battle for your heart."
+    show weeb happy
 
     think "Kiiinda beginning to see why people get the urge to slap him."
 
@@ -158,100 +165,120 @@ label Day3_MC:
 
     mc "Even though it's because of the way I look..."
 
-    weeb "Dearest, you appear to be going red. Is it a fever? Should I carry you to the nurse's office?"
+    weeb laugh "Dearest, you appear to be going red. Is it a fever? Should I carry you to the nurse's office?"
+    show weeb happy
 
     mc "Oh, no no, please, I'm fine. I'm just... Angry."
     mc "Thanks for telling me. You still believe in sci-fi and aliens and all that crap, right?"
 
-    weeb "Oh? Could it be that it is a secret passion of yourself too?!"
+    weeb laugh "Oh? Could it be that it is a secret passion of yourself too?!"
+    show weeb happy
 
     mc "So you believe in that stuff, right?"
 
-    weeb "Of course not! I do not believe, I know!"
+    weeb laugh "Of course not! I do not believe, I know!"
+    show weeb happy
 
     mc "Uh... Yeah, that's fine too."
 
-    mc "So would you believe me if I said that I was actually MC?"
+    mc "So would you believe me if I said that I was actually David?"
 
-    weeb "...MC? What do you mean?"
+    weeb think "...David? What do you mean?"
 
-    mc "I am MC, and the MC you talked to yesterday was Rumi. Me and Rumi have had our bodies swapped."
+    mc "I am David, and the David you talked to yesterday was Rumi. Me and Rumi have had our bodies swapped."
 
     "It took him awhile to process that information, but for some reason he eventually got around to the idea."
 
-    weeb "MC, is that you?!"
+    weeb "David, is that you?!"
 
     mc "Yeah, it's me."
-    weeb "By all that is alien, I cannot believe you managed to find a high tech alien device that would let you freely alter anyone as you desire!"
+    weeb laugh "By all that is alien, I cannot believe you managed to find a high tech alien device that would let you freely alter anyone as you desire!"
+    show weeb happy
     mc "...That's... No, I don't have a thing like that."
 
     mc "Also, why the hell do you believe me so quickly?!"
     mc "I had like at least ten different facts ready to tell you to prove to you I'm the real deal!"
 
-    weeb "My friends obviously would not try to deceive me."
+    weeb laugh "My friends obviously would not try to deceive me."
 
     think "That's... not how it works."
 
     weeb "Hey, so that means you get to see the lovely Rumi naked?"
+    show weeb happy
 
     mc "Uhm, well, yeah... But-"
 
-    weeb "Score for you, man!"
+    weeb laugh "Score for you, man!"
     weeb "You really picked the delicate target for your shenanigans! Please tell me how to do it!"
+    show weeb happy
+
     mc "It's not something I did! I just woke up as her four days ago without any warning."
-    weeb "So a mystery swap... Maybe we could research this to be able to replicate it."
+    weeb laugh "So a mystery swap... Maybe we could research this to be able to replicate it."
+    show weeb happy
 
     mc "Oh, yeah we could. I want to go back as soon as possible."
 
-    weeb "Go back? Are you a madman? This is the golden opportunity to claim the rank of number one beauty!"
+    weeb laugh "Go back? Are you a madman? This is the golden opportunity to claim the rank of number one beauty!"
+    show weeb happy
 
     mc "Living as her is a nightmare."
-    weeb "...So I can have dibs on her?"
+    weeb laugh "...So I can have dibs on her?"
+    show weeb happy
+
     mc "For all I care, sure, as long as I get back to being myself."
 
-    weeb "It is settled then! The plan is in motion!"
+    weeb laugh "It is settled then! The plan is in motion!"
+    show weeb happy
 
     mc "What plan?"
-    weeb "The plan to get me a smoking hot girlfriend, J-man!"
+
+    weeb laugh "The plan to get me a smoking hot girlfriend, J-man!"
+    show weeb happy
 
     mc "No that's not the plan at all."
 
-    weeb "We weren't talking about getting me a smoking hot girlfriend?"
+    weeb laugh "We weren't talking about getting me a smoking hot girlfriend?"
+    show weeb happy
 
     mc "We were talking about having me become myself again."
 
-    weeb "Ah! I must have gotten carried away."
+    weeb laugh "Ah! I must have gotten carried away."
+    show weeb happy
+
     mc "...Right."
 
     mc "And can you please try to convince the girls to believe me too? Rumi must have tried to keep me from telling you guys, but probably didn't anticipate your... Uh... Personality."
 
-    weeb "Of course. When have I ever let you down?"
+    weeb laugh "Of course. When have I ever let you down?"
+    show weeb happy
     think "Yeah I don't want to answer that."
-    mc "Thank god someone believes me. See you later man, I should get back before pg starts having another panic attack."
-    weeb "I wish you all the best on your explorations!"
+    mc "Thank god someone believes me. See you later man, I should get back before Angela starts having another panic attack."
+    weeb laugh "I wish you all the best on your explorations!"
+    show weeb happy
 
     "It felt like something had been lifted off my chest. Knowing someone else knew who I really was would be a big help."
-
-    "Knowing that Weeb wouldn't try to hit on me was really just the icing on the cake."
+    hide weeb
+    "Knowing that Rick wouldn't try to hit on me was really just the icing on the cake."
     "At least I hoped he wouldn't."
     "Like, really hoped."
 
     #go back to lunch
 
-    "But... Uh, PG is apparently already having her breakdown."
+    "But... Uh, Angela is apparently already having her breakdown."
+    show pg scared at one
 
     pg "-she's being blackmailed, oh god she's being blackmai-"
 
     rfriend "Fucking really, Rumi?"
     rfriend "Him of all people?"
     pg "-oh god she's being blackmailed, oh god she's being blackmailed, oh go-"
-    rfriend "pg has been like this for three freaking minutes now!"
+    rfriend "Angela has been like this for three freaking minutes now!"
     mc "Wha-?"
 
-    pg "Fuck! Saya! What are you doing?! What are they doing to you?!"
+    pg think "Fuck! Saya! What are you doing?! What are they doing to you?!"
 
     mc "...I... Was in the bathroom...?"
-    pg "You absolutely terrible liar! We all saw you taking those two space-nerds with you and returning with- Ew! Weeb!"
+    pg "You absolutely terrible liar! We all saw you taking those two space-nerds with you and returning with- Ew! Rick!"
 
     mc "I was just talking with him, why is that a big deal?"
 
@@ -259,7 +286,7 @@ label Day3_MC:
 
     rfriend "Do you actually have the hots for him?"
 
-    pg "Please say no, please say no, please say no-"
+    pg scared "Please say no, please say no, please say no-"
 
     mc "Why the hell would I be into him? If anything then Eric or Mi-"
 
@@ -268,7 +295,7 @@ label Day3_MC:
     think "Why did I just think of Eric or Mike as boyfriends?!"
     think "Am I suddenly gay or something?!"
 
-    rfriend "In every other scenario, yes. But this is Weeb. I wouldn't wish that for her, even despite... You know."
+    rfriend "In every other scenario, yes. But this is Rick. I wouldn't wish that for her, even despite... You know."
 
     pg "I am {i}not{/i} leaving you out of sight anymore! From now on, it's back to you being normal Saya! I can't stand this!"
 
@@ -287,6 +314,8 @@ label Day3_MC:
     return
 
 label Day3_Rumi:
+    scene bg library
+    with wipeleft
     #scene bg library
 
     "I was currently reading all of the books I could find in the school library that had even a slight similarity on people suddenly changing personalities, but fuck."
@@ -330,7 +359,7 @@ label Day3_Rumi:
     r "Hey girls. Who did you say was the cheerleader captain now?"
     rfriend "Huh? Who are you?"
 
-    popgirl "Ooh! I've seen 'em before! They always hanging out with that Weeb fella'!"
+    popgirl "Ooh! I've seen 'em before! They always hanging out with that Rick fella'!"
 
     rfriend "Ew, that guy."
     r "Just tell me."
@@ -341,7 +370,7 @@ label Day3_Rumi:
 
     rfriend "Wha-"
 
-    think "MC keeps humiliating me, huh?"
+    think "David keeps humiliating me, huh?"
 
     rfriend "Did you tell him about me?"
 

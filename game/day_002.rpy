@@ -1,4 +1,6 @@
 label Day2_Rumi:
+    scene room
+    with fade
 
     think "..."
 
@@ -49,7 +51,7 @@ label Day2_Rumi:
     "It almost felt like having talking to your own maid, but your maid is your mom instead. Weird."
     "I put on one of the spare uniforms, which was way easier to do than the girl's uniform."
 
-    scene kitchen with fade
+    scene kitchen_day with fade
 
     "Afterwards, I made it down to the kitchen, which still was like, nothing, compared to ours."
     "I could take comfort in the fact that I wasn't pressed for time. Having to schill out time to make mc look good with combed hair or some shit was something I totally was never, ever, going to do voluntarily."
@@ -131,7 +133,10 @@ label Day2_Rumi:
 
 label Day2_MC:
 
-    #Entrance BG
+    scene gate_2
+    with fade
+
+    show pg think at one
 
     pg "You already forgot about the clothes you bought this weekend?"
 
@@ -141,13 +146,19 @@ label Day2_MC:
 
     think "Is she going to be nagging me like this all day...?"
     think "I don't want to go to the pool with some swimsuit I never bought."
-
+    show rumi think at two_left
+    show pg at two_right
     #Show Rumi running to MC
     pg "Huh? What are you-"
 
-    "Rumi pushed PG aside as she stomped towards me."
+    show pg scared at three_right
+    show rumi at one 
+
+    "Rumi pushed Angela aside as she stomped towards me."
 
     think "Shit, I knew this would happen."
+
+    show layer master at vpunch
 
     "She grabbed me forcefully without saying a word, steam almost coming out of her head of pure fury."
 
@@ -157,11 +168,12 @@ label Day2_MC:
 
     mc "I'm serious, don't worry about me."
 
-    scene bg garden with fade
+    scene park_no_fence_day
+    with fade
 
     "Before long I got pulled so much out of the way, I couldn't see or hear PG anymore."
     "She let go her grip by pushing me away from her. We were once more in the garden behind the school."
-
+    show rumi think at one
     mc "So..."
 
     r "{i}{b}SO?!{/b}{/i}"
@@ -172,7 +184,7 @@ label Day2_MC:
 
     mc "Rumi, calm down, I know your hair is important to you, but I-"
 
-    r "But what, MC?!"
+    r "But what, David?!"
     r "But what?!"
 
     #CG Brushing hair
@@ -205,7 +217,10 @@ label Day2_MC:
     "Or at least it was the only thing I could think of."
 
     #go back to garden
+    scene park_no_fence_day
+    with fade
 
+    show rumi think at one
     "So, basically what happened can be summed up into one word: {i}{b}Fuck{/b}{/i}."
 
     "All of this wouldn't have been an issue if I had someone to help me, but... Her mom essentially told me to {q}deal with it myself{/q}."
@@ -216,9 +231,11 @@ label Day2_MC:
 
     mc "If there is anything I can do to make it up for you-"
 
-    r "Ooo~~~ohoho, so you're going that route, huh?"
+    r laugh "Ooo~~~ohoho, so you're going that route, huh?"
 
     r "Okay, no problems. If that's how we're doing this, I guess I'll see you later then."
+
+    hide rumi
 
     "..."
     think "...She... Left...?"
@@ -230,21 +247,25 @@ label Day2_MC:
     think "I'm getting a bad feeling about this."
 
     scene black
+    with fade
 
     "Despite several alarms going off that this was way too unusual, I decided to head to the first class of school anyways."
     "Maybe talking to her is just going to make things worse and this is how she copes with it."
     think "But she really is way too set on this beauty-crap."
 
-    #classroom with PG at left
-    "PG was already sitting in her seat when I looked into the classroom."
+    scene classroom
+    with fade
+    
+    "Angela was already sitting in her seat when I looked into the classroom."
     #MC walk into the classroom
     "As soon as I walked into the classroom, she hurried up to me."
 
+    show pg scared at one
     pg "Oh my god, Rumi, what was up with him? He didn't hurt you, right?"
 
     mc "We were just talking. It's no biggie."
 
-    pg "No, you were clearly not just talking. That face of his wasn't the face of someone who just {q}wants to talk{/q}."
+    pg think "No, you were clearly not just talking. That face of his wasn't the face of someone who just {q}wants to talk{/q}."
 
     pg "I am getting totally worried about you, you're doing weird shit all day since school started again..."
 
@@ -252,11 +273,12 @@ label Day2_MC:
 
     mc "Shush, I'm serious, it's nothing to worry about."
 
-    pg "{size=-5}Hmph, I just want to help...{/size}"
+    pg scared "{size=-5}Hmph, I just want to help...{/size}"
 
-    think "PG really deserves better than to hang out with this wicked witch."
+    think "Angela really deserves better than to hang out with this wicked witch."
 
     scene black
+    with fade
     "School-day was once more normal. Yesterday was almost entirely homeroom, so we had our first classes today."
     think "It's nice to just space out and do classes like I was myself."
     "Luckily, me and Rumi were both seniors, so I could follow the class like normal."
@@ -265,21 +287,23 @@ label Day2_MC:
 
     mc "{i}Sigh...{/i}"
 
+    show pg happy at three_left
+
     popgirl "Girl, you're awfully timid right now."
 
     mc "You think?"
     "I was being forced to sit with Rumi's friends since, well, they kind of pulled me to the table."
-    "I barely knew anything about popgirl, or the other people I literally didn't even know the names of and luckily didn't bother talking with me."
-    pg "I'm sure it's because of mc."
+    "I barely knew anything about Anna, or the other people I literally didn't even know the names of and luckily didn't bother talking with me."
+    pg think "I'm sure it's because of David."
 
     mc "Can you drop that already?"
 
-    pg "I know he is doing something shady with you. And not the {i}shady{/i} kind of shady."
+    pg scared "I know he is doing something shady with you. And not the {i}shady{/i} kind of shady."
 
     popgirl "Ooh, that kind of shady."
     think "They aren't ever going to let this topic die out, are they..."
 
-    "I just gruntled and ate into one of the burgers PG brought us."
+    "I just gruntled and ate into one of the burgers Angela brought us."
 
     "They kept on talking about whatever they talked about, I heard a few mentions of clothes, so that's probably it."
     "I was sure that Rumi would be absolutely burning with passion if she could talk about it herself, but I really didn't give a damn."
@@ -297,7 +321,7 @@ label Day2_MC:
 
     popgirl "{i}Tch, {/i}if I bore you that much I might as well leave for one of the lame-o tables."
 
-    pg "Hey, look at that."
+    pg happy "Hey, look at that."
 
     "She caught my attention as she pointed behind me."
 
@@ -312,10 +336,10 @@ label Day2_MC:
     "A smile on her face."
     think "That bitch. What did she do?"
 
-    pg "Aa~~haha, the nerd-group is having a fall-out? That's too hilarious, right Rumi?"
+    pg laugh "Aa~~haha, the nerd-group is having a fall-out? That's too hilarious, right Rumi?"
 
     #MC cry
-    pg "Wh- Rumi? What's wrong?!"
+    pg scared "Wh- Rumi? What's wrong?!"
 
     "I hadn't noticed it myself, but a few tears managed to roll down my face."
     think "Shit, do I cry faster while in Rumi's body?"
@@ -326,7 +350,7 @@ label Day2_MC:
 
     popgirl "Are you actually crying about this? Christ you're pathetic."
 
-    pg "Hey, don't you dare say that again!"
+    pg think "Hey, don't you dare say that again!"
 
     mc "It's nothing."
 
@@ -352,7 +376,7 @@ label Day2_MC:
     mc "So just take all of it."
     "They looked at each other as looked at me as if I had gone insane."
 
-    pg "I don't know what he has done to traumatize you..."
+    pg scared "I don't know what he has done to traumatize you..."
     "She pushed the money back to my side of the table."
 
     pg "But don't do this to yourself, Rumi. You can't give anyone money. If anything, they should be giving it to you!"
@@ -362,11 +386,11 @@ label Day2_MC:
 
     popgirl "What? She gave it to me."
 
-    pg "Can't you see that MC has traumatized her or some shit?!"
+    pg "Can't you see that David has traumatized her or some shit?!"
 
     popgirl "Who cares? She could just not give it to me while she's traumatized. Not my problem."
 
-    mc "PG, it's fine. You can have it. And I'm not traumatized or whatever kind of condition you come up with next."
+    mc "Angela, it's fine. You can have it. And I'm not traumatized or whatever kind of condition you come up with next."
     mc "I just thought during the summer that I was maybe a bit too stuck up for my own good..."
 
     mc "A bit too arrogant too..."
@@ -385,11 +409,11 @@ label Day2_MC:
 
     pg "Wha- Why are you leav- Actually, forget that!"
 
-    pg "What the fuck is going on in your head, Rumi? You're none of the above!"
+    pg think "What the fuck is going on in your head, Rumi? You're none of the above!"
 
     mc "I want to be a better person this year, okay? Like, a real angel."
 
-    pg "A real angel? Are you... Oh god, you've lost your mind..."
+    pg scared "A real angel? Are you... Oh god, you've lost your mind..."
 
     pg "Alright then, let's just go with this farce of yours."
 
@@ -398,14 +422,14 @@ label Day2_MC:
     "I once more pushed the money she rejected towards her."
     mc "I probably spent some of your money sometime ago without paying you back. And if I didn't, please take it as a gift. We're best friends, right?"
 
-    pg "You- You really think we're best friends?"
+    pg happy "You- You really think we're best friends?"
 
     pg "Of course! We're friends, I always knew that. BFFs after all, right?"
 
     mc "That's it."
 
     think "I think I'm going to puke at the amount of bubbly bullshit I just spewed spontaneously."
-
+    hide pg
     scene black
 
     think "Okay, I admit. This is actually kind of stupid and a spur of the moment thing."
@@ -414,7 +438,7 @@ label Day2_MC:
     "I barely knew anyone in here apart from Rumi's group, which, apart from PG, I've barely interacted with so far."
 
     "And since my lifeline squirt wasn't around, I would likely have to pair up with complete strangers who knew Rumi."
-    "Although I really didn't want to pretend being all cutesy and sickening like I was earlier to pg."
+    "Although I really didn't want to pretend being all cutesy and sickening like I was earlier to Angela."
 
     #Hallway BG
 
@@ -465,17 +489,18 @@ label Day2_MC:
     "For whatever reason, she was just standing in the hall outside one of the classrooms. We both met eyes right then."
 
     #TODO: make "Both" definition
-    both "What the hell are you doing here?"
+    show rumi think at one
+    "Rumi & David" "What the hell are you doing here?"
 
-    both "Huh?"
+    "Rumi & David" "Huh?"
 
     mc "What the fuck happened at lunch today?"
 
-    r "Hah, she only got what she deserved."
+    r laugh "Hah, she only got what she deserved."
 
     mc "Rumi, I'm fucking serious right now. What. Did. You. Say?"
 
-    r "What do you care? You're better off not associating with that backstabbing whore anyways."
+    r think "What do you care? You're better off not associating with that backstabbing whore anyways."
 
     mc "Backsta- What?! You told me to act like you, yet you attempt to kill off any bonds I have with my friends within a fucking day!"
 
@@ -493,11 +518,12 @@ label Day2_MC:
 
     r "And if you think I am ever going to talk with her again, then you are very mistaken. So if you're so buddy buddy with the lowest scum you can find in the trash, why don't you go try your luck with her?"
 
-    r "I would really like to see you try. And make sure to film it, I would really treasure seeing any attempt you make. Heh."
+    r laugh "I would really like to see you try. And make sure to film it, I would really treasure seeing any attempt you make. Heh."
 
     mc "That's it. I'm done playing by your rules. You've been nothing more than an absolute maniac who would attempt to ruin the life of someone else over {b}fucking hair!{/b}"
 
-    r "Still better than whatever you think you are. Hmpf."
+    r think "Still better than whatever you think you are. Hmpf."
+    hide rumi
 
     "I've never been so angry at talking with someone else in my life than now."
     "It's as if she deliberately tries to piss me off."
@@ -521,6 +547,8 @@ label Day2_MC:
     return
 
 label Day2_Rumi2:
+    scene room
+    with wipeleft
 
     think "{size=+5}UGH!{/size} It's all just stupid fetish porn on these sites!"
     think "I've been looking at this for over an hour now and all of it just garbage!"
@@ -558,6 +586,8 @@ label Day2_Rumi2:
     "Before I was involved in any more pointless situations I threw my plate on the counter and went back up to hopefully find anything on the internet about this pile of garbage situation I was in currently."
     "It wasn't long before that little runt barged into the room right after."
 
+    scene room_dusk_light
+    with wipeleft
     #MC's PoV
     "This family is even more rotten than Rumi herself..."
     "I asked for help once, with something trivial, even."
@@ -572,6 +602,18 @@ label Day2_Rumi2:
 
     #something with both MC's and Rumi's room
 
+    scene black
+    show bg_room:
+        anchor (1.0, 0.0)
+        pos (0.5, 0.0)
+    show bg_room_dusk_light:
+        anchor (0.0, 0.0)
+        pos (0.5, 0.0)
+
+
     both "I really hope we can swap back soon..."
+
+    hide bg_room_dusk_light
+    hide bg_room
 
     return

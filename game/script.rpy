@@ -6,43 +6,43 @@ label splashscreen:
 # this is the new game's start point
 label start:
     # Day 1 dialogue
-    jump Day1_MC1
-    jump Day1_Rumi
-    jump Day1_MC2
+    call Day1_MC1
+    call Day1_Rumi
+    call Day1_MC2
     # Day 2 dialogue
-    jump Day2_Rumi
-    jump Day2_MC
-    jump Day2_Rumi2
+    call Day2_Rumi
+    call Day2_MC
+    call Day2_Rumi2
     # Day 3 dialogue
-    jump Day3_MC
-    jump Day3_Rumi
+    call Day3_MC
+    call Day3_Rumi
     # Day 4 dialogue
-    jump Day4_MC1
-    jump Day4_Rumi
-    jump Day4_MC2
-    jump Day4_May
-    jump Day4_MC3
-    jump Day4_Rumi2
+    call Day4_MC1
+    call Day4_Rumi
+    call Day4_MC2
+    call Day4_May
+    call Day4_MC3
+    call Day4_Rumi2
     # Day 5 dialogue
-    jump Day5_Rumi
+    call Day5_Rumi
     # Day 6 dialogue
-    jump Day6_Rumi
-    jump Day6_MC
+    call Day6_Rumi
+    call Day6_MC
     # Day 7 dialogue
-    jump Day7_MC
+    call Day7_MC
     # Day 16 dialogue
-    jump Day16_PGWeeb
+    call Day16_PGWeeb
     # Day 17 dialogue
-    jump Day17_MC
+    call Day17_MC
     # Day 18 dialogue
-    jump Day18_MC
+    call Day18_MC
     # Day 18 dialogue
-    jump Day19_MC
+    call Day19_MC
     # Day 29 dialogue
-    jump Day29_MC
+    call Day29_MC
     # Day 139 dialogue
-    jump Day139
+    call Day139
     # Year 9 dialogue
-    jump Year9_Day1_MC
-    jump Year9_Day2_MC
-    jump Day2_Unknown
+    call Year9_Day1_MC
+    call Year9_Day2_MC
+    call Day2_Unknown
