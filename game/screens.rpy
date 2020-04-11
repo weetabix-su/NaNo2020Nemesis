@@ -70,7 +70,6 @@ style vslider:
     base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/slider/vertical_[prefix_]thumb.png"
 
-
 style frame:
     padding gui.frame_borders.padding
     background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
@@ -380,6 +379,24 @@ style main_menu_title:
 style main_menu_version:
     properties gui.text_properties("version")
 
+## Game Menu screen ############################################################
+##
+## This lays out the basic common structure of a game menu screen. It's called
+## with the screen title, and displays the background and navigation.
+
+screen game_menu():
+
+    add "gui/overlay/game_menu.png"
+
+    transclude
+
+    imagebutton auto "gui/button/return_%s.png":
+        xpos 1.0
+        ypos 0.98
+        xanchor 1.0
+        yanchor 1.0
+        action Return()
+
 ## Pause screen ################################################################
 ##
 ## Appears when game is paused.
@@ -388,8 +405,6 @@ screen pause():
 
     tag menu
 
-    #modal True
-    #zorder 199
     add "gui/overlay/pause.png"
 
     vbox:
@@ -426,7 +441,6 @@ style pause_button is gui_button
 style pause_button:
     size_group "navigation"
     properties gui.button_properties("navigation_button")
-
 
 ## About screen ################################################################
 ##
@@ -483,90 +497,95 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use file_slots("save")
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots("load")
 
 
 screen file_slots(title):
 
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
-    #use game_menu(title):
+    use game_menu():
 
-    fixed:
+        if title == "save":
+            add "gui/overlay/game_menu_save.png"
+        elif title == "load":
+            add "gui/overlay/game_menu_load.png"
 
-        ## This ensures the input will get the enter event before any of the
-        ## buttons do.
-        order_reverse True
+        fixed:
 
-        ## The page name, which can be edited by clicking on a button.
-        button:
-            style "page_label"
+            ## This ensures the input will get the enter event before any of the
+            ## buttons do.
+            order_reverse True
 
-            key_events True
-            xalign 0.5
-            action page_name_value.Toggle()
+            ## The page name, which can be edited by clicking on a button.
+            button:
+                style "page_label"
 
-            input:
-                style "page_label_text"
-                value page_name_value
+                key_events True
+                xalign 0.5
+                action page_name_value.Toggle()
 
-        ## The grid of file slots.
-        grid gui.file_slot_cols gui.file_slot_rows:
-            style_prefix "slot"
+                input:
+                    style "page_label_text"
+                    value page_name_value
 
-            xalign 0.5
-            yalign 0.5
+            ## The grid of file slots.
+            grid gui.file_slot_cols gui.file_slot_rows:
+                style_prefix "slot"
 
-            spacing gui.slot_spacing
+                xalign 0.5
+                yalign 0.5
 
-            for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                spacing gui.slot_spacing
 
-                $ slot = i + 1
+                for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                button:
-                    action FileAction(slot)
+                    $ slot = i + 1
 
-                    has vbox
+                    button:
+                        action FileAction(slot)
 
-                    add FileScreenshot(slot) xalign 0.5
+                        has vbox
 
-                    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                        style "slot_time_text"
+                        add FileScreenshot(slot) xalign 0.5
 
-                    text FileSaveName(slot):
-                        style "slot_name_text"
+                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
 
-                    key "save_delete" action FileDelete(slot)
+                        text FileSaveName(slot):
+                            style "slot_name_text"
 
-        ## Buttons to access other pages.
-        hbox:
-            style_prefix "page"
+                        key "save_delete" action FileDelete(slot)
 
-            xalign 0.5
-            yalign 1.0
+            ## Buttons to access other pages.
+            hbox:
+                style_prefix "page"
 
-            spacing gui.page_spacing
+                xalign 0.5
+                yalign 1.0
 
-            textbutton _("<") action FilePagePrevious()
+                spacing gui.page_spacing
 
-            if config.has_autosave:
-                textbutton _("{#auto_page}A") action FilePage("auto")
+                textbutton _("<") action FilePagePrevious()
 
-            if config.has_quicksave:
-                textbutton _("{#quick_page}Q") action FilePage("quick")
+                if config.has_autosave:
+                    textbutton _("{#auto_page}A") action FilePage("auto")
 
-            ## range(1, 10) gives the numbers from 1 to 9.
-            for page in range(1, 10):
-                textbutton "[page]" action FilePage(page)
+                if config.has_quicksave:
+                    textbutton _("{#quick_page}Q") action FilePage("quick")
 
-            textbutton _(">") action FilePageNext()
+                ## range(1, 10) gives the numbers from 1 to 9.
+                for page in range(1, 10):
+                    textbutton "[page]" action FilePage(page)
+
+                textbutton _(">") action FilePageNext()
 
 
 style page_label is gui_label
@@ -612,157 +631,15 @@ screen preferences():
 
     tag menu
 
-    vbox:
+    use game_menu():
+
+        add "gui/overlay/game_menu_options.png"
 
         hbox:
-            box_wrap True
-
-            if renpy.variant("pc") or renpy.variant("web"):
-
-                vbox:
-                    style_prefix "radio"
-                    label _("Display")
-                    textbutton _("Window") action Preference("display", "window")
-                    textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-            vbox:
-                style_prefix "radio"
-                label _("Rollback Side")
-                textbutton _("Disable") action Preference("rollback side", "disable")
-                textbutton _("Left") action Preference("rollback side", "left")
-                textbutton _("Right") action Preference("rollback side", "right")
-
-            vbox:
-                style_prefix "check"
-                label _("Skip")
-                textbutton _("Unseen Text") action Preference("skip", "toggle")
-                textbutton _("After Choices") action Preference("after choices", "toggle")
-                textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
-            ## Additional vboxes of type "radio_pref" or "check_pref" can be
-            ## added here, to add additional creator-defined preferences.
-
-        null height (4 * gui.pref_spacing)
-
-        hbox:
-            style_prefix "slider"
-            box_wrap True
 
             vbox:
 
-                label _("Text Speed")
-
-                bar value Preference("text speed")
-
-                label _("Auto-Forward Time")
-
-                bar value Preference("auto-forward time")
-
-            vbox:
-
-                if config.has_music:
-                    label _("Music Volume")
-
-                    hbox:
-                        bar value Preference("music volume")
-
-                if config.has_sound:
-
-                    label _("Sound Volume")
-
-                    hbox:
-                        bar value Preference("sound volume")
-
-                        if config.sample_sound:
-                            textbutton _("Test") action Play("sound", config.sample_sound)
-
-
-                if config.has_voice:
-                    label _("Voice Volume")
-
-                    hbox:
-                        bar value Preference("voice volume")
-
-                        if config.sample_voice:
-                            textbutton _("Test") action Play("voice", config.sample_voice)
-
-                if config.has_music or config.has_sound or config.has_voice:
-                    null height gui.pref_spacing
-
-                    textbutton _("Mute All"):
-                        action Preference("all mute", "toggle")
-                        style "mute_all_button"
-
-
-style pref_label is gui_label
-style pref_label_text is gui_label_text
-style pref_vbox is vbox
-
-style radio_label is pref_label
-style radio_label_text is pref_label_text
-style radio_button is gui_button
-style radio_button_text is gui_button_text
-style radio_vbox is pref_vbox
-
-style check_label is pref_label
-style check_label_text is pref_label_text
-style check_button is gui_button
-style check_button_text is gui_button_text
-style check_vbox is pref_vbox
-
-style slider_label is pref_label
-style slider_label_text is pref_label_text
-style slider_slider is gui_slider
-style slider_button is gui_button
-style slider_button_text is gui_button_text
-style slider_pref_vbox is pref_vbox
-
-style mute_all_button is check_button
-style mute_all_button_text is check_button_text
-
-style pref_label:
-    top_margin gui.pref_spacing
-    bottom_margin 2
-
-style pref_label_text:
-    yalign 1.0
-
-style pref_vbox:
-    xsize 225
-
-style radio_vbox:
-    spacing gui.pref_button_spacing
-
-style radio_button:
-    properties gui.button_properties("radio_button")
-    foreground "gui/button/radio_[prefix_]foreground.png"
-
-style radio_button_text:
-    properties gui.button_text_properties("radio_button")
-
-style check_vbox:
-    spacing gui.pref_button_spacing
-
-style check_button:
-    properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
-
-style check_button_text:
-    properties gui.button_text_properties("check_button")
-
-style slider_slider:
-    xsize 350
-
-style slider_button:
-    properties gui.button_properties("slider_button")
-    yalign 0.5
-    left_margin 10
-
-style slider_button_text:
-    properties gui.button_text_properties("slider_button")
-
-style slider_vbox:
-    xsize 450
+                bar value Preference("sound volume")
 
 
 ################################################################################
