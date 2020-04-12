@@ -1,9 +1,14 @@
 
 label Day6_Rumi:
+    scene corridor
+    with fade
+    show weeb happy at two_left
+    show pg happy at two_right
     r "I don't fucking get it!"
-    r "Why do they all like him?! Why do people like some roadside fodder like mc?!"
+    r "Why do they all like him?! Why do people like some roadside fodder like David?!"
 
-    weeb "I can take it that yesterday's lunch period was a great success for your plans to give my man a shot with the ladies."
+    weeb laugh "I can take it that yesterday's lunch period was a great success for your plans to give my man a shot with the ladies."
+    show weeb happy
 
     r "Yes! No! It's terrible! I couldn't say no to {i}any of them{/i} once they were okay with him {q}liking them{/q}!"
 
@@ -11,16 +16,20 @@ label Day6_Rumi:
     "If this wasn't basically the taste of defeat then I didn't know anymore."
     "Even then, texting the three people I talked to yesterday was still the ace in my pocket. I had just recently texted them that this was all a joke. No way they wouldn't see him like a scumbag now then!"
 
-    weeb "Ah yes, about this highly fascinating light novel I read just recently-"
+    weeb laugh "Ah yes, about this highly fascinating light novel I read just recently-"
+    show weeb happy
 
     "I had already texted all of them when we entered the lunchroom, so it was only a matter of time until rumors would spread about him, I bet."
 
-    weeb "Oh, she isn't listening to me."
+    weeb think "Oh, she isn't listening to me."
     weeb "Back to eating I go."
 
     pg "Hey Rumi."
 
     r "Whatever..."
+    show weeb at three_left
+    show pg at three_right
+    show mc 2 think at one
 
     mc "Uh...?"
     mc "Is she angry at us?"
@@ -29,7 +38,7 @@ label Day6_Rumi:
 
     mc "...I'm not even gonna ask."
 
-    mc "Although the most bizarre thing just happened to us..."
+    mc 2 happy "Although the most bizarre thing just happened to us..."
 
     pg "Yeah, some blonde freshman was staring at us all the time while we got some food."
 
@@ -41,27 +50,31 @@ label Day6_Rumi:
 
     r "{i}{b}AARGH! Fuck this!{/b}{/i}"
 
-    mc "Wo- What is it now?!"
+    mc 2 think "Wo- What is it now?!"
 
     "The three of them were both startled at my outburst."
 
-    "I grabbed MC by the collar of his outfit and dragged him along."
+    "I grabbed David by the collar of his outfit and dragged him along."
 
-    mc "Wait, what did I do now?!"
+    mc 2 scared "Wait, what did I do now?!"
 
     r "Shut up and come with me."
     mc "{size=-5}But what about my food?!{/size} {size=-7}No, wait,{/size} {size=-10}I'm starving!{/size}"
 
-    pg "How are you just calmly still eating your food...?"
+    pg scared "How are you just calmly still eating your food...?"
+    show think
 
-    weeb "Ah, I was just wondering if that girl you saw staring at you in astonishment was interested in me."
+    weeb laugh "Ah, I was just wondering if that girl you saw staring at you in astonishment was interested in me."
+    show weeb happy
 
-    pg "Yeah, no."
+    pg scared "Yeah, no."
 
     return
 
 label Day6_MC:
-
+    scene corridor_2
+    with fade
+    show rumi 2 think at one
     mc "{size=-7}Ow ow ow- Hey, hold up, why are we- {/size}"
 
     think "Man, what the hell is her deal today?"
@@ -159,18 +172,21 @@ label Day6_MC:
     mc "{i}Sigh{/i}... Alright..."
 
     mc "You want to go to make sure we both feel this way, right? No tricks, no dating between us, right?"
-    r "Of course."
+    r happy "Of course."
 
     mc "Okay, but if I do this, we're even. I get to wear what I want as long as it isn't a clown outfit-"
-    r "{size=-5}You're already wearing one...{/size}"
+    r laugh "{size=-5}You're already wearing one...{/size}"
 
     mc "...As I said, as long as it isn't a clown outfit. Okay?"
 
-    r "...Fine, have it your way."
+    r think "...Fine, have it your way."
 
     think "Oh god, what have I even gotten myself into..."
 
     #street scene
+    scene bg street_4
+    with fade
+    show pg happy at one
 
     "Ah yes, sweet release. We were done with the half-day at school today and finally had weekend once more."
 
@@ -182,31 +198,36 @@ label Day6_MC:
 
     "She looked at me as if confused about it. For whatever reason she didn't expect this at all."
 
-    pg "No... It's okay, I don't... Uh, usually just enter her house, you know..."
+    pg scared "No... It's okay, I don't... Uh, usually just enter her house, you know..."
+    show pg think
 
     mc "Huh? You don't?"
 
     mc "Has Rumi never invited you over to just hang out?"
 
-    pg "What? No, of course not! We hang out in the mall and I get to go to her home if we are setting things up for her parties. That's it."
+    pg scared "What? No, of course not! We hang out in the mall and I get to go to her home if we are setting things up for her parties. That's it."
+    show pg think
 
     "Well that took a sad turn. I didn't expect them to have a friendship this terrible."
     "What she was saying was essentially that Rumi never let her just casually visit her, even though they walked to school and back every single day..."
     mc "No, please, if that's the case, I really insist. I'm not Rumi, remember? Or do you have anything better to do?"
-    pg "Well, no, but..."
+    pg scared "Well, no, but..."
+    show pg think
     mc "Come on! You get to just casually hang out in her house. Doesn't that sound exciting?"
 
-    pg "If you put it like that, sure, but-"
+    pg scared "If you put it like that, sure, but-"
+    show pg think
 
     mc "Then make yourself comfortable. Come on, what's the harm?"
 
-    pg "...Alright, you win, sure."
+    pg happy "...Alright, you win, sure."
 
     #show them going out of the scene
 
     scene black
-
-    "At least I could spend some idle time of the day on talking to PG right now. I actually liked talking to her on occasions now."
+    with fade
+    show pg happy at one
+    "At least I could spend some idle time of the day on talking to Angela right now. I actually liked talking to her on occasions now."
 
     mc "Uh... So let's see... We got apple juice, raspberry juice... Something called lemon water...?"
     pg "Lemon water sounds good."
@@ -216,6 +237,9 @@ label Day6_MC:
     "But still, I did like talking to people, that much hasn't changed despite our swap."
 
     #scene Rumi's room
+    scene bg room_noon
+    with fade
+    show pg happy at one
 
     pg "It's been so long since I've been in Rumi's room... It almost feels like I'm breaking some kind of law, heh."
 
@@ -225,7 +249,8 @@ label Day6_MC:
 
     mc "Rumi has more rooms?!"
 
-    pg "...Seriously, you didn't know?"
+    pg scared "...Seriously, you didn't know?"
+    show pg happy
 
     mc "Why would she have multiple rooms? You mean bedrooms?"
 
@@ -271,13 +296,13 @@ label Day6_MC:
     mc "Heh, sorry."
 
     "It was really easy to figure out how she feels about certain things."
-    "If I had never swapped with Rumi, I probably never would have seen pg in this kind of light, but she was really not that bad."
+    "If I had never swapped with Rumi, I probably never would have seen Angela in this kind of light, but she was really not that bad."
     "The only thing that stood out to me about her was the influence Rumi was having on her, and I personally didn't think it was the good kind of influence."
     "But whatever, right now I was in charge on that front."
 
     think "Actually, all this talk is making me remember about this thing I found some time ago."
 
-    think "Maybe it's worth a shot asking PG about it."
+    think "Maybe it's worth a shot asking Angela about it."
 
     mc "Hey, by the way, I wanted to ask you something."
 
@@ -285,7 +310,8 @@ label Day6_MC:
 
     mc "I found this thing after rummaging through the room."
 
-    pg "Why have you been rummaging through Rumi's room? You know she would never allow that."
+    pg scared "Why have you been rummaging through Rumi's room? You know she would never allow that."
+    show pg think
 
     mc "What she doesn't know, doesn't hurt her."
     "After digging through the drawers I found the thing I had been wondering about for a long time."
@@ -293,37 +319,43 @@ label Day6_MC:
     #CG Picture (maybe?)
 
     mc "Here."
-    pg "An old picture?"
+    pg scared "An old picture?"
+    show pg think
     mc "Sounds like you don't know what it is either."
-    pg "Hm, no, never seen it."
+    pg scared "Hm, no, never seen it."
+    show pg think
     mc "I just thought that this girl right here-"
     "I pointed at the little girl to the very left."
     mc "Doesn't she look a lot like Kat?"
     pg "..."
     mc "And this girl on the right looks like Rumi."
-    "PG went silent the moment I mentioned Kat."
+    "Angela went silent the moment I mentioned Kat."
 
     #Exit CG
 
-    pg "{i}Sigh...{/i}"
+    pg scared "{i}Sigh...{/i}"
     pg "Look, I'm sure someone out there would appreciate your endless curiosity in the business of someone else..."
     pg "But this isn't something you're supposed to know about. I don't even know much about it and I'm next to Rumi constantly."
+    show pg think
 
     mc "So you think I should stay out of trying to figure out the beef between Rumi and Kat?"
-    pg "Exactly."
+    pg scared "Exactly."
+    show pg think
 
     mc "Ugh, fine. I'm just really curious as to why they hate each other so much..."
     mc "I know that they were friends at some point, but something {i}must{/i} have happened, especially if Rumi keeps this picture hidden."
 
-    pg "You're really bad at letting a topic go just like that, huh?"
+    pg scared "You're really bad at letting a topic go just like that, huh?"
+    show pg think
 
     mc "Seems like it."
 
-    pg "That aside, why does Rumi have an ExBox in her room...?"
+    pg happy "That aside, why does Rumi have an ExBox in her room...?"
 
     mc "Oh, you know what it is? Do you have one yourself?"
 
-    pg "Of course not. You think I'm some kind of nerd who knows about that stuff?"
+    pg scared "Of course not. You think I'm some kind of nerd who knows about that stuff?"
+    show pg think
 
     think "...But She still knows what an ExBox is..."
 
@@ -335,7 +367,7 @@ label Day6_MC:
 
     "The moment I had asked her the question I immediately realized that she totally did want to play, if just a little."
 
-    pg "...No, but you can go ahead if you want to. I'll watch."
+    pg happy "...No, but you can go ahead if you want to. I'll watch."
 
     mc "Wouldn't that be boring for you?"
     pg "I said it's fine, you only have one controller anyways."
@@ -348,6 +380,7 @@ label Day6_MC:
     "I couldn't help but smirk."
 
     scene black
+    with fade
 
     pg "No, no, you're doing it all wrong, you need to first stack up blocks and wait for a straight block to appear."
 
@@ -366,7 +399,7 @@ label Day6_MC:
     think "...Why does she know so much about games..."
 
     "I only had the games that were installed on my console, so after we got bored of them we started playing some retro games that were already installed when I bought it."
-    "And for some reason, pg of all people was tutoring me in how to play them at what is basically competitive level..."
+    "And for some reason, Angela of all people was tutoring me in how to play them at what is basically competitive level..."
 
     mc "So are retro games your thing?"
 

@@ -98,7 +98,7 @@ label Day3_MC:
     "Angela didn't even get angry at me for skipping out on the cheerleading I was supposedly the captain of now either."
     "It did, however, make her worry at least twice as much about whether something was going on with Rumi's life behind the scenes."
     "Which in turn kind of makes her more of a pain to deal with. But at least it's well-meant pain."
-    scene park
+    scene bg park
     with fade
 
     "Anyhow, my goal was to try and approach someone I knew would consider this swap a possible thing that could happen."

@@ -63,6 +63,7 @@ image rumi laugh = "images/sprites/rumi/mc_laugh.png"
 image rumi scared = "images/sprites/rumi/mc_scared.png"
 image rumi think = "images/sprites/rumi/mc_thinking.png"
 # With pink hair
+image rumi 2 cry = "images/sprites/rumi/mc2_cry.png"
 image rumi 2 happy = "images/sprites/rumi/mc2_happy.png"
 image rumi 2 laugh = "images/sprites/rumi/mc2_laugh.png"
 image rumi 2 scared = "images/sprites/rumi/mc2_scared.png"
@@ -93,13 +94,16 @@ image mc 3 happy = "images/sprites/mc/rumi3_happy.png"
 image mc 3 laugh = "images/sprites/mc/rumi3_laugh.png"
 image mc 3 scared = "images/sprites/mc/rumi3_scared.png"
 image mc 3 think = "images/sprites/mc/rumi3_thinking.png"
+# Silhouetted
+image mc silhouette_b = im.MatrixColor(Image("images/sprites/mc/rumi_scared.png"), im.matrix((0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,)))
+image mc silhouette_w = im.MatrixColor(Image("images/sprites/mc/rumi_scared.png"), im.matrix((0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0,)))
 
 # PG sprites
-image pg cry= "images/sprites/pg/loli_crying.png"
-image pg happy= "images/sprites/pg/loli_happy.png"
-image pg laugh= "images/sprites/pg/loli_laugh.png"
-image pg scared= "images/sprites/pg/loli_scared.png"
-image pg think= "images/sprites/pg/loli_thinking.png"   
+image pg cry = "images/sprites/pg/loli_crying.png"
+image pg happy = "images/sprites/pg/loli_happy.png"
+image pg laugh = "images/sprites/pg/loli_laugh.png"
+image pg scared = "images/sprites/pg/loli_scared.png"
+image pg think = "images/sprites/pg/loli_thinking.png"
 
 # BG Definitions
 
@@ -149,6 +153,8 @@ image bg street_4 = im.Scale("images/bg/this_better_be_good_because_the_render_t
 image bg_room = im.Scale("images/bg/room.jpg", 1280, 720)
 image bg_room_dusk_light = im.Scale("images/bg/room_dusk_light_on.jpg", 1280, 720)
 
+
+image white = "#ffffff"
 
 
 

@@ -1,7 +1,9 @@
 label Day7_MC:
     #Rumi's room
 
-    $ screenfilter.blur = 5
+    #$ screenfilter.blur = 5
+    scene bg room_dawn
+    with fade
 
     think "..."
 
@@ -11,7 +13,7 @@ label Day7_MC:
 
     "Sundays were the best, especially if you spent a lot of time just gaming into midnight last day."
 
-    think "I'm sure PG can be proud of the fact that I finally unlocked hard-mode in Tetris."
+    think "I'm sure Angela can be proud of the fact that I finally unlocked hard-mode in Tetris."
 
     think "..."
     think "Right, I made the stupid decision to promise going on this date thing."
@@ -21,7 +23,7 @@ label Day7_MC:
 
     think "There you are."
 
-    $ screenfilter.blur = 0
+    #$ screenfilter.blur = 0
 
     think "That's better."
 
@@ -33,7 +35,7 @@ label Day7_MC:
     "It was a bit of a hassle since anyone without a key wouldn't even be able to get into this massive complex of a building."
 
     "I opened the gate for her and..."
-
+    show rumi 2 laugh at one
     r "Took you long enough."
 
     m "I knew it, you totally were going to be with this girl today! You shouldn't just lie to girls like that!"
@@ -44,7 +46,7 @@ label Day7_MC:
 
     "That blonde girl that kept looking at me during lunch last day are with her."
 
-    r "Not my fault that this annoying girl doesn't want to leave me alone."
+    r 2 think "Not my fault that this annoying girl doesn't want to leave me alone."
 
     m "We both agreed we would be going to hang out today."
 
@@ -156,11 +158,11 @@ label Day7_MC:
 
     m "Do you guys do this often?"
 
-    r "Often? Uh..."
+    r 2 scared "Often? Uh..."
 
-    mc "N- No, MC just... Likes to practice for the future, heh, right?"
+    mc "N- No, David just... Likes to practice for the future, heh, right?"
 
-    r "Uh, yeah, sure."
+    r 2 think "Uh, yeah, sure."
 
     m "Ooh, you want to be some kind of make-up stylist or whatcha call it?"
 
@@ -198,7 +200,7 @@ label Day7_MC:
     mc "You're not serious right?"
 
     "She ignored me and got out her phone (well, it's actually my phone but whatever)."
-
+    hide rumi
     m "What did he tell you?"
 
     mc "Uh... Nothing..."
@@ -223,7 +225,7 @@ label Day7_MC:
     m "Of course."
 
     mc "Wha- Why would she do tha-"
-
+    show rumi 2 happy at one
     "As I was trying to figure out what the heck she was saying, Rumi walked back into the bathroom with a smile on her face."
 
     mc "...What did you do now?"
@@ -231,7 +233,7 @@ label Day7_MC:
     r "What do you mean by that?"
 
     mc "You have a smile on your face, that's not a good sign."
-    r "Rude."
+    r 2 think "Rude."
 
     r "Anyways, I'm {i}so sorry{/i} May, but it seems like Mike has business with you and is here in a minute to pick you up, so sadly we will have to part ways now."
 
@@ -259,9 +261,9 @@ label Day7_MC:
 
     think "Still, confessed to her? Why on earth would she do that?"
 
-    scene black
+    scene black with fade
     #bathroom
-
+    show rumi 2 think at one
     r "Alright, she's finally gone."
 
     r "Geez was she annoying."
@@ -290,7 +292,7 @@ label Day7_MC:
 
     mc "So, we done with the dress-up?"
 
-    r "Yep. You finally look like me again."
+    r happy "Yep. You finally look like me again."
 
     mc "Do I really need to wear contacts though? They are annoying to wear."
     r "Yes, you do."
@@ -324,7 +326,7 @@ label Day7_MC:
 
     r "Mentioned what?"
     mc "Something about you confessing to her."
-
+    show rumi 2 scared
     "Her face went red in an instant as she looked away."
 
     think "Could you make it more obvious that you did something stupid?"
@@ -333,18 +335,21 @@ label Day7_MC:
 
     mc "Besides, she's being annoying to {i}you{/i} right now so I really have no idea what you were thinking."
 
-    r "Shut up, okay?!"
+    r 2 think "Shut up, okay?!"
 
     mc "Geez, touchy subject or something?"
 
     "It was probably something I would have digged further into to get my satisfaction of annoying her a bit, but with this mixer thing coming up I figured that I probably shouldn't tempt the devil."
 
     #scene karaoke
+    scene black
+    with fade
 
     "We arrived at the locale, which was kind of cozy looking."
     "We were just in time, with a minute to spare, but there was nobody else in sight here yet."
 
     "Time ran with us just sitting around for five minutes. I couldn't really be bothered striking up something to talk with Rumi about, and evidently, neither could she."
+    show rumi 2 think at one
 
     r "{size=-7}Where the hell are they...{/size}"
 
@@ -354,17 +359,17 @@ label Day7_MC:
 
     "Rumi lit up from her grumpy mood immediately as if nothing were ever wrong and greeted them."
 
-    r "Hello. Great to meet both of you. Dominic and Audrey, I believe it was?"
+    r happy "Hello. Great to meet both of you. Dominic and Audrey, I believe it was?"
     audrey "Hey. We're so sorry about the delay."
 
     dominic "Yeah, hey, the train was delayed so we had to run our pants off, heh."
 
-    r "Ah, public transport. I totally get what you went through, haha."
+    r laugh "Ah, public transport. I totally get what you went through, haha."
 
     think "Uh... Has she ever even taken public transport?"
 
     think "Don't tell me she is going to lie all throughout the day."
-    r "As you guys already know, my name is MC, and this lady over here is Rumi, the one I talked to you about."
+    r happy "As you guys already know, my name is David, and this lady over here is Rumi, the one I talked to you about."
 
     mc "Oh, yeah, hi."
     "I waved my hand as we introduced ourselves."
@@ -491,7 +496,7 @@ label Day7_MC:
     "Mostly because Rumi heavily insisted on us doing that for them."
     "But I can imagine that her thirst wasn't the reason for wanting to go out of the room for a minute."
 
-    r "Those guys are so fucking lame!"
+    r 2 think "Those guys are so fucking lame!"
 
     mc "What? Why?"
 
@@ -509,9 +514,9 @@ label Day7_MC:
 
     r "I mean, sure, she's cute and would probably make for a great girlfr-"
 
-    r "Oooh fuck no what am I saying?!"
+    r 2 scared "Oooh fuck no what am I saying?!"
 
-    r "She's average!"
+    r 2 think "She's average!"
 
     mc "{i}Sigh...{/i} Okay, so you're having another one of your anger fits."
 
@@ -523,16 +528,17 @@ label Day7_MC:
 
     r "That I'm pissed! I get it, I was supposed to figure out if I turned lesbian and obviously I am!"
 
-    r "But what about you? You think that joke of a man is worth anything?"
+    r laugh "But what about you? You think that joke of a man is worth anything?"
 
     mc "Uhm... Well..."
+    show rumi 2 think
 
     think "I guess I looked at him in a bit of a different light...?"
     think "I mean, if he asked me out on a date while I was still a guy then I'd still try to politely tell him something like {q}Whoah, back off{/q} in order to not hurt his feelings too much..."
 
     mc "It's... Uh... Kind of complicated I think."
 
-    r "What about the girl? You seemed all giddy-giddy being able to sing with her without holding back."
+    r 2 happy "What about the girl? You seemed all giddy-giddy being able to sing with her without holding back."
     r "No perv thoughts at all?"
 
     mc "I guess not...?"
@@ -543,7 +549,7 @@ label Day7_MC:
 
     think "Hell, I didn't even notice that. I just went with the flow, Audrey was pretty much a natural born performer which I tried to mirror for fun."
 
-    r "I really hope for your own sake that you aren't naturally gay."
+    r 2 think "I really hope for your own sake that you aren't naturally gay."
 
     mc "I didn't do that on purpose!"
 
@@ -561,13 +567,13 @@ label Day7_MC:
 
     mc "You're still angry about today?"
 
-    r "Oh no, mc, I am actually so freaking happy right now. You ended up having loads of fun hanging out with that bitch while I was stuck talking with the other guy about how he tuned his motorbike."
+    r 2 laugh "Oh no, David, I am actually so freaking happy right now. You ended up having loads of fun hanging out with that bitch while I was stuck talking with the other guy about how he tuned his motorbike."
 
     r "Just a splendid time."
 
     mc "...I'll take that as a yes."
 
-    r "{i}Sigh...{/i} It's just frustrating..."
+    r 2 think "{i}Sigh...{/i} It's just frustrating..."
 
     mc "..."
 

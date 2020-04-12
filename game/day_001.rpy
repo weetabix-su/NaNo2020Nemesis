@@ -2,7 +2,7 @@
 
 label Day1_MC1:
 
-    scene bg room with fade
+    scene black
 
     #add alarm sound
 
@@ -32,7 +32,7 @@ label Day1_MC1:
 
     think "Where the hell am I?"
 
-    show david silhouette with fade
+    show mc silhouette_b with dissolve
 
     "The alarm was still ringing, and I sat myself up in the bed I was in, which was in any way mine, starting to panick."
 
@@ -58,19 +58,25 @@ label Day1_MC1:
 
     "I opened the closest closet I could find."
 
-    #add Rumi's CG
+    show mc silhouette_w with dissolve
 
     "Luckily, there was a big-ass mirror inside."
 
     "With one look, my suspicions were confirmed, for the better or the worse."
 
+    show mc think with dissolve
+
     mc "Rumi?!"
 
     mc "I'm... Rumi?"
 
+    show mc scared with dissolve
+
     mc "What the actual fuck is that?"
 
     "This is a dream... Right?"
+
+    scene bg room_dawn with fade
 
     think "This isn't a dream... If it was, I would have already woken up from this nightmare."
 
@@ -86,7 +92,7 @@ label Day1_MC1:
 
     "As I began to understand this wasn't just a dream, and that I was currently one of the best lookings girls in school, I blushed."
 
-    show david normal
+    show mc think with dissolve
 
     "I pushed all of this aside for later. {s}My{/s} Rumi's alarm had been ringing since I woke up."
 
@@ -94,9 +100,9 @@ label Day1_MC1:
         think "It's really..."
 
         "Incredible!":
-            show david smug
+            show mc happy with dissolve
         "Weird!":
-            show david sad
+            show mc scared with dissolve
 
     think "Come to think of this, if I am her..."
 
@@ -105,6 +111,7 @@ label Day1_MC1:
     mc "Fuck."
 
     "If she really turned into me, then I {b}need{/b} to find her as soon as possible."
+
 
     think "Today is the first school day of my senior year, and Rumi's also in her senior year now. I need to go to school as early as I can."
 
@@ -150,7 +157,7 @@ label Day1_MC1:
     r "Calm down?! Are you for real?! How am I supposed to be calm when you're trying to steal my fucking life right in front of me!"
 
     mc "Steal your life?"
-    
+
     r cry "I've been calling my phone for half a fucking hour now and it went to {i}MY OWN{/i} voicemail {b}EVERY TIME!{/b}"
 
     think "Well, I already thought as much, but she isn't the cause for this swap between us then?"

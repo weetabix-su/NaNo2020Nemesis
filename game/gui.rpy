@@ -21,7 +21,7 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#663300'
+define gui.accent_color = '#dddddd'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#aaaaaa'
@@ -31,7 +31,7 @@ define gui.idle_color = '#aaaaaa'
 define gui.idle_small_color = '#AAAAAA'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#663300'
+define gui.hover_color = '#dddddd'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -83,8 +83,8 @@ define gui.title_text_size = 50
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.main_menu_background = None
+define gui.game_menu_background = None
 
 
 ## Dialogue ####################################################################
@@ -233,8 +233,8 @@ define config.thumbnail_width = 256
 define config.thumbnail_height = 144
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 3
-define gui.file_slot_rows = 2
+define gui.file_slot_cols = 1
+define gui.file_slot_rows = 3
 
 
 ## Positioning and Spacing #####################################################
@@ -449,8 +449,8 @@ init python:
         gui.quick_button_text_size = 20
 
         ## File button layout.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
+        gui.file_slot_cols = 1
+        gui.file_slot_rows = 3
 
         ## NVL-mode.
         gui.nvl_height = 170

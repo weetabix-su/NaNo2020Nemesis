@@ -6,6 +6,18 @@ init offset = -2
 
 define _game_menu_screen = "pause"
 
+image menu_bg blue:
+    xpos -128
+    ypos -32
+    "gui/menu_bg_blue.png"
+    linear 10.0 xpos -256
+    repeat
+
+image menu_bg pink:
+    "gui/menu_bg_pink.png"
+    xpos -128
+    linear 10.0 xpos 0
+    repeat
 
 ################################################################################
 ## Styles
@@ -250,7 +262,6 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
@@ -279,6 +290,16 @@ style quick_button_text:
 ################################################################################
 ## Main and Game Menu Screens
 ################################################################################
+
+screen menu_bg():
+
+    #add "gui/menu_bg_static.png"
+
+    add "#dfdfdf"
+    add "menu_bg blue"
+    add "menu_bg pink"
+
+    transclude
 
 ## Navigation screen ###########################################################
 ##
@@ -338,17 +359,26 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    style_prefix "main_menu"
+    use menu_bg:
 
-    add gui.main_menu_background
+        style_prefix "main_menu"
 
-    ## This empty frame darkens the main menu.
-    frame:
-        pass
+        add gui.main_menu_background
 
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use mm_navigation
+        ## This empty frame darkens the main menu.
+        frame:
+            pass
+
+        ## The use statement includes another screen inside this one. The actual
+        ## contents of the main menu are in the navigation screen.
+        use mm_navigation
+
+        add "gui/logo.png":
+            xanchor 0.0
+            yanchor 0.5
+            xpos 30
+            ypos 0.5
+            size (924, 99)
 
 
 style main_menu_frame is empty
@@ -386,16 +416,18 @@ style main_menu_version:
 
 screen game_menu():
 
-    add "gui/overlay/game_menu.png"
+    use menu_bg:
 
-    transclude
+        add "gui/overlay/game_menu.png"
 
-    imagebutton auto "gui/button/return_%s.png":
-        xpos 1.0
-        ypos 0.98
-        xanchor 1.0
-        yanchor 1.0
-        action Return()
+        transclude
+
+        imagebutton auto "gui/button/return_%s.png":
+            xpos 1.0
+            ypos 0.98
+            xanchor 1.0
+            yanchor 1.0
+            action Return()
 
 ## Pause screen ################################################################
 ##
@@ -509,7 +541,7 @@ screen load():
 
 screen file_slots(title):
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"))
 
     use game_menu():
 
@@ -519,74 +551,34 @@ screen file_slots(title):
             add "gui/overlay/game_menu_load.png"
 
         fixed:
+            
 
-            ## This ensures the input will get the enter event before any of the
-            ## buttons do.
-            order_reverse True
+            vbox:
+                xpos 338
+                ypos 98
 
-            ## The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
+                imagebutton auto "gui/button/page1_%s.png":
+                    xpos 4
+                    action FilePage(1)
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+                imagebutton auto "gui/button/page2_%s.png":
+                    xpos 38
+                    action FilePage(2)
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+                imagebutton auto "gui/button/page3_%s.png":
+                    xpos 48
+                    action FilePage(3)
 
-            ## The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
+                imagebutton auto "gui/button/page4_%s.png":
+                    xpos 41
+                    action FilePage(4)
 
-                xalign 0.5
-                yalign 0.5
+                imagebutton auto "gui/button/page5_%s.png":
+                    xpos 26
+                    action FilePage(5)
 
-                spacing gui.slot_spacing
-
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-                    $ slot = i + 1
-
-                    button:
-                        action FileAction(slot)
-
-                        has vbox
-
-                        add FileScreenshot(slot) xalign 0.5
-
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            style "slot_time_text"
-
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-
-                        key "save_delete" action FileDelete(slot)
-
-            ## Buttons to access other pages.
-            hbox:
-                style_prefix "page"
-
-                xalign 0.5
-                yalign 1.0
-
-                spacing gui.page_spacing
-
-                textbutton _("<") action FilePagePrevious()
-
-                if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
-
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
-
-                ## range(1, 10) gives the numbers from 1 to 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
-
-                textbutton _(">") action FilePageNext()
-
+                imagebutton auto "gui/button/page6_%s.png":
+                    action FilePage(6)
 
 style page_label is gui_label
 style page_label_text is gui_label_text
