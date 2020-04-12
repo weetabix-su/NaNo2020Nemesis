@@ -24,21 +24,21 @@ init python:
 define gui.accent_color = '#dddddd'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#aaaaaa'
+define gui.idle_color = '#cccccc'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#AAAAAA'
+define gui.idle_small_color = '#cccccc'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#dddddd'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#555555'
+define gui.selected_color = '#dddddd'
 
 ## The color used for a text button when it cannot be selected.
-define gui.insensitive_color = '#aaaaaa7f'
+define gui.insensitive_color = '#aaaaaaaf'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
@@ -233,8 +233,8 @@ define config.thumbnail_width = 256
 define config.thumbnail_height = 144
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 1
-define gui.file_slot_rows = 3
+define gui.file_slot_cols = 2
+define gui.file_slot_rows = 2
 
 
 ## Positioning and Spacing #####################################################
