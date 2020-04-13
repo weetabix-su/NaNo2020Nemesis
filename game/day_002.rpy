@@ -142,7 +142,7 @@ label Day2_MC:
     pause 4
     hide txt with dissolve
 
-    scene gate_2
+    scene bg gate_2
     with fade
 
     show pg think at one

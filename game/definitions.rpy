@@ -32,6 +32,12 @@ define sandra = Character("Sandra")
 
 define yui = Character("Yui")
 
+define leona = Character("Leona")
+
+define waitress = Character("Waitress")
+
+define waitressJ = Character("Josephine")
+
 define unknownA = Character("??? #1")
 
 define unknownB = Character("??? #2")
@@ -168,11 +174,16 @@ image bg street_3 = im.Scale("images/bg/street_background_04.jpg", 1280, 720)
 image bg street_4 = im.Scale("images/bg/this_better_be_good_because_the_render_time_for_this_bg_is_horrendous_despite_having_a_render_farm.jpg", 1280, 720)
 image bg street_5 = im.Scale("images/bg/street_background_00.jpg", 1280, 720)
 
-
-
 image bg_room = im.Scale("images/bg/room.jpg", 1280, 720)
 image bg_room_dusk_light = im.Scale("images/bg/room_dusk_light_on.jpg", 1280, 720)
 
+image bg bighouse = im.Scale("images/bg/the_jp_mansion_night.jpg", 1280, 844)
+
+# The following BGs are from Guttari Nyanko (guttari8.sakura.ne.jp)
+image bg bighouse_lobby = im.Scale("images/bg/bijyutukan00.jpg", 1280, 960)
+image bg bighouse_dining = im.Scale("images/bg/rissyoku00a.jpg", 1280, 960)
+image bg bighouse_table = im.Scale("images/bg/syokudou00.jpg", 1280, 960)
+image bg bighouse_lib = im.Scale("images/bg/tosyo00.jpg", 1280, 960)
 
 image white = "#ffffff"
 
