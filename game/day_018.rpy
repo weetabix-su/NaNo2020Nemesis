@@ -145,7 +145,7 @@ label Day18_MC:
 
     pg "..."
 
-    scene black
+    scene black with fade
 
     "The day ended up with a very hostile feeling in the air."
     "I intentionally avoided talking to her, and she did the same."

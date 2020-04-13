@@ -6,7 +6,7 @@ define r = Character("Rumi", image = "rumi")
 
 define mc = Character("David", image = "mc")
 
-define pg = Character("Angela", image = "angela")
+define pg = Character("Angela", image = "pg")
 
 define weeb = Character("Rick", image = "weeb")
 
@@ -19,6 +19,10 @@ define popgirl = Character("Anna")
 define rfriend = Character("Some ass kissing bitch")
 
 define tea = Character("Teacher")
+
+define kat = Character("Katrina")
+
+define caren = Character("Caren")
 
 
 # Position Definitions
@@ -36,12 +40,12 @@ transform one:
 
 transform two_left:
     position
-    xalign 1.0/3.0
+    xalign 0.275
     yoffset pov_offset
 
 transform two_right:
     position
-    xalign 2.0/3.0
+    xalign 0.725
     yoffset pov_offset
 
 transform three_left:
@@ -127,17 +131,17 @@ image bg kitchen_night = im.Scale("images/bg/kitchen_night.jpg", 1280, 720)
 image bg library = im.Scale("images/bg/library.png", 1280, 720)
 image bg apartment_evening = im.Scale("images/bg/old_apartment_evening.jpg", 1280, 720)
 image bg apartment_noon = im.Scale("images/bg/old_apartment_noon.jpg", 1280, 720)
-image bg roadisde_dawn = im.Scale("images/bg/roadside_dawn.jpg", 1280, 720)
-image bg roadisde_morning = im.Scale("images/bg/roadside_morning.jpg", 1280, 720)
-image bg roadisde_night = im.Scale("images/bg/roadside_night_fullmoon.jpg", 1280, 720)
+image bg roadside_dawn = im.Scale("images/bg/roadside_dawn.jpg", 1280, 720)
+image bg roadside_morning = im.Scale("images/bg/roadside_morning.jpg", 1280, 720)
+image bg roadside_night = im.Scale("images/bg/roadside_night_fullmoon.jpg", 1280, 720)
 image bg room = im.Scale("images/bg/room.jpg", 1280, 720)
 image bg room_dawn = im.Scale("images/bg/room_dawn_light_off.jpg", 1280, 720)
 image bg room_dusk = im.Scale("images/bg/room_dusk_light_off.jpg", 1280, 720)
 image bg room_dusk_light = im.Scale("images/bg/room_dusk_light_on.jpg", 1280, 720)
 image bg room_evening = im.Scale("images/bg/room_evening_light_off.jpg", 1280, 720)
 image bg room_noon = im.Scale("images/bg/room_noon_light_off.jpg", 1280, 720)
-image bg corridor = im.Scale("image/bg/school_corridor_background.jpg", 1280, 720)
-image bg corridor_2 = im.Scale("image/bg/uncle mugen school corridor morning.jpg", 1280, 720)
+image bg corridor = im.Scale("images/bg/school_corridor_background.jpg", 1280, 720)
+image bg corridor_2 = im.Scale("images/bg/uncle mugen school corridor morning.jpg", 1280, 720)
 image bg seaside_road_evening = im.Scale("images/bg/seaside_road_evening.jpg", 1280, 720)
 image bg seaside_road_morning = im.Scale("images/bg/seaside_road_morning.jpg", 1280, 720)
 image bg seaside_road_sunset = im.Scale("images/bg/seaside_road_sunset.jpg", 1280, 720)
