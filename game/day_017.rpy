@@ -1,28 +1,34 @@
 
 
 label Day17_MC:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 17{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene bg classroom with fade
     #show Kat, Caren and Anuja at the door of the classroom
-    show mc 2 scared at two_left with moveinleft
+    #show mc 2 scared at two_left with moveinleft
     think "Wha-"
     "For some reason, Kat, Caren and Anuja were here before I could get out of my classroom."
     show Katrina at two_right with dissolve
     show Caren at right with dissolve
-    show pg scared behind mc at left with easeinleft
+    show pg scared at two_left with easeinleft #behind mc at left with easeinleft
     pg "What do {i}you{/i} want?"
     kat "Buzz off. I need to talk with her in private."
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
     mc "Me?"
     kat "Yes, you."
 
-    show pg cry at left
+    show pg cry at two_left #left
     pg "Hell no you aren't-"
 
-    show pg think at left
-    show mc 2 happy at two_left
+    show pg think at two_left #left
+    #show mc 2 happy at two_left
     mc "Hey, Angela, it's okay."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     mc "Just you and me?"
 
@@ -32,14 +38,14 @@ label Day17_MC:
 
     "I was hoping for the day where they would finally try to talk with me again. I expected they would come around sooner than this, but better late than never."
 
-    show mc 2 happy at two_left
+    #show mc 2 happy at two_left
 
     mc "And {i}don't{/i} start any quarrels with the other two while I'm gone, got it?"
 
     pg "Tch, fine."
 
     hide pg with easeoutleft
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     "Kat looked at me with serious eyes all the time."
 
@@ -51,8 +57,8 @@ label Day17_MC:
 
     scene bg library with fade
 
-    show mc 2 think at two_left with dissolve
-    show Katrina at two_right with dissolve
+    #show mc 2 think at two_left with dissolve
+    show Katrina at center with dissolve #two_right with dissolve
 
     mc "This looks private enough."
 
@@ -69,25 +75,25 @@ label Day17_MC:
 
     mc "Ah, ye-"
 
-    show mc 2 scared at two_left
+    #show mc 2 scared at two_left
 
     mc "She did what?!"
 
     kat "None of this is something he would have done."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     kat "At the same time, you suddenly dress up like a total geek, have the worst hair-do since middle-school and act all nice towards your pathetic group of posh-ups."
 
     kat "So, without any tricks, are you for real the actual David who looks like this bitch right now?"
 
-    show mc 2 happy at two_left
+    #show mc 2 happy at two_left
 
     mc "Finally, you get it. Yes!"
 
     "While I was hoping for her to be a bit more energetic about this, she instead looked kind of sad."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     "Did I say something wrong now all of a sudden? Was I not supposed to be happy that she finally came around to it?"
 
@@ -101,7 +107,7 @@ label Day17_MC:
 
     kat "{size=-5}Why her...{/size}"
 
-    show mc 2 cry at two_left
+    #show mc 2 cry at two_left
 
     mc "It's... Sorry, but I didn't have a say in that..."
 
@@ -110,7 +116,7 @@ label Day17_MC:
 
     think "Maybe now I can ask though..."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     mc "Hey, would you mind if I asked what happened between you and her when you were kids?"
 
@@ -128,7 +134,7 @@ label Day17_MC:
 
     think "{i}Sigh...{/i} Honestly, these guys."
 
-    show mc 2 happy at two_left
+    #show mc 2 happy at two_left
 
     mc "Then, if you don't mind me asking, do you hang out with Anuja a lot now? I saw that she was with you, and I think I've seen you talk occasionally a lot as well..."
 
@@ -136,19 +142,19 @@ label Day17_MC:
 
     think "Sandra...? Wasn't there a rumor about her at some point?"
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     mc "Did something happen to her?"
 
     kat "{i}Sigh...{/i} Well for one, she's gone insane..."
 
-    show mc 2 scared at two_left
+    #show mc 2 scared at two_left
 
     mc "Insane? What happened to her?"
 
     kat "Don't you dare tell this to someone else. I'm trusting that you're the real David I know on this."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     mc "Your trust is well placed then."
 
@@ -156,7 +162,7 @@ label Day17_MC:
 
     kat "Everything had been thrown around, and everyone says Sandra herself did it, almost as if possessed by some kind of demon."
 
-    show mc 2 scared at two_left
+    #show mc 2 scared at two_left
 
     mc "...Wha..."
 
@@ -169,7 +175,7 @@ label Day17_MC:
 
     kat "And, uh... Well, Anuja now lives with my family for the time being after that."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     mc "..."
 
@@ -184,7 +190,7 @@ label Day17_MC:
     kat "She's supposedly still in the hospital. I haven't heard from her since then. Not even Anuja knows anything."
     kat "Apparently she is under lock and key so that she doesn't hurt anyone or... Attempt suicide..."
 
-    show mc 2 scared at two_left
+    #show mc 2 scared at two_left
 
     mc "...Shit, I'm so sorry to hear that. You two were close friends even though I never really talked to her, right?"
 
@@ -192,7 +198,7 @@ label Day17_MC:
 
     kat "It's... Been a tough couple of weeks lately. And I'm sorry I... Didn't believe you at first when you said you were David."
 
-    show mc 2 happy at two_left
+    #show mc 2 happy at two_left
 
     mc "Hey, I don't blame you at all if that happened without my knowing."
 
@@ -200,7 +206,7 @@ label Day17_MC:
 
     kat "Thanks, but..."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     "She looked at me for a brief moment in consideration."
 
@@ -216,14 +222,14 @@ label Day17_MC:
 
     "But... It just felt kind of... Empty to me for some reason?"
 
-    show mc 2 cry at two_left
+    #show mc 2 cry at two_left
 
     mc "Is that so... I, uh... Thanks, I guess..."
 
     kat "{size=-8}You guess, huh...{/size}"
     kat "I don't have any ill will against you, or hate you David..."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     kat "But I just cannot look at you right now and not hate you."
 
@@ -253,21 +259,21 @@ label Day17_MC:
 
     "I didn't have a response. I wasn't extremely torn about it. Everything was a mess."
 
-    show mc 2 cry at two_left
+    #show mc 2 cry at two_left
 
     "It was sad, and a tear of regret not being able to respond to her feelings did roll down my cheek, but I didn't know if that was the \"old me\" somehow weeping or not."
 
     caren "Are you okay?"
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     mc "Huh? Oh, Caren."
 
-    show Caren at two_right with moveinright
+    show Caren at one with moveinleft #two_right with moveinright
 
     caren "I just wanted to make sure you are okay. If Kat and Rick both believe it's you, then I do too, David."
 
-    show mc 2 happy at two_left
+    #show mc 2 happy at two_left
 
     mc "Heh, thanks."
 
@@ -275,7 +281,7 @@ label Day17_MC:
 
     caren "You already know then."
 
-    show mc 2 think at two_left
+    #show mc 2 think at two_left
 
     caren "Yes, she's going through a lot right now, so I think it is best if I stay by her side."
 
@@ -288,7 +294,7 @@ label Day17_MC:
 
     caren "If I find or need anything, I will let Weeb know. And I hope everything goes well between you and Rumi."
 
-    show mc 2 happy at two_left
+    #show mc 2 happy at two_left
 
     mc "...Thanks. It helps knowing you're supporting me through this."
 
@@ -313,25 +319,23 @@ label Day17_MC:
 
     scene bg classroom with fade
 
-    show pg happy at two_left with dissolve
+    show pg happy at one with dissolve #two_left with dissolve
 
     pg "Finally."
 
-    show mc 2 happy at two_right with easeinright
+    #show mc 2 happy at two_right with easeinright
 
     mc "Sorry to make you wait. I hope you didn't start anything back here."
 
     pg "Of course not. I do have self restraint after all."
 
-    show pg think at two_left
+    show pg think at one #two_left
 
     pg "But what were you talking about?"
 
-    show mc 2 think at two_right
+    #show mc 2 think at two_right
 
     mc "Just... It's, uh... Private..."
-
-    show pg think at two_left
 
     pg "Tch, fine. Keep your secrets then."
 

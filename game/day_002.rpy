@@ -1,4 +1,9 @@
 label Day2_Rumi:
+    scene black with fade
+    show txt cen "{size=+54}DAY 2{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene room
     with fade
 
@@ -132,6 +137,10 @@ label Day2_Rumi:
     return
 
 label Day2_MC:
+    scene black with fade
+    show txt cen "{size=+54}DAY 2{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
 
     scene gate_2
     with fade
@@ -152,7 +161,7 @@ label Day2_MC:
     pg "Huh? What are you-"
 
     show pg scared at three_right
-    show rumi at one 
+    show rumi at one
 
     "Rumi pushed Angela aside as she stomped towards me."
 
@@ -203,7 +212,7 @@ label Day2_MC:
     mc "Why does that hurt so much?! It's just a fucking brush!"
 
     "Using her surprisingly hot hair straightener also turned out to be more lethal than i thought..."
-    "I, uh... {q}Lightly{/q} burned a section of her hair while using it."
+    "I, uh... \"Lightly\" burned a section of her hair while using it."
 
     scene black
 
@@ -223,7 +232,7 @@ label Day2_MC:
     show rumi think at one
     "So, basically what happened can be summed up into one word: {i}{b}Fuck{/b}{/i}."
 
-    "All of this wouldn't have been an issue if I had someone to help me, but... Her mom essentially told me to {q}deal with it myself{/q}."
+    "All of this wouldn't have been an issue if I had someone to help me, but... Her mom essentially told me to \"deal with it myself\"."
     "I could never have expected more of a cold response from a parent than that."
 
     mc "I know this is something that is difficult to repair, alright?"
@@ -255,7 +264,7 @@ label Day2_MC:
 
     scene classroom
     with fade
-    
+
     "Angela was already sitting in her seat when I looked into the classroom."
     #MC walk into the classroom
     "As soon as I walked into the classroom, she hurried up to me."
@@ -265,7 +274,7 @@ label Day2_MC:
 
     mc "We were just talking. It's no biggie."
 
-    pg think "No, you were clearly not just talking. That face of his wasn't the face of someone who just {q}wants to talk{/q}."
+    pg think "No, you were clearly not just talking. That face of his wasn't the face of someone who just \"wants to talk\"."
 
     pg "I am getting totally worried about you, you're doing weird shit all day since school started again..."
 
@@ -284,6 +293,7 @@ label Day2_MC:
     "Luckily, me and Rumi were both seniors, so I could follow the class like normal."
 
     #BG lunch with PG and PopGirl
+    scene bg gym with fade
 
     mc "{i}Sigh...{/i}"
 
@@ -315,7 +325,7 @@ label Day2_MC:
     mc "Huh, what?"
 
     popgirl "What the hell is up with you? I asked you about the Jevi jeans you bought me as a present last week, but you're dozing off like some cliche airhead on me."
-    popgirl "Besides, why the hell you wearing a ponytail? I thought your {q}hair that resembles the ocean breeze{/q} was your shitty schtick."
+    popgirl "Besides, why the hell you wearing a ponytail? I thought your \"hair that resembles the ocean breeze\" was your shitty schtick."
 
     mc "I, uh... Had some accident yesterday with my hair...?"
 
@@ -536,7 +546,7 @@ label Day2_MC:
 
     "She left me the very moment she heard the bell and fucked off."
 
-    scene black
+    scene black with fade
 
     "After this, I went home, and, hust like yesterday, nobody was home."
     "There was no comfort in living here. They had a big TV, comfy sofas, a luxurious kitchen. But for what reason?"
@@ -547,6 +557,11 @@ label Day2_MC:
     return
 
 label Day2_Rumi2:
+    scene black with fade
+    show txt cen "{size=+54}DAY 2{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene room
     with wipeleft
 

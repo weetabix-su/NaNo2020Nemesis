@@ -1,6 +1,12 @@
 
 
 label Year9_Day1_MC:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 366{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     #Rumi's future livingroom
     mc "{i}Sigh...{/i} Finally home..."
 
@@ -8,7 +14,7 @@ label Year9_Day1_MC:
     think "..."
 
     "Oh, right."
-    "So, we didn't really end up anywhere with the... Uh, well, {q}experiments{/q}."
+    "So, we didn't really end up anywhere with the... Uh, well, \"experiments\"."
 
     "Despite the lack of results, Weeb had actually impressed me at the stuff he could come up with."
     "Like really, I think at some point we ended up catching a fly, cooking it, splitting it in two, and had both me and MC eat one half."
@@ -161,7 +167,7 @@ label Year9_Day1_MC:
 
     r "So go right ahead, what were we talking about?"
 
-    weeb "I cannot really see the {q}insane{/q} in it."
+    weeb "I cannot really see the \"insane\" in it."
 
     weeb "I just wanted MC to raise a guard dog for us."
 
@@ -220,7 +226,7 @@ label Year9_Day1_MC:
 
     r "{size=-5}If you get the chance, you should ask her where she got it from.{/size}"
 
-    mc "{size=-5}{i}Sigh...{/i} I already have enough {q}party-wear{/q}. I'm not rich, you know.{/size}"
+    mc "{size=-5}{i}Sigh...{/i} I already have enough \"party-wear\". I'm not rich, you know.{/size}"
 
     r "{size=-5}At least ask her for reference then.{/size}"
 
@@ -374,7 +380,7 @@ label Year9_Day1_MC:
 
     "MC just looked at me as if expecting me to know what to do in this situation."
 
-    "I just shrugged while telling him {q}You dragged me into this, handle it yourself!{/q} in body language."
+    "I just shrugged while telling him \"You dragged me into this, handle it yourself!\" in body language."
 
     r "You were spying on us?"
 
@@ -465,7 +471,7 @@ label Year9_Day1_MC:
 
     mc "Wait, so can you for real fly?"
 
-    r "The hell do you mean {q}fly{/q}? It's a trick! Don't tell me you actually think this is real."
+    r "The hell do you mean \"fly\"? It's a trick! Don't tell me you actually think this is real."
 
     mc "Dude, why are you so riled up if you think she isn't the real deal..."
 
@@ -594,6 +600,12 @@ label Year9_Day1_MC:
     return
 
 label Year9_Day2_MC:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 367{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     #scene livingroom
     mc "Name five dog breeds."
 
@@ -714,10 +726,10 @@ label Year9_Day2_MC:
 
     #TODO:Make a newspaper CG
     "It had an image of a woman."
-    think "{q}I became someone else{/q}."
+    think "\"I became someone else\"."
     "That was the headline for the article."
     "I continued reading the synopsis right below."
-    think "{q}Sandra Bloom (28) describes her recent years of panic and anxiety, as she believes herself to be born as someone else entirely. In her past, she claims to have been Zendaya Uduike, and despite never having shown interest in African culture, manages to speak fluent Swahli and knows many other customs and locations. Her story is chilling, to the point where one could wonder if there is a grain of truth in it.{/q}"
+    think "\"Sandra Bloom (28) describes her recent years of panic and anxiety, as she believes herself to be born as someone else entirely. In her past, she claims to have been Zendaya Uduike, and despite never having shown interest in African culture, manages to speak fluent Swahli and knows many other customs and locations. Her story is chilling, to the point where one could wonder if there is a grain of truth in it.\""
 
     "PG was done reading before I was, so when I looked up, she had already recoiled."
     pg "{b}{i}That{/i}{/b} Sandra?! From our high-school?!"
@@ -792,7 +804,7 @@ label Year9_Day2_MC:
     r "Without that girl's help, we probably would never have been able to swap back to begin with. So everything we did was completely pointless."
     mc "...This really is kind of screwed up. So there are probably many others like us out there then."
 
-    pg "Wh- Who is {q}that girl{/q}?"
+    pg "Wh- Who is \"that girl\"?"
 
     r "Uh... Can't say, sorry."
 
@@ -803,11 +815,17 @@ label Year9_Day2_MC:
     return
 
 label Day2_Unknown:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 2{/size}\n\n{size=+16}~ ??? ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     unknownA "S- Sister...?"
     unknownB "What is it?"
     unknownA "We might be in... Slight trouble."
 
-    unknownB "The way you worded {q}slight{/q} makes me believe there is more trouble than the word implies."
+    unknownB "The way you worded \"slight\" makes me believe there is more trouble than the word implies."
 
     unknownA "..."
     unknownA "The modifications we performed a while back. Do you remember them?"

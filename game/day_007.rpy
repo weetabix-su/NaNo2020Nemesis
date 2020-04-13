@@ -1,6 +1,11 @@
 label Day7_MC:
     #Rumi's room
 
+    scene black with fade
+    show txt cen "{size=+54}DAY 7{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     #$ screenfilter.blur = 5
     scene bg room_dawn
     with fade
@@ -167,7 +172,7 @@ label Day7_MC:
     m "Ooh, you want to be some kind of make-up stylist or whatcha call it?"
 
     r "Uhm, yeah, that."
-    "It was only for a brief moment, but Rumi actually nodded in approval to me in the mirror. Almost as if telling me {q}good job{/q}."
+    "It was only for a brief moment, but Rumi actually nodded in approval to me in the mirror. Almost as if telling me \"good job\"."
     "It almost felt fulfilling having this girl approve of my genius lie."
 
     mc "But don't, you know, tell anyone. It's a secret."
@@ -454,7 +459,7 @@ label Day7_MC:
     mc "Heh, well, maybe it's a possibility for the future."
 
     audrey "Hey, hey, can I do this one with you as well?"
-    "She pointed towards some song I knew. {q}Don't start unbelieving{/q}."
+    "She pointed towards some song I knew. \"Don't start unbelieving\"."
 
     think "What a classic."
 
@@ -534,7 +539,7 @@ label Day7_MC:
     show rumi 2 think
 
     think "I guess I looked at him in a bit of a different light...?"
-    think "I mean, if he asked me out on a date while I was still a guy then I'd still try to politely tell him something like {q}Whoah, back off{/q} in order to not hurt his feelings too much..."
+    think "I mean, if he asked me out on a date while I was still a guy then I'd still try to politely tell him something like \"Whoah, back off\" in order to not hurt his feelings too much..."
 
     mc "It's... Uh... Kind of complicated I think."
 
@@ -594,7 +599,7 @@ label Day7_MC:
 
     "She went her own way without looking back, but did wave a hand in the air briefly when we got to the crossing where the roads home forked."
 
-    think "Huh, she even said {q}see you{/q} in her own roundabout way."
+    think "Huh, she even said \"see you\" in her own roundabout way."
     "Today really was weird. Rumi seemed to tolerate me at the end there. A real world first."
     mc "Hm, maybe things are starting to look better between us, somehow."
 

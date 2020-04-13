@@ -1,5 +1,11 @@
 
 label Day5_Rumi:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 5{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     #add glasses scene
     show mc 2 happy at two_right
     show pg happy at two_left
@@ -72,7 +78,7 @@ label Day5_Rumi:
     pg "...Sigh..."
 
     #scene lunch
-    scene black
+    scene bg gym
     with fade
     show pg think at one
     r "So, any ideas?"
@@ -170,7 +176,7 @@ label Day5_Rumi:
 
     r "Uh, yes, I want to try out how you approach girls first, you know."
 
-    pg scared "What is this {q}training{/q} I just heard about?"
+    pg scared "What is this \"training\" I just heard about?"
     show pg think
 
     weeb "My dear Rumi has promised me to learn how to approach girls properly, as it seems my previous attempts have been fruitless."
@@ -220,10 +226,10 @@ label Day5_Rumi:
 
     pg scared "Hey! Don't laugh at that!"
 
-    pg "And what do you mean I'm not {q}girlfriend material{/q}?!"
+    pg "And what do you mean I'm not \"girlfriend material\"?!"
     show pg think
 
-    weeb laugh "According to {q}Rick's Womanly Exam{/q}, Angela lacks the following."
+    weeb laugh "According to \"Rick's Womanly Exam\", Angela lacks the following."
     weeb "Strike one: She is unusually flat."
 
     weeb "Strike two: Her personality is quite shallow and from observations, not very feminine."
@@ -369,7 +375,7 @@ label Day5_Rumi:
     think "O- Okay, that was just one girl who seemed to accept anyone, hah, nothing to worry about, I can just... Tell her it was a joke later on..."
 
     #go back to lunch
-    scene black
+    scene bg gym
     with fade
     show weeb laugh at one
     weeb "{i}It is also important to make sure you properly convey your feelings.{/i}"
@@ -405,7 +411,8 @@ label Day5_Rumi:
     "This time, I wasn't going to fool around with people I didn't know."
     "Once word spread that I had confessed to two people at the same time, he would look like an absolute asshole anyways."
 
-    #go back again to lunch
+    #go back again to
+    scene bg gym with fade
 
     think "Okay, get your fucking grip together."
 

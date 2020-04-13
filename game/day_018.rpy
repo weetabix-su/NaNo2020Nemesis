@@ -1,12 +1,23 @@
 
 
 label Day18_MC:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 18{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
+
     #scene bg living room
+
+    scene bg room_dusk_light
+
     "So, this supposed party Rumi was throwing every month without me knowing about it was starting to creep up."
 
-    "As a result, I ended up bringing PG and Rumi along with me home."
+    "As a result, I ended up bringing Angela and Rumi along with me home."
 
-    r "{size=-5}PG, we need to check the lights in the kitchen.{/size}"
+
+    r "{size=-5}Angela, we need to check the lights in the kitchen.{/size}"
 
     pg "Coming!"
     "And now they were rushing around the house to check things."
@@ -24,9 +35,16 @@ label Day18_MC:
     think "And yeah, I checked, there are exactly 20 light bulbs in the kitchen."
     think "Don't blame me, this place is {i}that{/i} boring."
 
-    "But after all, the only response to the situation that came to mind was {q}Ah well{/q} after I dropped another two or three popcorn down into my mouth."
+    "But after all, the only response to the situation that came to mind was \"Ah well\" after I dropped another two or three popcorn down into my mouth."
+
+    scene black with fade
+
     "The peace didn't last long though. Rumi wanted to check if every formal thing was in check."
     "I had busted my ass off doing what she told me, making sure her parents knew that she was throwing the party (and of course getting permission for it), and all other stuff like alcohol, snacks, you name it."
+
+    scene bg kitchen_night with fade
+    show rumi 2 think at one with dissolve
+
     r "And you've notified the neighbors?"
     mc "Checkaroo."
     r "Made sure the pool is getting cleaned tomorrow?"
@@ -35,20 +53,31 @@ label Day18_MC:
     mc "Cheee~~~eck."
     "It went on and on."
 
+    hide rumi with dissolve
+
     "They stayed for a long time. Every little nook was checked, as if fanatic that everything would be perfect."
     "And to that end, I just had to ask."
 
     mc "Hey, is this really just a regular party?"
 
+    show rumi 2 think at one with dissolve
+
     r "What do you mean?"
 
     mc "I mean, you are really making a huge deal out of this. Will it really matter if you've made sure there isn't a single speck of dust behind the refrigerator?"
 
+    show rumi 2 laugh at one
+
     r "Really? You still haven't noticed?"
     mc "...Noticed what?"
+
+    show rumi 2 happy at one
+
     r "That this is my last chance of redeeming myself as a public figure?"
 
     mc "...Public figure?"
+
+    show rumi 2 think at one
 
     r "Oh my god, you are just so dense..."
 
@@ -56,7 +85,11 @@ label Day18_MC:
 
     r "Unlike you, I actually believe we can swap back. I bet you're having the time of your life as me, so you don't worry too much about the bigger picture as always, but some of us want to right what's wrong."
 
+    show rumi 2 scared at one
+
     mc "Wait, hold up. Don't start thinking I don't want to swap back either here, I've already made it perfectly clear several times that your life sucks."
+
+    show rumi 2 think at one
 
     r "Well if it sucks so much then why are you spending your useless brain power on video games if you've managed to hack your way into my computer and phone, huh?"
 
@@ -76,27 +109,40 @@ label Day18_MC:
 
     mc "Fuck no she didn't! She's been going through hell and you only made it worse! I can only say that it's pure luck she's even wanted to talk to me recently!"
 
+    show rumi 2 scared at one
+
     r "What?! You're talking with Katrina?!"
 
     mc "As if it concerns a self-centered douchebag like you who I talk to-"
 
+    show rumi 2 think at one
+
     r "You are {b}not{/b} talking to her while we are swapped! Do you fucking understand?!"
 
-    #show confused PG
+    show rumi 2 think at two_right with ease
+    show pg scared at two_left with moveinleft
 
     pg "What the hell is going on in here?"
 
     mc "It's none of your business Rumi! Absolutely, none of your business."
 
+    show rumi 2 scared at two_right
+
     r "You piece of fucking shit! I knew it, the moment I started to trust you just a little bit, you begin backstabbing me just like her!"
 
     mc "You call this a display of trust? Don't make me laugh, you'e been commanding me around like I'm your stupid puppy or something!"
+
+    show pg cry at two_left
 
     pg "{size=+5}{b}{i}HEY! Both of you, stop it!{/i}{/b}{/size}"
 
     mc "...If you want to stop anyone, then stop her! I am tired of her constant whining about how I am misusing {i}my own{/i} life."
 
+    show rumi 2 think at two_right
+
     r "This isn't your life! It's {i}{b}my{/b}{/i} life!"
+
+    show pg scared at two_left
 
     pg "That's it! Both of you! I've had enough of your constant fighting!"
 
@@ -104,13 +150,17 @@ label Day18_MC:
 
     mc "What, is that supposed to be some kind of threat?"
 
+    show pg think at two_left
+
     pg "You should know by now how Rumi's parents work, shouldn't you?!"
 
     "...Crap, she did have a point. I already didn't live up to their ideals of their perfect daughter who wouldn't embarrass them or their image, so I sure as hell wouldn't want to endure whatever punishment they could come up with..."
 
     pg "Did you two idiots finally come to your fucking senses then?"
 
-    r "PG, don't you dare call me an id-"
+    show rumi 2 scared at two_right
+
+    r "Angela, don't you dare call me an id-"
 
     pg "You clearly aren't in the right mindset to make any decisions right now, so I'm taking the fucking wheel here!"
 
@@ -119,6 +169,8 @@ label Day18_MC:
     pg "If you're going to continue like this, then there {i}is{/i} no saving your image, Rumi! We need this jerk if we want there to be any point to this party!"
 
     pg "{size=+5}{b}So calm the fuck down, both of you!{/b}{/size}"
+
+    show rumi 2 think at two_right
 
     r "..."
 
@@ -131,6 +183,8 @@ label Day18_MC:
 
     pg "{i}Sigh...{/i}"
 
+    hide pg with moveoutright
+
     "She turned her head away after a long scoff."
 
     "This absolute bitch was criticizing my every life choice, and I was getting sick of it."
@@ -139,6 +193,8 @@ label Day18_MC:
     "Nothing we tried was working anyways, and no fucking wonder. After all, we barely interacted in the first place, so us performing some sort of ritual that allowed a full body swap by accident was practically impossible."
 
     pg "Good. Are we fine?"
+
+    show rumi 2 think at one with ease
 
     r "Hmph."
     mc "Right back at you."
@@ -149,11 +205,11 @@ label Day18_MC:
 
     "The day ended up with a very hostile feeling in the air."
     "I intentionally avoided talking to her, and she did the same."
-    "We were both clearly at our limits of tolerance it seemed, and my pride only allowed for one goodbye to pg."
+    "We were both clearly at our limits of tolerance it seemed, and my pride only allowed for one goodbye to Angela."
     think "As if I'd ever talk to her again."
     "That was the only thought in my head."
     "I now cemented it into my brain. I hated her with a burning passion. I wanted out of this sickening scenario I was put into."
-    "I just couldn't wait to get this party over with and get back to regular school-days, and to hopefully talk with Weeb, Caren and Kat on a nice noon where the only real concern was coming up with new non-sense to talk about after a long class with any of our teachers."
+    "I just couldn't wait to get this party over with and get back to regular school-days, and to hopefully talk with Rick, Caren and Kat on a nice noon where the only real concern was coming up with new non-sense to talk about after a long class with any of our teachers."
     "I hoped that once the new week started, everything could go back to the way it was before. That Caren somehow figured out how to swap two people."
     "And at the end of the day, that hope was the only thing that really kept me going right now."
     "I didn't want to live my remaining life as Rumi Sato."

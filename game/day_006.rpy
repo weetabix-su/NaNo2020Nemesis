@@ -1,6 +1,12 @@
 
 label Day6_Rumi:
-    scene corridor
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 6{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
+    scene bg gym
     with fade
     show weeb happy at two_left
     show pg happy at two_right
@@ -10,7 +16,7 @@ label Day6_Rumi:
     weeb laugh "I can take it that yesterday's lunch period was a great success for your plans to give my man a shot with the ladies."
     show weeb happy
 
-    r "Yes! No! It's terrible! I couldn't say no to {i}any of them{/i} once they were okay with him {q}liking them{/q}!"
+    r "Yes! No! It's terrible! I couldn't say no to {i}any of them{/i} once they were okay with him \"liking them\"!"
 
     "To think one of my plans to ruin someone failed so spectacularly that I didn't even know why I did it in the first place..."
     "If this wasn't basically the taste of defeat then I didn't know anymore."
@@ -72,6 +78,12 @@ label Day6_Rumi:
     return
 
 label Day6_MC:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 6{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene corridor_2
     with fade
     show rumi 2 think at one
@@ -98,7 +110,7 @@ label Day6_MC:
 
     r "I don't give a crap about you, I just have something to confirm."
 
-    mc "Something to confirm? What the hell are you going to {q}confirm{/q} by going to a mixer with me?!"
+    mc "Something to confirm? What the hell are you going to \"confirm\" by going to a mixer with me?!"
 
     r "Then you haven't noticed it? When you look at guys?"
 
@@ -281,7 +293,7 @@ label Day6_MC:
 
     pg "Rumi has qualities that you can't even understand, and before you came along she had status and power in her image alone."
 
-    pg "We can't play some kid's game of {q}Hang out and cuddle with your friends{/q} like that."
+    pg "We can't play some kid's game of \"Hang out and cuddle with your friends\" like that."
 
     mc "But isn't that exactly what we're doing right now...?"
 

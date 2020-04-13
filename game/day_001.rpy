@@ -2,7 +2,10 @@
 
 label Day1_MC1:
 
-    scene black
+    scene black with fade
+    show txt cen "{size=+54}DAY 1{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
 
     #add alarm sound
 
@@ -70,7 +73,7 @@ label Day1_MC1:
 
     mc "I'm... Rumi?"
 
-    show mc scared with dissolve
+    show mc scared
 
     mc "What the actual fuck is that?"
 
@@ -112,14 +115,17 @@ label Day1_MC1:
 
     "If she really turned into me, then I {b}need{/b} to find her as soon as possible."
 
+    scene bg classroom_2 with fade
 
     think "Today is the first school day of my senior year, and Rumi's also in her senior year now. I need to go to school as early as I can."
+
+    show pg scared at one with dissolve
 
     pg "But then what are you going to do in the meantime?"
 
     mc "Just do it."
 
-    pg "Alright then. Jeez, you're moody today."
+    pg think "Alright then. Jeez, you're moody today."
 
     "Choosing to once more ignore her statement, I placed myself leaning up a wall and waited."
 
@@ -127,20 +133,27 @@ label Day1_MC1:
 
     "I couldn't check the time because I had no phone or watch on me, but as a sudden flood of people appeared, I knew it was close to ten minutes left until we had to meet at the ceremony."
 
-
-    show rumi angry at two_right
-
     think "Great..."
-    show rumi think at one
+
+    show pg think at two_left with ease
+    show rumi think at two_right with easeinleft
+
     "I thought of how to approach {i}me{/i}, but the moment my own body saw me, it sprinted towards me."
 
+    show rumi scared at two_right
+
     r "{b}{i}YOU!{/i}{/b}"
+
+    show pg scared at two_left
 
     think "Yep, she's pissed."
 
     r "You! We're going to talk!"
 
     mc "Alright, alright."
+
+    hide pg with dissolve
+    hide rumi with dissolve
 
     "She had grabbed me by my hand and straight up yoinked me in the opposite direction of where all the other students were headed."
 
@@ -149,6 +162,8 @@ label Day1_MC1:
 
     "She lead me to the garden of the school. With everyone soon attending the entrance ceremony, there was nobody around."
     "And she made sure of that before erupting at me like a volcano."
+
+    show rumi scared at one with dissolve
 
     r "Explain. Right now! Are you that bitch's pet David?!"
 
@@ -167,8 +182,6 @@ label Day1_MC1:
     mc "But it sure sounds like you didn't have anything to do with it either."
 
     r think "Oh, please. Someone like you would be begging to be me. Of course you have something to do with this!"
-
-    #pissed MC
 
     mc "Listen here, you stuck-up sissy. I would rather spend eternity walking around as a WcDonalds employee than have to live your pathetic life of bullying for a single day."
 
@@ -196,7 +209,7 @@ label Day1_MC1:
 
     mc "Did I wha-"
 
-    r "{b}DID YOU FUCKING TOUCH ME?!{/b}"
+    r scared "{b}DID YOU FUCKING TOUCH ME?!{/b}"
 
     mc "What do you think?! I was in a hurry to get to school to figure out what's going on myself! And it is kind of hard getting clothes on without touching my own body! Or would you rather I come in underwear?"
 
@@ -208,7 +221,7 @@ label Day1_MC1:
 
     mc "YES! OH MY GOD, YES!"
 
-    r "Hngh- Then- "
+    r think "Hngh- Then- "
 
     #see Rumi kick a bucket
 
@@ -288,9 +301,7 @@ label Day1_MC1:
 
     mc "Could you {i}not{/i} try to bully people when trying to talk?"
 
-    show rumi scared
-
-    r "..."
+    r scared "..."
 
     mc "...What?"
 
@@ -314,9 +325,7 @@ label Day1_MC1:
 
     mc "Alright, alright."
 
-    #show them leave
-
-    pause 1.0
+    hide rumi with dissolve
 
     scene black
 
@@ -331,6 +340,11 @@ label Day1_MC1:
     return
 
 label Day1_Rumi:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 1{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
 
     r "{size=-5} Ugh, I can only shudder at having to live like a guy.{/size}"
     think "But I can fix this. Everything is going to work my way eventually. If it can happen once, it can happen twice."
@@ -444,6 +458,12 @@ label Day1_Rumi:
     return
 
 label Day1_MC2:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 1{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene park_no_fence_day
     with fade
     show rumi happy

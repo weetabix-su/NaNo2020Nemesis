@@ -1,10 +1,18 @@
 
 label Day139:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 139{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     #christmas tree?
     mc "..."
 
     think "They promised..."
     think "They promised to at least be there today..."
+
+    scene bg room_evening with fade
 
     think "...I can't take this anymore..."
     "Was I really being too demanding?"
@@ -21,7 +29,7 @@ label Day139:
 
     "They promised that we would spend christmas together, those stupid parents!"
 
-    "But instead, I got two texts telling me how {q}We have {i}soooo{/i} much important stuff to do right now{/q}, as if this {b}one{/b} favor from their own daughter was just some side-thing to worry about!"
+    "But instead, I got two texts telling me how \"We have {i}soooo{/i} much important stuff to do right now\", as if this {b}one{/b} favor from their own daughter was just some side-thing to worry about!"
 
     "Even if they were late, they told me they would be home by nine at the latest, but they still aren't here!"
     "I had even prepared dinner for them, all on my own without getting any help from them at all, having to look up recipes online and all of that."
@@ -35,10 +43,14 @@ label Day139:
 
     "Oh, how I would scold them for taking so freaking long!"
 
+    scene bg kitchen_night with fade
+
     #show Dad
     "It was the dad. He looked tired and noticed me when I came into the kitchen."
 
-    rdad "Hello sweetie. I'm sorry I'm home late."
+    show Dad at one with dissolve
+
+    rdad "Hello sweetie. I\'m sorry I\'m home late."
 
     "..."
 
@@ -70,6 +82,9 @@ label Day139:
 
     "He rubbed his temple to display that he was tired of me."
     #show him leave
+
+    hide Dad with dissolve
+
     "While ignoring my question, he walked into the living room in a completely calm fashion."
 
     "I had to spend a few seconds to process what just happened."
@@ -84,8 +99,12 @@ label Day139:
 
     #scene Rumi's livingroom
 
+    scene bg room_evening with fade
+
     mc "You are so stupid!"
     mc "Don't you get what's going on here?!"
+
+    show Dad at one with dissolve
 
     rdad "I beg your pardon?"
 
@@ -119,7 +138,7 @@ label Day139:
 
     "I left the house as fast as I could."
     "I couldn't stand it anymore. It was like mental abuse."
-    "I knew he would get angry as all hell at me for saying {q}{i}Fuck you{/i}{/q} to him. And I didn't want to listen to him anymore."
+    "I knew he would get angry as all hell at me for saying \"{i}Fuck you{/i}\" to him. And I didn't want to listen to him anymore."
     "Not today."
     "It was chilly outside. Very chilly. And I only had the dress and bullteaet on."
     "But it still felt better than having to be next to him. It only cemented how much I hated him. And Rumi's mom would probably not react very differently."
@@ -134,12 +153,13 @@ label Day139:
     "..."
     think "I don't want this anymore... I just want to go home..."
 
-    #MC's home
+    scene bg street_5 with fade
+
     "It felt wrong to actually visit my real home."
     "It was still... Christmas, after all..."
     "We hadn't told anyone about the swap besides our small friend group."
 
-    "Kat, Caren, Weeb, PG and Mike were still the only ones who really knew about it. But recently, it started becoming extremely lonely, despite those five knowing my actual identity."
+    "Kat, Caren, Rick, Angela and Mike were still the only ones who really knew about it. But recently, it started becoming extremely lonely, despite those five knowing my actual identity."
     "So I took the courage to perhaps do this today. To perhaps convince my mom of who I really was."
 
     mc "{i}Sigh...{/i} Here we go..."
@@ -147,6 +167,8 @@ label Day139:
     "I knocked on the door."
 
     "It took a while before someone from the inside opened it."
+
+    show Mom at one with dissolve
 
     mcmom "Uh- Rumi?!"
 
@@ -162,11 +184,17 @@ label Day139:
 
     mc "No, no, I'm here out of my own will, uhm-"
 
+    show Mom at two_left with ease
+    show rumi 2 happy at two_right with dissolve
     #show Rumi
 
     r "Oh. Hey. Uh... What are you doing here?"
 
     yui "{size=-3}Rumi?{/size}?"
+
+    show Mom at three_left with ease
+    show rumi 2 think at one with ease
+    show Yui at three_right with dissolve
 
     mc "Uhm, hey guys..."
 
@@ -174,9 +202,13 @@ label Day139:
 
     mc "..."
 
+    show rumi 2 scared
+
     mc "{i}Sob....{/i}"
 
     mc "I- I'm- I'm sorry, I can't do this anymore...!"
+
+    show rumi 2 cry
 
     "I ended up crying my heart out in front of them that night."
     "Even if something like that is hard to admit as a guy."

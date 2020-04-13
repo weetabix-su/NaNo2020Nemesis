@@ -1,4 +1,9 @@
 label Day4_MC1:
+    scene black with fade
+    show txt cen "{size=+54}DAY 4{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene bg corridor
     with fade
     show pg think at one
@@ -205,6 +210,11 @@ label Day4_MC1:
     return
 
 label Day4_Rumi:
+    scene black with fade
+    show txt cen "{size=+54}DAY 4{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene bg classroom_2
     with fade
 
@@ -214,7 +224,7 @@ label Day4_Rumi:
     show r:
         ease 0.5 alpha 1.0
 
-    tea "...How about you, David? Got anything {q}wise{/q} to share with us about this topic since you so seemingly believe you do not need to pay attention?"
+    tea "...How about you, David? Got anything \"wise\" to share with us about this topic since you so seemingly believe you do not need to pay attention?"
 
     r "Huh? Wh-What?"
 
@@ -275,7 +285,7 @@ label Day4_Rumi:
 
     r "Oh, this? I'm just trying to read some books to figure out something completely unrelated. I couldn't give less of a shit about that jerk."
 
-    mike "Uhuh. {q}Spiritual Bond{/q}... Didn't know you were into the... Metaphysical stuff and books like that, or what do you call it?"
+    mike "Uhuh. \"Spiritual Bond\"... Didn't know you were into the... Metaphysical stuff and books like that, or what do you call it?"
 
     mike "What are you trying to figure out? I'm not into spirits and such, but you know I'm a great advisor, heh."
 
@@ -355,7 +365,7 @@ label Day4_Rumi:
     mike "Cool. Let's jet."
 
     #lunch bg
-    scene black
+    scene bg gym
     with fade
     "The last two days during lunch had been excessively boring."
 
@@ -393,6 +403,11 @@ label Day4_Rumi:
     return
 
 label Day4_MC2:
+    scene black with fade
+    show txt cen "{size=+54}DAY 4{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     show weeb laugh at two_right
     show pg think at two_left
     weeb "Since yesterday I read three different light novels I found about the subject of swapping on the internet."
@@ -475,7 +490,7 @@ label Day4_MC2:
 
     r 2 scared "You... Absolute... AAGH!"
 
-    r "Is it so hard to do simple tasks like {q}don't interact with weirdos{/q}?!"
+    r "Is it so hard to do simple tasks like \"don't interact with weirdos\"?!"
 
     r "Why are you doing this?! You're just ruining my reputation!"
 
@@ -526,7 +541,7 @@ label Day4_MC2:
 
     mc "Uh... Guess someone else is in on it then."
 
-    mike "Was that the {q}impossible{/q} thing you told me about then, David?"
+    mike "Was that the \"impossible\" thing you told me about then, David?"
     mc "{i}Sigh{/i}... She, or he, whatever, is Rumi, not David."
 
     mike "Whoah. So I was talking to Queenie all the time?"
@@ -744,6 +759,11 @@ label Day4_MC2:
     return
 
 label Day4_May:
+    scene black with fade
+    show txt cen "{size=+54}DAY 4{/size}\n\n{size=+16}~ May ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene bg corridor
     with fade
     #Switch to.. May's PoV?
@@ -791,7 +811,12 @@ label Day4_May:
     return
 
 label Day4_MC3:
-    #$ screenfilter.blur = 5
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 4{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     show rumi 2 think at one
 
     mc "Seriously, I can't see anything."
@@ -815,7 +840,7 @@ label Day4_MC3:
 
     mc "Still, could I at least have my own phone so I can do anything interesting during the entire day? All I have is TV right now."
 
-    r "You want {q}Rumi{/q} to have {q}David's{/q} phone? No way. Besides, I can't trust you with anything that resembles a camera while you're in control of me."
+    r "You want \"Rumi\" to have \"David's\" phone? No way. Besides, I can't trust you with anything that resembles a camera while you're in control of me."
 
     mc "Can't you at least put a little trust in me? It's not like I'm planning to tear your life down."
     r "No."
@@ -964,7 +989,7 @@ label Day4_MC3:
     #zoom to another table with Rumi and Weeb
     scene black
     with fade
-    show weeb happy at three_right 
+    show weeb happy at three_right
     show rumi 2 think at one
 
     r "What else?"
@@ -1126,7 +1151,7 @@ label Day4_MC3:
 
     r 2 think "Because you aren't invited you knobhead."
 
-    mc "Is this like... Some kind of {q}popular people{/q} party you got going on?"
+    mc "Is this like... Some kind of \"popular people\" party you got going on?"
     r "Yes. Now you know why you don't know this exists."
 
     mc "Oof."
@@ -1228,6 +1253,12 @@ label Day4_MC3:
     return
 
 label Day4_Rumi2:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 4{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     #$ screenfilter.blur = 0
     #MC's room with Weeb
     scene room
@@ -1236,7 +1267,7 @@ label Day4_Rumi2:
 
     "Yeah... So this is me in a situation I never thought I'd find myself in."
     "Rick - yes, that Rick - visiting my home for the time being."
-    "He promised to read up more about possible swap methods me and David could do and practically invited himself over, saying {q}It's fine because he would {i}technically{/i} be visiting David{/q}."
+    "He promised to read up more about possible swap methods me and David could do and practically invited himself over, saying \"It's fine because he would {i}technically{/i} be visiting David\"."
 
     r "{i}Sigh...{/i}"
 
@@ -1297,7 +1328,7 @@ label Day4_Rumi2:
     "Whether those ideas were rational or not was another thing entirely."
 
     "But the main question we had to ask ourselves was still the same."
-    "Is this a question of {q}Why did it happen{/q}, or is it a question of {q}Who did it{/q}."
+    "Is this a question of \"Why did it happen\", or is it a question of \"Who did it\"."
     "It would be ideal if this happened by accident. If I could replicate it, then everything would go back to normal."
     "I would be able to build up my reputation again, to live life as a winner and be, well, me."
     "On the other hand, if this was caused by someone and I couldn't replicate it myself..."
@@ -1397,7 +1428,7 @@ label Day4_Rumi2:
     r "That's totally besides the point!"
     r "How many times do you need to have an anchor smacked across your face before you finally take the hint?"
 
-    r "Nobody wants to be {q}flirted{/q} at by some dipshit!"
+    r "Nobody wants to be \"flirted\" at by some dipshit!"
 
     weeb "..."
 
@@ -1412,7 +1443,7 @@ label Day4_Rumi2:
     weeb "...Kind of?"
     weeb "You are not mad at me then?"
 
-    r "I am angry as fuck at you right now. But it's not the {q}Fuck you{/q} kind of angry, it's the dissapointment kind of."
+    r "I am angry as fuck at you right now. But it's not the \"Fuck you\" kind of angry, it's the dissapointment kind of."
 
     r "But... Look. You're helping me by spending your time. I can't pay you back in money, but what if I gave you some actual tips on how to get into a girl's pants?"
 
@@ -1425,7 +1456,7 @@ label Day4_Rumi2:
 
     weeb laugh "That would be a gift I would never be able to refuse."
 
-    weeb "I would need to give you my extensive list of research that has helped me create {q}Rick's Womanly Exam{/q} then!"
+    weeb "I would need to give you my extensive list of research that has helped me create \"Rick's Womanly Exam\" then!"
     show weeb happy
 
     r "What the hell is that?"

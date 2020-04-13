@@ -3,6 +3,11 @@
 label Day16_PGWeeb:
 
     scene black with fade
+    show txt cen "{size=+54}DAY 16{/size}\n\n{size=+16}~ Rick and Angela ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
+    scene black with fade
 
     "1 week later"
 
@@ -64,7 +69,7 @@ label Day16_PGWeeb:
 
     show weeb think at two_right
 
-    "..."
+    weeb "..."
 
     show pg scared at two_left
 
@@ -95,11 +100,13 @@ label Day16_PGWeeb:
 
     pg "You can't even think of anything from the top of your head?! Seriously?!"
 
-    #TODO: show May walking
+    show May behind pg, weeb at one with moveinleft
 
     show pg scared at two_left
 
     pg "What about her? That girl that's always after Rumi. She is annoying and even smaller than me."
+
+    hide May with moveoutright
 
     weeb "Well..."
     pg "\"Well\" what?"
@@ -121,9 +128,9 @@ label Day16_PGWeeb:
 
     mc "{i}Hah... Hah... Hah...{/i} Rumi!"
 
-    show pg scared at three_left with ease
-    show weeb think at three_right with ease
-    show mc 2 cry at one with dissolve
+    show pg scared at two_left
+    show weeb think at two_right
+    #show mc 2 cry at one with dissolve
 
     pg "Huh? David? Why are you out of breath?"
 
@@ -134,8 +141,8 @@ label Day16_PGWeeb:
     mc "Yes!"
     mc "And she filled out her own form for it and everything. But!"
 
-    show weeb scared at three_right
-    show mc 2 scared at one
+    show weeb scared at two_right
+    #show mc 2 scared at one
 
     mc "What the hell does she mean with {i}\"I want to be the loving wife of a billionaire in the future\"{/i}?!"
 

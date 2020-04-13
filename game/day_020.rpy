@@ -91,17 +91,17 @@ label Day20_MC:
 
     #Rumi's bedroom scene
 
-    think "Okay, so I have to find clothes that {q}don't suck{/q}."
+    think "Okay, so I have to find clothes that \"don't suck\"."
     think "My wardrobe is absolutely massive, so it shouldn't be impossible to find something like that."
     think "..."
 
-    think "Wait, what does {q}don't suck{/q} even mean?"
+    think "Wait, what does \"don't suck\" even mean?"
 
-    "Puzzled at how I should know exactly what {q}doesn't suck{/q}, I wavered my options."
+    "Puzzled at how I should know exactly what \"doesn't suck\", I wavered my options."
 
     "And I wavered my options for about 15 seconds before just settling on the thing Rumi told me to wear during the mixer."
 
-    think "Surely this falls under the category of {q}doesn't suck{/q}."
+    think "Surely this falls under the category of \"doesn't suck\"."
 
     $ screenfilter.blur = 0
 
@@ -163,7 +163,7 @@ label Day20_MC:
 
     mc "...I was just going to ask how you managed to beat this guy last time."
 
-    pg "{q}This guy{/q}? Oh, the Dedris King."
+    pg "\"This guy\"? Oh, the Dedris King."
 
     pg "Wait, just, let me get changed first."
 
@@ -224,7 +224,7 @@ label Day20_MC:
 
     mc "If all I have to do is just walk around for an evening then it's going to be a piece of cake."
 
-    pg "Well, you have to do a bit more than just {q}walk around{/q}, but it's a start."
+    pg "Well, you have to do a bit more than just \"walk around\", but it's a start."
 
     #scene bg kitchen
     #show Rumi coming in
@@ -258,7 +258,7 @@ label Day20_MC:
 
     scene black
 
-    pg "{i}{q}Yes, one of us would love to spend time with you, pg!{/q}{/i}"
+    pg "{i}\"Yes, one of us would love to spend time with you, pg!\"{/i}"
 
     pg "Jerks."
 
@@ -327,7 +327,7 @@ label Day20_Rumi:
 
     think "For fucks sake, can she let this go already?"
     "She'd been pestering me all the time lately, about somehow being in a loving relationship with my own body."
-    "And I mean, sure, {q}MC{/q} was spending an unusual amount of time with {q}Rumi{/q} recently, but of course she had to interpret it as a freaking romance."
+    "And I mean, sure, \"MC\" was spending an unusual amount of time with \"Rumi\" recently, but of course she had to interpret it as a freaking romance."
 
     think "It just reminds me of why I hate people who gossip about me..."
 
@@ -505,7 +505,7 @@ label Day20_Rumi:
     "I had a lot of time to think about things right now, and I had to slowly accept that things wouldn't go back to how they were before."
     "I was in a terrible mood. The benefits I had from being the leader of the highest circle of people in school was evaporating in front of my eyes."
     "It had been evaporating since this semester started. And fuck, it was frustrating not being able to do anything about it."
-    "Again, I kept thinking to myself, {q}Why MC? What's so special about him{/q}."
+    "Again, I kept thinking to myself, \"Why MC? What's so special about him\"."
     "I mean, sure, his family is great and he has friends, but the same was true for me too, right?"
     "But really, what mistake did I do to be swapped with him..."
 
@@ -558,7 +558,7 @@ label Day20_Rumi:
 
     maria "Gabriel, of all people, walking out of the dressing room!"
 
-    maria "And where did the clothes he was allegedly {q}trying on{/q} go?"
+    maria "And where did the clothes he was allegedly \"trying on\" go?"
 
     maria "They weren't there, at all!"
 
@@ -636,7 +636,7 @@ label Day20_Rumi:
 
     r "And you're not drunk at all?"
 
-    weeb "I do feel a little tingling in my head. Is that considered {q}drunk{/q}?"
+    weeb "I do feel a little tingling in my head. Is that considered \"drunk\"?"
 
     maria "...Dude, do you have some sort of black hole in your stomach?"
 
@@ -822,14 +822,14 @@ label Day20_Rumi:
 
     mc "Aha, no takers, well, I have apparently {i}never{/i} told anyone about it before!"
 
-    mc "That's right! Rumi {q}Sparrow{/q} Sato!"
+    mc "That's right! Rumi \"Sparrow\" Sato!"
 
     r "No no {size=+5}no no{/size}!"
 
     tori "Pfft, for real?"
 
     maria "Ahahahah... Seriously?! Sparrow?"
-    rfriend "What kind of shitty parents name their daughter {q}Sparrow{/q}?"
+    rfriend "What kind of shitty parents name their daughter \"Sparrow\"?"
 
     popgirl "Did they think they were going to raise a bird?"
     think "Oh god, no."
@@ -976,7 +976,7 @@ label Day20_MC2:
 
     mc "Uhm... She told me to act like herself...?"
 
-    mike "What part of that was acting as {q}herself{/q}?"
+    mike "What part of that was acting as \"herself\"?"
 
     mc "She's been a pain in the ass, dude! She asked for this!"
 
@@ -992,7 +992,7 @@ label Day20_MC2:
 
     mike "Queenie has also been feeling down lately, so I thought the least I could do was talk with her during school."
 
-    mc "Wait, who is {q}Quee-{/q} Oh, Rumi."
+    mc "Wait, who is \"Quee-\" Oh, Rumi."
 
     mike "Yes. Again, what made you think that humiliating her like that is going to be helpful to anyone?"
 
@@ -1061,7 +1061,7 @@ label Day20_MC2:
     mc "I'm not gonna ask what happened. I'm going to try finding MC."
     mc "Can you, uh... Hold down the fort while I'm gone?"
 
-    AN_harry "Uhh... You want me to {q}hold own the fort{/q}?"
+    AN_harry "Uhh... You want me to \"hold own the fort\"?"
 
     mc "Thanks, I appreciate it."
 
@@ -1109,7 +1109,7 @@ label Day20_MC2:
     r "I'm sorry..."
     r "I..."
 
-    think "Wait a minute- That's the first genuine sounding {q}sorry{/q} I've heard from her!"
+    think "Wait a minute- That's the first genuine sounding \"sorry\" I've heard from her!"
 
     mc "...You're sorry about what?"
 
@@ -1224,7 +1224,7 @@ label Day20_MC2:
     mc "That's what happened?"
 
     r "Partially."
-    r "I think I overheard them talking about how I {q}wasn't giving them enough money{/q} at some point."
+    r "I think I overheard them talking about how I \"wasn't giving them enough money\" at some point."
 
     r "So I confronted them, and they started all kinds of rumors about me and treated me like some 3rd class citizen all of a sudden."
 
@@ -1235,7 +1235,7 @@ label Day20_MC2:
     mc "..."
     mc "...I find it hard to believe that Kat would do something like that..."
 
-    r "Oh, so {i}now{/i} your entire {q}swearing on your name{/q} thing conveniently goes up in smoke."
+    r "Oh, so {i}now{/i} your entire \"swearing on your name\" thing conveniently goes up in smoke."
 
     mc "Hey, I didn't say that I {i}don't{/i} believe you."
 
@@ -1247,9 +1247,9 @@ label Day20_MC2:
 
     r "{i}Sigh...{/i}"
 
-    r "Anyways, those pigs made my life hell in middle-school. And then, after a few years when it's convenient for her, she suddenly starts crying for forgiveness to me, claiming {q}she wasn't a good enough friend and that she would make up for it if I let her{/q}."
+    r "Anyways, those pigs made my life hell in middle-school. And then, after a few years when it's convenient for her, she suddenly starts crying for forgiveness to me, claiming \"she wasn't a good enough friend and that she would make up for it if I let her\"."
 
-    r "In all seriousness, the fucking nerve she has to tell me how {q}{i}she's so sorry{/i}{/q} after making me go through middle-school for four years without anyone to talk to because they decided I wasn't good enough based on made-up rumors..."
+    r "In all seriousness, the fucking nerve she has to tell me how \"{i}she's so sorry{/i}\" after making me go through middle-school for four years without anyone to talk to because they decided I wasn't good enough based on made-up rumors..."
 
     r "Can you imagine how it feels like to be rejected by everyone else as a kid? I fucking {i}hate them all{/i} for doing that!"
 
@@ -1284,7 +1284,7 @@ label Day20_MC2:
 
     r "Not just your mom! I admit it, your life is so much fucking better than mine!"
 
-    r "You have her, you have friends, you have {q}hobbies{/q}, nobody cares how you look, how you act, and you've got relatives that come over regularly, fuckloads of girls that apparently want to get into your pants for god knows what reason-"
+    r "You have her, you have friends, you have \"hobbies\", nobody cares how you look, how you act, and you've got relatives that come over regularly, fuckloads of girls that apparently want to get into your pants for god knows what reason-"
 
     r "Seriously, what the fuck did you do to deserve so much better?"
 

@@ -1,7 +1,12 @@
 label Day3_MC:
 
+    scene black with fade
+    show txt cen "{size=+54}DAY 3{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     #Lunch BG, with every popular girls
-    scene black
+    scene bg gym with fade
     mc "Here."
     show pg happy at one
     #MC go to PG
@@ -263,6 +268,7 @@ label Day3_MC:
     "Like, really hoped."
 
     #go back to lunch
+    scene bg gym with wipeleft
 
     "But... Uh, Angela is apparently already having her breakdown."
     show pg scared at one
@@ -314,6 +320,11 @@ label Day3_MC:
     return
 
 label Day3_Rumi:
+    scene black with fade
+    show txt cen "{size=+54}DAY 3{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     scene bg library
     with wipeleft
     #scene bg library

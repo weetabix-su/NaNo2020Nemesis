@@ -12,17 +12,29 @@ define weeb = Character("Rick", image = "weeb")
 
 define m = Character("May")
 
+define mcmom = Character("David's Mom")
+
+define rdad = Character("Rumi's Dad")
+
 define mike = Character("Mike")
 
 define popgirl = Character("Anna")
 
-define rfriend = Character("Some ass kissing bitch")
+define rfriend = Character("{size=-11}Some ass-kissing bitch{/size}")
 
 define tea = Character("Teacher")
 
 define kat = Character("Katrina")
 
 define caren = Character("Caren")
+
+define sandra = Character("Sandra")
+
+define yui = Character("Yui")
+
+define unknownA = Character("??? #1")
+
+define unknownB = Character("??? #2")
 
 
 # Position Definitions
@@ -125,6 +137,9 @@ image bg bus_stop_morning = im.Scale("images/bg/bus stop morning.jpg", 1280, 720
 image bg bus_stop_night = im.Scale("images/bg/bus stop night.jpg", 1280, 720)
 image bg classroom = im.Scale("images/bg/Classroom_01_day.jpg", 1280, 720)
 image bg classroom_2 = im.Scale("images/bg/Classroom_02_day.jpg", 1280, 720)
+image bg rooftop = im.Scale("images/bg/uncle_mugen_school_building_rooftop_day.jpg", 1280, 941)
+image bg gym = im.Scale("images/bg/basketball court.png", 1280, 908)
+image bg gym_showers = im.Scale("images/bg/toilet_04.jpg", 1280, 720)
 image bg evening = im.Scale("images/bg/evening02.jpg", 1280, 720)
 image bg kitchen_day = im.Scale("images/bg/kitchen_day.jpg", 1280, 720)
 image bg kitchen_night = im.Scale("images/bg/kitchen_night.jpg", 1280, 720)
@@ -151,6 +166,7 @@ image bg street = im.Scale("images/bg/Street Background.jpg", 1280, 720)
 image bg street_2 = im.Scale("images/bg/street_background_01.jpg", 1280, 720)
 image bg street_3 = im.Scale("images/bg/street_background_04.jpg", 1280, 720)
 image bg street_4 = im.Scale("images/bg/this_better_be_good_because_the_render_time_for_this_bg_is_horrendous_despite_having_a_render_farm.jpg", 1280, 720)
+image bg street_5 = im.Scale("images/bg/street_background_00.jpg", 1280, 720)
 
 
 
@@ -160,6 +176,5 @@ image bg_room_dusk_light = im.Scale("images/bg/room_dusk_light_on.jpg", 1280, 72
 
 image white = "#ffffff"
 
-
-
-# CG Definitions
+# Text Generators
+image txt cen = renpy.ParameterizedText(ypos=0.5, xpos=0.5, xalign=0.5, yalign=0.5, text_align=0.5)
