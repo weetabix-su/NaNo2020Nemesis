@@ -24,6 +24,20 @@ define rfriend = Character("{size=-11}Some ass-kissing bitch{/size}")
 
 define tea = Character("Teacher")
 
+define eric = Character("Eric")
+
+define audrey = Character("Audrey")
+
+define dominic = Character("Dominic")
+
+define mel = Character("Mel")
+
+define maria = Character("Maria")
+
+define marty = Character("Marty")
+
+define tori = Character("Victoria")
+
 define kat = Character("Katrina")
 
 define caren = Character("Caren")
@@ -111,9 +125,9 @@ image mc 2 laugh = "images/sprites/mc/rumi2_laugh.png"
 image mc 2 scared = "images/sprites/mc/rumi2_scared.png"
 image mc 2 think = "images/sprites/mc/rumi2_thinking.png"
 # With only ponytail
-image mc 3 cry = "images/sprites/mc/rumi3_cry.png"
+image mc 3 cry = "images/sprites/mc/rumi3_crying.png"
 image mc 3 happy = "images/sprites/mc/rumi3_happy.png"
-image mc 3 laugh = "images/sprites/mc/rumi3_laugh.png"
+image mc 3 laugh = "images/sprites/mc/rumi3_laughing.png"
 image mc 3 scared = "images/sprites/mc/rumi3_scared.png"
 image mc 3 think = "images/sprites/mc/rumi3_thinking.png"
 # Silhouetted
@@ -149,13 +163,15 @@ image bg gym_showers = im.Scale("images/bg/toilet_04.jpg", 1280, 720)
 image bg evening = im.Scale("images/bg/evening02.jpg", 1280, 720)
 image bg kitchen_day = im.Scale("images/bg/kitchen_day.jpg", 1280, 720)
 image bg kitchen_night = im.Scale("images/bg/kitchen_night.jpg", 1280, 720)
+image bg bathroom = im.Scale("images/bg/bathroom_post_processed.jpg", 1280, 843)
 image bg library = im.Scale("images/bg/library.png", 1280, 720)
 image bg apartment_evening = im.Scale("images/bg/old_apartment_evening.jpg", 1280, 720)
 image bg apartment_noon = im.Scale("images/bg/old_apartment_noon.jpg", 1280, 720)
 image bg roadside_dawn = im.Scale("images/bg/roadside_dawn.jpg", 1280, 720)
 image bg roadside_morning = im.Scale("images/bg/roadside_morning.jpg", 1280, 720)
 image bg roadside_night = im.Scale("images/bg/roadside_night_fullmoon.jpg", 1280, 720)
-image bg room = im.Scale("images/bg/room.jpg", 1280, 720)
+image bg beach_night = im.Scale("images/bg/beach_night_no_moon.jpg", 1280, 720)
+image bg room = im.Scale("images/bg/room.jpg", 1280, 876)
 image bg room_dawn = im.Scale("images/bg/room_dawn_light_off.jpg", 1280, 720)
 image bg room_dusk = im.Scale("images/bg/room_dusk_light_off.jpg", 1280, 720)
 image bg room_dusk_light = im.Scale("images/bg/room_dusk_light_on.jpg", 1280, 720)
@@ -173,9 +189,6 @@ image bg street_2 = im.Scale("images/bg/street_background_01.jpg", 1280, 720)
 image bg street_3 = im.Scale("images/bg/street_background_04.jpg", 1280, 720)
 image bg street_4 = im.Scale("images/bg/this_better_be_good_because_the_render_time_for_this_bg_is_horrendous_despite_having_a_render_farm.jpg", 1280, 720)
 image bg street_5 = im.Scale("images/bg/street_background_00.jpg", 1280, 720)
-
-image bg_room = im.Scale("images/bg/room.jpg", 1280, 720)
-image bg_room_dusk_light = im.Scale("images/bg/room_dusk_light_on.jpg", 1280, 720)
 
 image bg bighouse = im.Scale("images/bg/the_jp_mansion_night.jpg", 1280, 844)
 

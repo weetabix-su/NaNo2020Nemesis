@@ -4,7 +4,7 @@ label Day2_Rumi:
     pause 4
     hide txt with dissolve
 
-    scene room
+    scene bg room
     with fade
 
     think "..."
@@ -59,7 +59,7 @@ label Day2_Rumi:
     scene kitchen_day with fade
 
     "Afterwards, I made it down to the kitchen, which still was like, nothing, compared to ours."
-    "I could take comfort in the fact that I wasn't pressed for time. Having to schill out time to make mc look good with combed hair or some shit was something I totally was never, ever, going to do voluntarily."
+    "I could take comfort in the fact that I wasn't pressed for time. Having to schill out time to make David look good with combed hair or some shit was something I totally was never, ever, going to do voluntarily."
     think "But he better apply like, some makeup today."
     "..."
     think "At least his mom made some really good breakfast."
@@ -131,7 +131,7 @@ label Day2_Rumi:
 
     think "I've never done this in my life..."
 
-    "I decided to just do it. There is no way that I can't live as mc Davis, I may be one of luxury and status, but that does not mean that I am unable to do these mundane things that he can."
+    "I decided to just do it. There is no way that I can't live as David Davis, I may be one of luxury and status, but that does not mean that I am unable to do these mundane things that he can."
     "Even then, I despised having to do this, but Ms. Davis would probably flip completely if I didn't do it."
 
     return
@@ -180,7 +180,7 @@ label Day2_MC:
     scene park_no_fence_day
     with fade
 
-    "Before long I got pulled so much out of the way, I couldn't see or hear PG anymore."
+    "Before long I got pulled so much out of the way, I couldn't see or hear Angela anymore."
     "She let go her grip by pushing me away from her. We were once more in the garden behind the school."
     show rumi think at one
     mc "So..."
@@ -262,7 +262,7 @@ label Day2_MC:
     "Maybe talking to her is just going to make things worse and this is how she copes with it."
     think "But she really is way too set on this beauty-crap."
 
-    scene classroom
+    scene bg classroom
     with fade
 
     "Angela was already sitting in her seat when I looked into the classroom."
@@ -278,7 +278,7 @@ label Day2_MC:
 
     pg "I am getting totally worried about you, you're doing weird shit all day since school started again..."
 
-    think "Of course she would catch on to me. Apparently Rumi was being a bitch towards pg normally. And since I usually don't interact with them, it's hard to tell how I should act sometimes..."
+    think "Of course she would catch on to me. Apparently Rumi was being a bitch towards Angela normally. And since I usually don't interact with them, it's hard to tell how I should act sometimes..."
 
     mc "Shush, I'm serious, it's nothing to worry about."
 
@@ -392,7 +392,7 @@ label Day2_MC:
     pg "But don't do this to yourself, Rumi. You can't give anyone money. If anything, they should be giving it to you!"
 
     "The other girl, on the other hand, had already pocketed her half."
-    "PG looked furious as she saw the last bit of this motion happening."
+    "Angela looked furious as she saw the last bit of this motion happening."
 
     popgirl "What? She gave it to me."
 
@@ -415,7 +415,7 @@ label Day2_MC:
 
     #make Popgirl leave
 
-    "It didn't bother me that popgirl suddenly felt like leaving. Maybe she felt as if my words were directed at her."
+    "It didn't bother me that Anna suddenly felt like leaving. Maybe she felt as if my words were directed at her."
 
     pg "Wha- Why are you leav- Actually, forget that!"
 
@@ -445,7 +445,7 @@ label Day2_MC:
     think "Okay, I admit. This is actually kind of stupid and a spur of the moment thing."
     think "I mean, getting payback by being nice is not exactly a conventional payback method, is it?"
     think "I have to talk to her as soon as possible though."
-    "I barely knew anyone in here apart from Rumi's group, which, apart from PG, I've barely interacted with so far."
+    "I barely knew anyone in here apart from Rumi's group, which, apart from Angela, I've barely interacted with so far."
 
     "And since my lifeline squirt wasn't around, I would likely have to pair up with complete strangers who knew Rumi."
     "Although I really didn't want to pretend being all cutesy and sickening like I was earlier to Angela."
@@ -493,7 +493,7 @@ label Day2_MC:
     "I had to confront Rumi about this cheerleading crap and the lunch incident."
     "Fortunately, all seniors seem to have their own little section of the school for themselves, so all I would have to do is look into the rooms that were in use and hopefully drag her outside quickly."
 
-    scene bg hallway with fade
+    scene bg corridor with fade
 
     "That being said, finding her turned out to be easier than expected."
     "For whatever reason, she was just standing in the hall outside one of the classrooms. We both met eyes right then."
@@ -572,7 +572,7 @@ label Day2_Rumi2:
 
     think "This just makes me tick off even more!"
 
-    mcmom "{size=-7}mc, dinner is ready!{/size}"
+    mcmom "{size=-7}David, dinner is ready!{/size}"
     think "Again, like yesterday, she is actually making dinner..."
     r "Yeah, yeah! Coming!"
 
@@ -601,34 +601,35 @@ label Day2_Rumi2:
     "Before I was involved in any more pointless situations I threw my plate on the counter and went back up to hopefully find anything on the internet about this pile of garbage situation I was in currently."
     "It wasn't long before that little runt barged into the room right after."
 
-    scene room_dusk_light
+    scene bg room_dusk_light
     with wipeleft
     #MC's PoV
-    "This family is even more rotten than Rumi herself..."
-    "I asked for help once, with something trivial, even."
-    "But I was rejected immediately and given a cold shoulder."
+    mc "(This family is even more rotten than Rumi herself...)"
+    mc "(I asked for help once, with something trivial, even.)"
+    mc "(But I was rejected immediately and given a cold shoulder.)"
     pause 1.5
-    "I said I could see the fun in posing around as Rumi, but if this is how my life would be for god knows how long..."
+    mc "(I said I could see the fun in posing around as Rumi, but if this is how my life would be for god knows how long...)"
 
     #Rumi PoV
-    "This family is so freaking crazy..."
-    "I have to admit, at least his mom pays attention to me like this, but having to deal with people who are buddy-buddy all the time is a pain in the ass."
-    "I... wouldn't mind replacing her with my bore of a mom, but..."
+    r "(This family is so freaking crazy...)"
+    r "(I have to admit, at least his mom pays attention to me like this, but having to deal with people who are buddy-buddy all the time is a pain in the ass.)"
+    r "(I... wouldn't mind replacing her with my bore of a mom, but...)"
 
     #something with both MC's and Rumi's room
 
     scene black
-    show bg_room:
+    show bg room:
         anchor (1.0, 0.0)
         pos (0.5, 0.0)
-    show bg_room_dusk_light:
+    show bg room_dusk_light:
         anchor (0.0, 0.0)
         pos (0.5, 0.0)
+    with dissolve
 
 
-    both "I really hope we can swap back soon..."
+    "Rumi & David" "I really hope we can swap back soon..."
 
-    hide bg_room_dusk_light
-    hide bg_room
+    hide bg room_dusk_light
+    hide bg room
 
     return

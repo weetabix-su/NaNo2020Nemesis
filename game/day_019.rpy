@@ -34,7 +34,7 @@ label Day19_MC:
 
     show pg think at three_left with ease
     show weeb happy at one with ease
-    show rumi 2 think at three_right with dissolve
+    show rumi think at three_right with dissolve
 
     think "Ugh, I just... Cannot stand looking at her after all..."
 

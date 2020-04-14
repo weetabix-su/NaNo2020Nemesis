@@ -136,14 +136,14 @@ label Year9_Day1_MC:
 
     scene bg bighouse_lobby with fade
 
-    show Sandra at two_left with dissolve
+    show Mom at two_left with dissolve
     show Leona at two_right with dissolve
 
     "As we went in, Mom and Aunt Leona were naturally receiving the guests in the lobby area."
 
     "Mom saw me and waved us over."
 
-    sandra "There you guys are! You almost made me worry you'd be missing out on the welcome speech."
+    mcmom "There you guys are! You almost made me worry you'd be missing out on the welcome speech."
 
     mc "Hey mom. And hello Leona. Congratulations on the 50 years!"
 
@@ -157,7 +157,7 @@ label Year9_Day1_MC:
 
     leona "David and Rick are already in the dining room, in case you're looking for them."
 
-    hide Sandra with dissolve
+    hide Mom with dissolve
     hide Leona with dissolve
 
     "We nodded, both with a smile on our faces as a thanks, and headed further into the building as more people came to greet both of them."

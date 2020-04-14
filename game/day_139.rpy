@@ -180,7 +180,7 @@ label Day139:
 
     r "{size=-10}Who is it mom?!{/size}"
 
-    sandra "It's Rumi from school! Did you invite her?!"
+    mcmom "It's Rumi from school! Did you invite her?!"
 
     mc "No, no, I'm here out of my own will, uhm-"
 

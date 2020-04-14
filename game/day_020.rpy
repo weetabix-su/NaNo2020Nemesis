@@ -1,52 +1,65 @@
 
 
 label Day20_MC:
+    scene black with fade
+    show txt cen "{size=+54}DAY 20{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
+    scene bg street_3 with fade
+
     #scene street
     #TODO:Find a bg with a truck
     mc "Huh? What's a truck doing here?!"
+
+    show pg happy at one with dissolve
 
     pg "They are here with the alcohol and snacks, idiot."
 
     mc "Just how much do you think we're gonna be drinking?!"
 
-    pg "{i}Sigh...{/i} Just don't think too much about it."
+    pg think "{i}Sigh...{/i} Just don't think too much about it."
 
     mc "Alright then..."
 
-    pg "Either way, we need to start getting you ready. Rumi doesn't want to fix you up, so I am going to have to do that."
+    pg happy "Either way, we need to start getting you ready. Rumi doesn't want to fix you up, so I am going to have to do that."
 
     "Ah yeah, Rumi was perfectly able to do my hair and make-up and whatever else sort of ritual she performed before that mixer thing, but she refused to even talk to me right now."
     "Not that I was complaining. A bit of peace and quiet was always nice. At least when that peace and quiet was away from her."
 
-    pg "Really, I can't believe you two are still fighting..."
+    pg scared "Really, I can't believe you two are still fighting..."
 
     mc "It's not my fault she keeps attacking me for not living her life the way she wants."
-    pg "Yeah, yeah, we get it, it's difficult having to get up in the morning to do your hair properly."
+    pg think "Yeah, yeah, we get it, it's difficult having to get up in the morning to do your hair properly."
 
     pg "Now get your ass inside instead of staring at a couple delivery workers."
 
     #bathroom
 
-    $ screenfilter.blur = 5
+    scene bg bathroom with wipeleft
+
+    #$ screenfilter.blur = 5
 
     "At least she knew what she was doing."
 
-    "PG was using all kinds of potentially dangerous chemicals on my face, just like Rumi did."
+    "Angela was using all kinds of potentially dangerous chemicals on my face, just like Rumi did."
 
-    think "Although I probably wouldn't know the difference between what PG is doing right now and what Rumi did..."
+    think "Although I probably wouldn't know the difference between what Angela is doing right now and what Rumi did..."
 
     "I was fresh out of a nice shower and it was kind of refreshing to just sit around and have my face being operated on."
 
     mc "Hey."
 
+    show pg think at one with dissolve
+
     pg "What?"
     mc "You use this stuff often, right?"
 
-    pg "Is that a serious question?"
+    pg scared "Is that a serious question?"
 
     mc "Uh... Yeah."
 
-    pg "Of course I do. There aren't many girls who don't use some sort of make-up."
+    pg happy "Of course I do. There aren't many girls who don't use some sort of make-up."
 
     mc "Oh."
 
@@ -55,28 +68,28 @@ label Day20_MC:
 
     mc "Hey."
 
-    pg "What?"
+    pg think "What?"
 
     mc "If I'm stuck like this for longer, can you teach me this stuff?"
 
-    pg "You haven't looked up anything yourself?"
+    pg scared "You haven't looked up anything yourself?"
 
     mc "Uh... No."
 
-    pg "Geez, you really aren't doing a lot to adapt yourself to being a girl, are you?"
+    pg think "Geez, you really aren't doing a lot to adapt yourself to being a girl, are you?"
 
-    pg "But yeah, I can teach you."
+    pg happy "But yeah, I can teach you."
 
-    pg "Not right now since I need to do my own hair and face too, though. I haven't even showered myself yet."
+    pg think "Not right now since I need to do my own hair and face too, though. I haven't even showered myself yet."
 
     mc "Mhm."
 
     "I spent another good 10 to 15 minutes shackled to this impromptu saloon chair we put into the bathroom."
 
-    "It honestly almost felt like pg had a better grip of what to do compared to Rumi."
+    "It honestly almost felt like Angela had a better grip of what to do compared to Rumi."
 
     "In the very least, she was done faster."
-    pg "Okay, done."
+    pg happy "Okay, done."
 
     pg "And don't touch your face for the next hour or so, or else you're going to end up looking like a ghost or some shit."
 
@@ -88,6 +101,8 @@ label Day20_MC:
     pg "Find some clothes that don't suck while I'm doing my own appearance."
 
     mc "Will do."
+
+    scene bg room_dusk_light with wipeleft
 
     #Rumi's bedroom scene
 
@@ -103,7 +118,7 @@ label Day20_MC:
 
     think "Surely this falls under the category of \"doesn't suck\"."
 
-    $ screenfilter.blur = 0
+    #$ screenfilter.blur = 0
 
     "I got changed into this outfit once more and then turned on my EksBox."
     "Apparently, the people who were setting stuff up down below knew what they were doing, so there wasn't much for me to do anymore."
@@ -122,10 +137,10 @@ label Day20_MC:
 
     think "...Releases in a week.... Great..."
 
-    "With nothing but disappointing looking titles apart from a few cool ones, I went back to trying to 100% this stupid game I played with pg."
+    "With nothing but disappointing looking titles apart from a few cool ones, I went back to trying to 100\% this stupid game I played with Angela."
 
-    "Not long after, PG knocked on the door."
-    pg "{size=-5}MC? Are my clothes in there?{/size}"
+    "Not long after, Angela knocked on the door."
+    pg "{size=-5}David? Are my clothes in there?{/size}"
 
     think "Her clothes...?"
 
@@ -141,7 +156,7 @@ label Day20_MC:
 
     pg "{size=-5}I'm half naked out here!{/size}"
     mc "...So what? You're going to be half naked out there for a long time if you're going to refuse coming in here."
-    pg "{size=-5}MC!{/size}"
+    pg "{size=-5}David!{/size}"
 
     mc "{i}Sigh...{/i}"
 
@@ -157,19 +172,21 @@ label Day20_MC:
 
     "Sure enough, she was wearing nothing but a towel. If I was still an actual guy I might have felt a bit differently, but the game I was playing was more interesting after all and required concentration, so I barely even bothered to look."
 
+    show pg think at one with dissolve
+
     mc "Hey-"
 
-    pg "D- Don't you dare turn around!"
+    pg scared "D- Don't you dare turn around!"
 
     mc "...I was just going to ask how you managed to beat this guy last time."
 
-    pg "\"This guy\"? Oh, the Dedris King."
+    pg think "\"This guy\"? Oh, the Dedris King."
 
     pg "Wait, just, let me get changed first."
 
     mc "No need to hurry."
 
-    scene black
+    scene black with fade
 
     "In the end, we managed to spend some 10 or 15 minutes again playing before we went downstairs to check up on how things were going."
     "I was forced to wear my eye contacts, even though I was promised I could dress however I wanted to."
@@ -177,9 +194,13 @@ label Day20_MC:
 
     #scene bg party
 
+    scene bg room_evening with fade
+
     pg "Hey, wait, we need the pult over in that corner!"
 
     think "And off she goes..."
+
+    show Marty at one with dissolve
 
     #marty = guy who install stuff for the party but I though giving him a name would be better
     marty "Ah, Ms. Sato, there you are."
@@ -194,7 +215,7 @@ label Day20_MC:
 
     think "As if I know where everything is supposed to be, though."
 
-    think "I better let PG handle this one..."
+    think "I better let Angela handle this one..."
 
     marty "Once more, thank you for choosing our service."
 
@@ -212,7 +233,11 @@ label Day20_MC:
 
     mc "Heh... Uh, yeah, will do."
 
+    hide Marty with dissolve
+
     "He got into the truck where the two other people that helped were already sitting."
+
+    show pg happy at one with dissolve
 
     pg "At least there is some hope for the party now."
 
@@ -224,49 +249,65 @@ label Day20_MC:
 
     mc "If all I have to do is just walk around for an evening then it's going to be a piece of cake."
 
-    pg "Well, you have to do a bit more than just \"walk around\", but it's a start."
+    pg think "Well, you have to do a bit more than just \"walk around\", but it's a start."
+
+    scene bg kitchen_night with wipeleft
 
     #scene bg kitchen
     #show Rumi coming in
 
+    show pg happy at two_left with dissolve
+
     "About thirty minutes after the delivery boys left, Rumi finally decided to show up."
+
+    show rumi happy at two_right with dissolve
 
     "Compared to what I've been put through, she sure didn't put in a lot of effort to make me look refined or whatever word she would use for herself."
     "It was just my usual clothes."
 
     pg "Rumi, there you are! How's it going?"
 
-    r "Fine."
+    r think "Fine."
 
-    pg "Oh... Uh, great."
+    pg think "Oh... Uh, great."
 
-    pg "There is still an hour left before the first show up, but do you... Maybe want to watch a movie while we wai-"
+    pg scared "There is still an hour left before the first show up, but do you... Maybe want to watch a movie while we wai-"
 
     r "I'm checking if this idiot over there has messed something up."
 
-    pg "O- Oh, right, you have to do that."
+    pg happy "O- Oh, right, you have to do that."
 
     mc "Really? First thing the Dunning-Kruger bitch says to me is an insult, as usual."
 
-    r "Do you expect anything else than the treatment of a twerp?"
+    r scared "Do you expect anything else than the treatment of a twerp?"
 
     mc "Yeah, screw it, I'm going to my room while you have fun licking up dust to make sure it's clean."
 
-    r "Hmph. Suit yourself, moron."
+    r think "Hmph. Suit yourself, moron."
 
-    pg "..."
+    pg think "..."
 
-    scene black
+    scene black with fade
 
-    pg "{i}\"Yes, one of us would love to spend time with you, pg!\"{/i}"
+    pg "{i}\"Yes, one of us would love to spend time with you, Angela!\"{/i}"
 
     pg "Jerks."
 
+    return
+
 label Day20_Rumi:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 20{/size}\n\n{size=+16}~ Rumi ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
+    scene bg room_evening with fade
+
     #scene bg livingroom party
     think "Hmph, at least he was competent enough to not screw something up."
     "I had just finished checking everything to make sure he wasn't stupid enough to leave a bowl of cereal or something around."
-    "I made double sure everything was clean and having PG check on other stuff."
+    "I made double sure everything was clean and having Angela check on other stuff."
     "At least she has some interest in doing this right."
 
     "And just in time, the first guest arrived."
@@ -278,7 +319,10 @@ label Day20_Rumi:
 
     r "Maria, Eric, welcome."
 
-    maria "MC! You're here already as well!"
+    show Maria at two_left with dissolve
+    show Eric at two_right with dissolve
+
+    maria "David! You're here already as well!"
 
     maria "Heheh, did Rumi employ you as her new butler?"
 
@@ -327,14 +371,19 @@ label Day20_Rumi:
 
     think "For fucks sake, can she let this go already?"
     "She'd been pestering me all the time lately, about somehow being in a loving relationship with my own body."
-    "And I mean, sure, \"MC\" was spending an unusual amount of time with \"Rumi\" recently, but of course she had to interpret it as a freaking romance."
+    "And I mean, sure, \"David\" was spending an unusual amount of time with \"Rumi\" recently, but of course she had to interpret it as a freaking romance."
 
     think "It just reminds me of why I hate people who gossip about me..."
 
     #transition with more people at the party
 
+    hide Maria with dissolve
+    hide Eric with dissolve
+
     "Eventually, most people started to arrive."
     "If I didn't know better, this was like any of my other parties."
+
+    show weeb happy at one with dissolve
 
     "Well, if it weren't for this guy."
     weeb "It truly is lively."
@@ -342,7 +391,7 @@ label Day20_Rumi:
 
     r "Why are you even here?"
 
-    weeb "To party, of course!"
+    weeb laugh "To party, of course!"
 
     r "{i}Sigh...{/i}"
 
@@ -350,18 +399,20 @@ label Day20_Rumi:
 
     weeb "Score!"
 
-    weeb "But I can make no promises."
+    weeb happy "But I can make no promises."
     r "...Seriously, don't attempt anything."
+
+    hide weeb with dissolve
 
     #scene party
 
     "As the evening began to really roll around, no major issues had really presented themselves."
     "Music was good, everyone was chatting, some already dancing..."
     "The outlook towards success was starting to become visible for once during these last three weeks."
-    "I had also spent a lot of time tutoring Weeb in socializing with girls properly. He actually took it to heart, which was completely alien to me."
+    "I had also spent a lot of time tutoring Rick in socializing with girls properly. He actually took it to heart, which was completely alien to me."
     "Because right now, he actually felt a bit more relaxed and not up in your face."
     "I frequently gave him a thumbs up when I he shot a glance my way. The girls not slapping him in the face was a constant success."
-    "I was almost proud of how he was currently talking to Maria and that Audrey girl that MC apparently was in contact with without them having a look of disgust on their faces."
+    "I was almost proud of how he was currently talking to Maria and that Audrey girl that David apparently was in contact with without them having a look of disgust on their faces."
 
     think "It really was a good idea to bring him, huh?"
     think "Huh? A phone call?"
@@ -375,7 +426,7 @@ label Day20_Rumi:
 
     m "-better pick up his stupid pho-"
 
-    m "Oh! Hey MC!"
+    m "Oh! Hey David!"
 
     r "I can't talk right now, so stop calling me today. Got it?"
 
@@ -383,12 +434,14 @@ label Day20_Rumi:
 
     m "Wait, who are these people behind you-"
 
-    m "Are you throwing a party without inviting me, MC?!"
+    m "Are you throwing a party without inviting me, David?!"
     r "See you, hopefully never."
-    m "Hold up, answer me, MC!"
+    m "Hold up, answer me, David!"
 
     think "There."
     think "Now to put it on silent mode."
+
+    show pg scared at one with dissolve
 
     pg "Who was that?"
 
@@ -396,9 +449,9 @@ label Day20_Rumi:
 
     r "Stop scaring me like that!"
 
-    pg "...Sure..."
+    pg think "...Sure..."
 
-    pg "But who was that? MC's mom?"
+    pg "But who was that? David's mom?"
 
     r "It was that annoying sister of Mike."
     r "Gosh, can she leave me freaking alone already?"
@@ -411,14 +464,14 @@ label Day20_Rumi:
 
     r "What?! You look at me like I'm a dog or something!"
 
-    pg "Are you, like, okay?"
+    pg scared "Are you, like, okay?"
     r "Who? Me?"
 
     pg "Who else?"
 
     r "What the hell do you think? I'm doing just fine, for your information. Why are you even asking?"
 
-    pg "No offense, but you've been acting really tense lately, and I don't think I've seen you talk to MC today at all."
+    pg think "No offense, but you've been acting really tense lately, and I don't think I've seen you talk to David today at all."
 
     pg "So are you sure you're okay? You sound like you're bottling up a lot of frustration as of late."
 
@@ -428,15 +481,15 @@ label Day20_Rumi:
     pg "{i}Sigh...{/i} You two really... Uh... Need to fix things, you know?"
 
     r "And why should I listen to that idiot talking for even a second?"
-    pg "Do I really have to explain why? You're still living his life, you two should work together, not against each other."
+    pg scared "Do I really have to explain why? You're still living his life, you two should work together, not against each other."
 
     r "Oh, lay it off already! You're starting to sound more and more like you adore him more than me!"
 
     pg "...What? Who?"
 
-    r "MC!"
+    r "David!"
 
-    pg "...Ohhh..."
+    pg think "...Ohhh..."
 
     think "Wait, don't tell me she's already..."
 
@@ -446,16 +499,16 @@ label Day20_Rumi:
 
     r "Yes, how many?"
 
-    pg "Uh... I think this is my ninth...?"
+    pg happy "Uh... I think this is my ninth...?"
 
     r "What?! The clock is not even eleven yet, and you've been downing cans of alcohol like it's a fucking bachelor's party!"
     r "You're supposed to help keep an eye out here!"
 
-    pg "Ngh... Well, it's not my fault you know! If only that asshole would finally tell me that he likes me too, then I wouldn't try to-"
+    pg think "Ngh... Well, it's not my fault you know! If only that asshole would finally tell me that he likes me too, then I wouldn't try to-"
 
-    r "Wait, who? Weeb?"
+    r "Wait, who? Rick?"
 
-    pg "Well, duh..."
+    pg happy "Well, duh..."
 
     pg "He isn't getting drunk at all! What's with him?"
 
@@ -469,7 +522,7 @@ label Day20_Rumi:
 
     r "What the hell is your obsession with this guy?!"
 
-    pg "He said I look ugly! I don't! Look at me!"
+    pg think "He said I look ugly! I don't! Look at me!"
 
     pg "If I just... Keep drinking with him then maybe sometime later..."
 
@@ -479,15 +532,15 @@ label Day20_Rumi:
 
     pg "Uh..."
 
-    pg "...No...?"
+    pg scared "...No...?"
 
     r "Doesn't it defeat the fucking purpose if he tells you without being at his senses? Because he'd be wasted?"
 
     pg "When you're drunk, you spill the truth of what you're thinking."
 
-    pg "I think."
+    pg think "I think."
 
-    pg "Yeah!"
+    pg happy "Yeah!"
 
     r "Oh my god, you're a completely lost cause..."
 
@@ -497,20 +550,23 @@ label Day20_Rumi:
 
     think "At least I now know that {i}she{/i} isn't going to be of any fucking help today."
 
-    scene black
+    scene black with fade
     "Another half an hour passed."
-    "It was perplexing not being the center of attention all the time, and mc seemingly wasn't screwing things over..."
-    "Still, instead of talking with the people he was {i}supposed{/i} to be talking with, he kept spending time with Eric, Mike, PG..."
+    "It was perplexing not being the center of attention all the time, and David seemingly wasn't screwing things over..."
+    "Still, instead of talking with the people he was {i}supposed{/i} to be talking with, he kept spending time with Eric, Mike, Angela..."
     "The same group of friends like fucking always."
     "I had a lot of time to think about things right now, and I had to slowly accept that things wouldn't go back to how they were before."
     "I was in a terrible mood. The benefits I had from being the leader of the highest circle of people in school was evaporating in front of my eyes."
     "It had been evaporating since this semester started. And fuck, it was frustrating not being able to do anything about it."
-    "Again, I kept thinking to myself, \"Why MC? What's so special about him\"."
+    "Again, I kept thinking to myself, \"Why David? What's so special about him\"."
     "I mean, sure, his family is great and he has friends, but the same was true for me too, right?"
     "But really, what mistake did I do to be swapped with him..."
 
+    scene bg room_evening with fade
+    show mc 3 happy at one with dissolve
+
     #show Drunk MC
-    mc "Heyy~~y Rumia~~~a- I mean, mc, heh..."
+    mc "Heyy~~y Rumia~~~a- I mean, David, heh..."
 
     r "...What?"
 
@@ -518,11 +574,11 @@ label Day20_Rumi:
 
     r "What do you care?"
 
-    mc "Hahah, good one!"
+    mc 3 laugh "Hahah, good one!"
 
     r "..."
 
-    mc "...Uh... So, Mike and Eric both, like... Said you looked a bit lonely, you know."
+    mc 3 happy "...Uh... So, Mike and Eric both, like... Said you looked a bit lonely, you know."
 
     mc "{i}{b}Hic!{/b}{/i}"
 
@@ -530,11 +586,11 @@ label Day20_Rumi:
 
     r "Are you drunk?"
 
-    mc "Whaat, noo..."
+    mc 3 think "Whaat, noo..."
 
     mc "I only had some punch and a bit of beer and some shots and you know you probably do this all the time so I bet I can take it too you know."
 
-    mc "Whee~~"
+    mc 3 happy "Whee~~"
 
     think "{i}Sigh...{/i} Add one more item to the list of issues that I have with this guy."
 
@@ -544,7 +600,7 @@ label Day20_Rumi:
 
     r "I am {b}not{/b} spending time with you. And stop drinking the punch! It's fucking filled with alcohol!"
 
-    mc "Alright Miss Naggy. Sorry for trying to make you happy."
+    mc 3 think "Alright Miss Naggy. Sorry for trying to make you happy."
 
     r "What did you just call me?"
 
@@ -552,7 +608,14 @@ label Day20_Rumi:
 
     think "I suddenly have a bad feeling about tonight with him on the loose."
 
+    hide mc with dissolve
+
     #transition to Rumi with PG, Weeb and Maria
+
+    show pg happy at three_left
+    show Maria at one
+    show weeb happy at three_right
+    with dissolve
 
     maria "So then, what do you think I see?"
 
@@ -564,7 +627,7 @@ label Day20_Rumi:
 
     maria "I checked all trying rooms the shop had, but none of the clothes he brought in were there!"
 
-    weeb "A robbery?"
+    weeb think "A robbery?"
 
     maria "You bet!"
 
@@ -576,7 +639,7 @@ label Day20_Rumi:
 
     maria "Man, that still bums me out that I didn't have it on me. It would have been a massive story."
 
-    weeb "Perhaps you would be interested in the new Moogle watches then."
+    weeb happy "Perhaps you would be interested in the new Moogle watches then."
 
     maria "Moogle what?"
 
@@ -587,7 +650,7 @@ label Day20_Rumi:
 
     weeb "Truly innovating technology."
 
-    pg "..."
+    pg think "..."
 
     maria "For real? I need to save up some money for that then!"
 
@@ -595,34 +658,34 @@ label Day20_Rumi:
 
     think "Oh my god this is boring..."
 
-    pg "Uh..."
+    pg scared "Uh..."
 
     pg "Uhm... What's the word..."
 
     maria "Is she... Okay?"
-    maria "I don't think I've ever seen PG {i}this{/i} wasted before..."
+    maria "I don't think I've ever seen Angela {i}this{/i} wasted before..."
 
-    pg "I'm not..."
+    pg think "I'm not..."
 
     pg "..."
 
     maria "..."
 
-    weeb "She likely had a few too many. I do not know why, but she really wanted to drink with me today."
+    weeb laugh "She likely had a few too many. I do not know why, but she really wanted to drink with me today."
 
     pg "Just... One more, please?"
 
-    weeb "If you insist, sure."
+    weeb happy "If you insist, sure."
 
     maria "You've been tallying with her?"
 
-    weeb "Tallying?"
+    weeb think "Tallying?"
 
     r "It means that you've been drinking the exact same as her for the entire night."
 
     maria "Yeah, that."
 
-    weeb "Hmm... I believe so? I've only had what she brought me so far."
+    weeb happy "Hmm... I believe so? I've only had what she brought me so far."
 
     maria "And how much is that?"
 
@@ -630,7 +693,7 @@ label Day20_Rumi:
 
     maria "Seventeen?! Seventeen of what?"
 
-    weeb "It's been a mix, but some beer, some of the small cups, some of that delicious beverage over there."
+    weeb think "It's been a mix, but some beer, some of the small cups, some of that delicious beverage over there."
 
     "He pointed toward the punch, also know as the 'toxic Wanda surprise'."
 
@@ -640,7 +703,7 @@ label Day20_Rumi:
 
     maria "...Dude, do you have some sort of black hole in your stomach?"
 
-    pg "Come on..."
+    pg happy "Come on..."
     maria "Girl, you really shouldn't have any more."
 
     pg "Just one more, please..."
@@ -649,11 +712,11 @@ label Day20_Rumi:
 
     maria "{size=-5}Hey, what's gotten into her?{/size}"
 
-    weeb "Beats me."
+    weeb think "Beats me."
 
     "I lifted my shoulders in indifference. Telling little Ms. Gossip about touchy subjects was never a good idea, so I feigned ignorance."
 
-    pg "{i}Ugh...{/i}"
+    pg think "{i}Ugh...{/i}"
 
     think "Aa~~~and she's close to throwing up..."
 
@@ -663,6 +726,10 @@ label Day20_Rumi:
     maria "Sure."
 
     maria "Now, let's go, princess, you need to at least be able to stand on two feet."
+
+    hide pg with dissolve
+    hide Maria with dissolve
+    show weeb at one with ease
 
     pg "...But after this... Just one more... {i}{b}Hic!{/b}{/i}"
     r "..."
@@ -675,9 +742,9 @@ label Day20_Rumi:
 
     "It kind of set an alarm of inside my head not having control over his location, but calmed down soon after since I knew I was on edge lately."
 
-    r "Do you know where MC is?"
+    r "Do you know where David is?"
 
-    weeb "He went with Eric and Tori outside, did he not?"
+    weeb think "He went with Eric and Tori outside, did he not?"
 
     r "Tori?!"
     r "She's here again?!"
@@ -687,6 +754,8 @@ label Day20_Rumi:
     r "Of course not, but she always sneaks in and steals my drinks."
 
     r "Ugh, I'm throwing her out!"
+
+    hide weeb with dissolve
 
     r "What is going on out he-"
 
@@ -710,15 +779,20 @@ label Day20_Rumi:
 
     r "Wha- What's going on here?!"
 
+    show Victoria at three_left
+    show Eric at one
+    show mc 3 happy at three_right
+    with dissolve
+
     tori "Oh, hey twerp. So you're here too."
 
     mc "Rumi, I totally got this."
 
-    mc "Hey! Get over here Vicky!"
+    mc 3 laugh "Hey! Get over here Vicky!"
 
     tori "...I'm right next to you."
 
-    mc "Stop running!"
+    mc 3 happy "Stop running!"
 
     r "Did you have her drink your garbage, Eric?!"
 
@@ -726,7 +800,7 @@ label Day20_Rumi:
 
     "He flashed one of the bottles he was so proud of when he arrived."
 
-    "78% alcohol. Enough to basically kill anyone who drank a full bottle."
+    "78\% alcohol. Enough to basically kill anyone who drank a full bottle."
     "What the hell are any of them thinking?!"
 
     r "Fuck you Eric, you knew she was hammered already!"
@@ -747,7 +821,7 @@ label Day20_Rumi:
 
     tori "I got better things to do."
 
-    "A few others were also in the garden talking, and what MC was doing was clearly the main attraction for anyone who was out here right now."
+    "A few others were also in the garden talking, and what David was doing was clearly the main attraction for anyone who was out here right now."
 
     think "Fucks sake, does he not know how to hold back at all?"
 
@@ -758,7 +832,7 @@ label Day20_Rumi:
     eric "Heh, feeling ballsy?"
     tori "Hell yeah."
 
-    mc "Hey! Toria, you aren't supposed to be here!"
+    mc 3 think "Hey! Toria, you aren't supposed to be here!"
 
     tori "{size=-5}Yeah yeah, love you too.{/size}"
 
@@ -766,14 +840,19 @@ label Day20_Rumi:
 
     r "{size=-5}Can you shut the fuck up already?{/size}"
 
-    mc "Uhuh? Me?"
+    mc 3 scared "Uhuh? Me?"
+
+    hide Victoria
+    hide Eric
+    with dissolve
+    show mc at one with ease
 
     "Looking around, people started minding their own business again."
     "At least he wouldn't be able to embarrass me any further for the time being."
 
     r "{size=-5}Why the hell did you drink so much?!{/size}"
 
-    mc "Wh- Whaa...?"
+    mc 3 think "Wh- Whaa...?"
 
     r "{size=-5}You are so fucking useless! All I wanted was to at least give people the impression that I haven't lost my mind, but now you're just making things worse!{/size}"
 
@@ -788,17 +867,19 @@ label Day20_Rumi:
 
     r "Suck?! You absolute-"
 
-    mc "Nobody even wants to hang out with you besides Weeb, hah, what a loser."
+    mc 3 happy "Nobody even wants to hang out with you besides Rick, hah, what a loser."
 
     r "You- Wh- What?!"
 
     r "Would you like to repeat what you just fucking said?!"
 
-    mc "Ohoh, you want me to repeat that? For everyone to hear how freaking {i}annoying{/i} you are with nagging- With your nagging?"
+    mc 3 think "Ohoh, you want me to repeat that? For everyone to hear how freaking {i}annoying{/i} you are with nagging- With your nagging?"
 
-    mc "{size=+7}Hey everyone, I have something totally funny to say!{/size}"
+    mc 3 laugh "{size=+7}Hey everyone, I have something totally funny to say!{/size}"
 
     r "No- Hey- Wait! Wha- What are you doing?!"
+
+    hide mc with dissolve
 
     "He went into the living room again before I could react."
 
@@ -806,13 +887,15 @@ label Day20_Rumi:
     "He looked at everyone, with some people seeing him pulling this stunt."
     think "Fuck, fuck fuck, what is this drunk ass doing?!"
 
+    show mc 3 happy at one with dissolve
+
     mc "Heheey, everyone! A friend of mine {i}really{/i} wanted me to introduce myself to everyone so that we {i}all get along just fine!{/i}"
 
     r "{size=-5}Get down from there, please!{/size}"
 
-    mc "As if I have to listen to you! Get off me!"
+    mc 3 think "As if I have to listen to you! Get off me!"
 
-    mc "Hey, guys! You all know me as Rumi Sato, I bet! But do you know what else my name is?"
+    mc 3 happy "Hey, guys! You all know me as Rumi Sato, I bet! But do you know what else my name is?"
 
     think "Wait. No."
 
@@ -822,7 +905,7 @@ label Day20_Rumi:
 
     mc "Aha, no takers, well, I have apparently {i}never{/i} told anyone about it before!"
 
-    mc "That's right! Rumi \"Sparrow\" Sato!"
+    mc 3 laugh"That's right! Rumi \"Sparrow\" Sato!"
 
     r "No no {size=+5}no no{/size}!"
 
@@ -837,7 +920,7 @@ label Day20_Rumi:
 
     "He must have found it by snooping around in some private stuff! That absolute...!"
 
-    mc "Hahah, funny, right? And I probably never even told you guys because it's such a stupid name!"
+    mc 3 happy "Hahah, funny, right? And I probably never even told you guys because it's such a stupid name!"
 
     mc "So. Incredibly. Stupid!"
 
@@ -849,19 +932,19 @@ label Day20_Rumi:
 
     mc "Oh yeah! Speaking of parents! Do you guys know {i}just how little{/i} they care about me?"
 
-    mc "Imagine this, right? Every day, they just don't give {i}a single shit{/i} about me! Just overall horrible people that don't even want to see me!"
+    mc 3 think "Imagine this, right? Every day, they just don't give {i}a single shit{/i} about me! Just overall horrible people that don't even want to see me!"
 
     mc "My response? Cool! As long as they don't get in the way of me trying to bitch around {i}everyone around me{/i}!"
 
-    mc "They even told me that I look ugly with glasses on, can you believe that?"
+    mc 3 happy "They even told me that I look ugly with glasses on, can you believe that?"
 
     r "{size=-5}No- no, please stop...{/size}"
 
-    mc "Is it my fault they gave me some shitty nearsighted eyes? Apparently it totally is!"
+    mc 3 think "Is it my fault they gave me some shitty nearsighted eyes? Apparently it totally is!"
 
     mc "Actually, their horrible treatment is a positive! Because I get more time to practice being a terrible piece of shit myself, just like them!"
 
-    mc "A complete win-win situation!"
+    mc 3 happy "A complete win-win situation!"
 
     popgirl "...She's lost it."
 
@@ -869,14 +952,14 @@ label Day20_Rumi:
 
     mc "Aahhh~~hahaha, take that, you stuck up bitch!"
 
-    mc "And get this, they don't even give me any allowance if I don't get the grades they tell me! So this next month, I'm practically going in with almost no money to buy stuff with. Woohoo for capitalism!"
+    mc 3 think"And get this, they don't even give me any allowance if I don't get the grades they tell me! So this next month, I'm practically going in with almost no money to buy stuff with. Woohoo for capitalism!"
 
     popgirl "...Let's just get out of here."
     think "..."
 
     mike "Rumi, seriously, what is this about?"
 
-    mc "Hey now! I'm {i}totally{/i} not forcing you annoying leeches to stay, but feel free to come back to this ghost house during halloween! Maybe we might catch a ghost of my parents!"
+    mc 3 happy "Hey now! I'm {i}totally{/i} not forcing you annoying leeches to stay, but feel free to come back to this ghost house during halloween! Maybe we might catch a ghost of my parents!"
 
     mc "I could even increase immersion by putting on the costume of a psycho- Oh wait, I already fucking am one!"
 
@@ -895,21 +978,29 @@ label Day20_Rumi:
 
     mike "Rumi, what the hell are you doing?"
 
-    mc "I am just telling everyone exactly who I really am."
+    mc 3 think "I am just telling everyone exactly who I really am."
 
     mike "You- Oh, for god's sake-"
 
     mike "Get down from there already you lunatic."
 
-    mc "I- Uh- Whoah, there's far down from here."
+    mc 3 scared "I- Uh- Whoah, there's far down from here."
 
     mike "It's 30 centimeters..."
 
     mike "{i}Sigh...{/i} Here, grab on."
 
-    mc "Oh, thank you very much."
+    mc 3 happy "Oh, thank you very much."
+
+    return
 
 label Day20_MC2:
+
+    scene black with fade
+    show txt cen "{size=+54}DAY 20{/size}\n\n{size=+16}~ David ~{/size}" with dissolve
+    pause 4
+    hide txt with dissolve
+
     think "Oohhh, boy, I might have had a little too much after all."
     "Rumi told me she could take an unusual amount of alcohol before she really got sick, but even so, the few drinks I had were making me very dizzy. I felt especially weird after taking in a little shot of what Eric had..."
 
@@ -924,6 +1015,11 @@ label Day20_MC2:
 
     "One look at her was enough to make her contort her face to her typical angry self."
 
+    scene bg room_evening with fade
+    show Mike at two_left
+    show Maria at two_right
+    with dissolve
+
     mike "Mind explaining what went through your head in more detail?"
 
     mc "Oh, that little show? Hah, I'm glad you aske-"
@@ -936,7 +1032,7 @@ label Day20_MC2:
 
     maria "Why did you say all of that?"
 
-    mc "Oh, it's because MC over there had it coming! Exactly."
+    mc "Oh, it's because David over there had it coming! Exactly."
 
     maria "...?"
 
@@ -962,6 +1058,10 @@ label Day20_MC2:
 
     mike "Alright. Come with me, we're going to have a talk in private."
 
+    hide Mike
+    hide Maria
+    with dissolve
+
     "Without much of a warning he grabbed my arm and dragged me along with him."
 
     #Rumi's room
@@ -971,6 +1071,8 @@ label Day20_MC2:
     mike "..."
 
     mike "Seems not."
+
+    show Mike at one with dissolve
 
     mike "Alright, what's going on between you two?"
 
@@ -1035,17 +1137,20 @@ label Day20_MC2:
 
     mc "Right."
 
-    scene black
+    scene black with fade
     "Before I'd go out looking for the crazy lady, I decided to quickly take out the contacts that had been injected into my eyes."
     "Walking around with glasses was way more comfortable."
     "People were still around downstairs, but it was obvious that a lot of people had left now."
     "Some were still dancing around to the music though."
     "I had hoped that Rumi had come back after she left, but after looking around, she wasn't anywhere to be seen."
 
-    #scene party
-    mc "Hey Weeb, have you seen MC?"
+    scene bg room_evening with fade
+    show weeb happy at one with dissolve
 
-    weeb "Of course not, he left after you did... That."
+    #scene party
+    mc "Hey Rick, have you seen David?"
+
+    weeb think "Of course not, he left after you did... That."
 
     mc "Right..."
 
@@ -1053,21 +1158,21 @@ label Day20_MC2:
 
     mc "Also, what's with her?"
 
-    weeb "PG? Hungover already, apparently."
+    weeb happy "Angela? Hungover already, apparently."
 
     mc "..."
-    "PG looked absolutely terrible and looked like some dead girl the way she was sitting on the couch."
+    "Angela looked absolutely terrible and looked like some dead girl the way she was sitting on the couch."
 
-    mc "I'm not gonna ask what happened. I'm going to try finding MC."
+    mc "I'm not gonna ask what happened. I'm going to try finding David."
     mc "Can you, uh... Hold down the fort while I'm gone?"
 
-    AN_harry "Uhh... You want me to \"hold own the fort\"?"
+    weeb "Uhh... You want me to \"hold down the fort\"?"
 
     mc "Thanks, I appreciate it."
 
     weeb "Wai- Wha-"
 
-    scene black
+    scene black with fade
 
     "I couldn't find her anywhere outside her house."
     "Some random people were sitting out here with a bottle of beer each, and the moment they looked at me, I turned my head away as if not noticing them."
@@ -1081,6 +1186,9 @@ label Day20_MC2:
     think "Man, it had been a weird ride for the last 3 weeks in retrospect."
     think "If this swap never happened to me then my life would be completely different right now."
     think "..."
+
+    scene bg beach_night
+
     #scene beach
     "After admiring the view for a few seconds, I looked around at the beach. It was completely empty, which shouldn't surprise anyone considering the current time."
     #show Rumi faraway
@@ -1090,6 +1198,9 @@ label Day20_MC2:
     think "But, uh... Do I just walk up to her...?"
     think "..."
     think "I can already imagine how awkward this is going to be."
+
+    show rumi think at one with dissolve
+
     #go to her
     mc "Uh... Hey!"
     r "..."
@@ -1098,22 +1209,22 @@ label Day20_MC2:
     mc "..."
     mc "Uhm... I just wanted to say that I'm so-"
 
-    r "Shut up."
+    r cry "Shut up."
 
     mc "..."
 
     mc "Wow. Alright."
 
-    r "..."
+    r think "..."
 
-    r "I'm sorry..."
+    r scared "I'm sorry..."
     r "I..."
 
     think "Wait a minute- That's the first genuine sounding \"sorry\" I've heard from her!"
 
     mc "...You're sorry about what?"
 
-    r "I'm saying I'm sorry, alright?!"
+    r cry "I'm saying I'm sorry, alright?!"
     r "For everything!"
 
     mc "...Really?"
@@ -1132,15 +1243,15 @@ label Day20_MC2:
 
     mc "Even if they aren't my actual parents."
 
-    r "...I know."
+    r think "...I know."
 
     r "They haven't always been so distant."
 
     r "I used to go shopping with Mom all the time, and it was some of the best times I ever had."
-    r "We used to spend evenings watching our favorite shows, and she taught me all about self-preservation back before she got promoted..."
+    r happy "We used to spend evenings watching our favorite shows, and she taught me all about self-preservation back before she got promoted..."
 
     r "And Dad was always around when I got home from school and made us food that we used to eat together..."
-    r "..."
+    r think "..."
 
     mc "...They both ended up becoming really attached to their jobs, huh?"
 
@@ -1152,10 +1263,12 @@ label Day20_MC2:
     "I really should have figured out that this was a painful topic for her to be mocked about..."
     "Even if I didn't care about her, it's still sensitive."
 
-    r "{i}Sigh...{/i} It's all just gone to shit..."
+    r cry "{i}Sigh...{/i} It's all just gone to shit..."
     "She shook her head in slow motion and wiped her eyes with the side of her hand."
 
     "Soon after she let herself lay down in the soft beach sand."
+
+    hide rumi with dissolve
 
     #scene sky
     "I joined her since it felt like the right thing to do."
@@ -1277,7 +1390,7 @@ label Day20_MC2:
 
     r "And Ms. Davis does all of that without even knowing it's me..."
 
-    r "For real, fuck you, MC!"
+    r "For real, fuck you, David!"
 
     mc "Uh..."
     mc "My mom did something?"
@@ -1375,7 +1488,7 @@ label Day20_MC2:
 
     mc "That one thing?"
 
-    r "The thing Weeb wanted us to do since day one?"
+    r "The thing Rick wanted us to do since day one?"
 
     r "Hello?"
 
@@ -1389,6 +1502,8 @@ label Day20_MC2:
 
     mc "...Argh, fuck it, alright then, let's just get this over with."
 
+    scene white with fade
+
     #Don't know how to make the kiss scene
     mc "{i}Cough{/i} Oh fuck-"
 
@@ -1398,15 +1513,19 @@ label Day20_MC2:
 
     r "What the fuck do you think it feels like for me?!"
 
+    scene bg beach_night with fade
+
     "She had gone closer to the water to spit out the thought of the kiss from her head."
 
     mc "Don't girls like kissing other girls or something?"
 
     r "Who the fuck made you have that sick idea?! Do you really think a straight girl would like kissing another straight girl?!"
-    r "Don't tell me you watch the same sick shit as Weeb does!"
+    r "Don't tell me you watch the same sick shit as Rick does!"
 
     mc "Of course not!"
 
     mc "{i}Cough!{/i} Ow- Fuck! We are {i}NEVER{/i} doing this again!"
 
     r "And we can both agree on that!"
+
+    return

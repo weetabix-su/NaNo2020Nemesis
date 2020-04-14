@@ -125,10 +125,10 @@ label Day3_MC:
     mc "Mike, can I talk to you alone for a minute?"
     mike "Me?"
     mc "Yeah, you."
-    "They murmured quietly about how I was going to confess to him or some crap, but Brad himself looked a bit more surprised than anything."
+    "They murmured quietly about how I was going to confess to him or some crap, but Mike himself looked a bit more surprised than anything."
     mike "Uh, sure, why not."
     eric "Bah, you shouldn't. You know her."
-    brad "It's alright. Be right back guys."
+    mike "It's alright. Be right back guys."
     "He followed me out of the lunch area where we talked mostly in private."
 
     mc "I'll make it quick. I need you to do me a favor."
@@ -150,7 +150,7 @@ label Day3_MC:
     "He wandered off..."
     #Weeb comes here
     "And sure enough, he appeared a minute later."
-    "When they realized that it was me who had sent Brad, it startled them both a bit."
+    "When they realized that it was me who had sent Mike, it startled them both a bit."
     show weeb happy at one
     mc "Hey. Can we talk for a sec?"
 

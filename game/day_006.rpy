@@ -68,7 +68,6 @@ label Day6_Rumi:
     mc "{size=-5}But what about my food?!{/size} {size=-7}No, wait,{/size} {size=-10}I'm starving!{/size}"
 
     pg scared "How are you just calmly still eating your food...?"
-    show think
 
     weeb laugh "Ah, I was just wondering if that girl you saw staring at you in astonishment was interested in me."
     show weeb happy
@@ -84,7 +83,7 @@ label Day6_MC:
     pause 4
     hide txt with dissolve
 
-    scene corridor_2
+    scene bg corridor_2
     with fade
     show rumi 2 think at one
     mc "{size=-7}Ow ow ow- Hey, hold up, why are we- {/size}"

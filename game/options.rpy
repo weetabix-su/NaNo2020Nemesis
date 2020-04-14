@@ -23,7 +23,7 @@ define config.name = _("Switcheroo")
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.01"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -189,6 +189,7 @@ init python:
     build.classify('game/**.png', 'archive')
     build.classify('game/**.jpg', 'archive')
     build.classify('game/**.ttf', 'archive')
+    build.classify('game/**.ogg', 'archive')
     build.classify('game/**.rpyc', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,

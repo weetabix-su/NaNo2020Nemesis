@@ -221,9 +221,6 @@ label Day4_Rumi:
     tea "Now, is there {i}anyone{/i} in here who is able to tell me anything about Charles Philippe?"
     tea "...Nobody?"
 
-    show r:
-        ease 0.5 alpha 1.0
-
     tea "...How about you, David? Got anything \"wise\" to share with us about this topic since you so seemingly believe you do not need to pay attention?"
 
     r "Huh? Wh-What?"
@@ -1142,7 +1139,7 @@ label Day4_MC3:
 
     mc "You do parties each month?"
 
-    pg scred "Have you not noticed that Rumi hosted parties every month last year?"
+    pg scared "Have you not noticed that Rumi hosted parties every month last year?"
     show pg think
 
     weeb laugh "Ahh, yes. I've tried entering numerous times."
@@ -1273,7 +1270,7 @@ label Day4_Rumi2:
 
     "Were it not for my current situation I never would have let that freak near me, yet here he is, being more reliable than crappy David."
 
-    mcmom "Oh, MC, before I forget, there will be some fruit salad later. Leona is coming over and we are making some."
+    mcmom "Oh,David, before I forget, there will be some fruit salad later. Leona is coming over and we are making some."
 
     r "Sure. Sounds delicious."
 

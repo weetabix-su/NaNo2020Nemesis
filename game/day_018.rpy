@@ -43,7 +43,7 @@ label Day18_MC:
     "I had busted my ass off doing what she told me, making sure her parents knew that she was throwing the party (and of course getting permission for it), and all other stuff like alcohol, snacks, you name it."
 
     scene bg kitchen_night with fade
-    show rumi 2 think at one with dissolve
+    show rumi think at one with dissolve
 
     r "And you've notified the neighbors?"
     mc "Checkaroo."
@@ -60,24 +60,24 @@ label Day18_MC:
 
     mc "Hey, is this really just a regular party?"
 
-    show rumi 2 think at one with dissolve
+    show rumi think at one with dissolve
 
     r "What do you mean?"
 
     mc "I mean, you are really making a huge deal out of this. Will it really matter if you've made sure there isn't a single speck of dust behind the refrigerator?"
 
-    show rumi 2 laugh at one
+    show rumi laugh at one
 
     r "Really? You still haven't noticed?"
     mc "...Noticed what?"
 
-    show rumi 2 happy at one
+    show rumi happy at one
 
     r "That this is my last chance of redeeming myself as a public figure?"
 
     mc "...Public figure?"
 
-    show rumi 2 think at one
+    show rumi think at one
 
     r "Oh my god, you are just so dense..."
 
@@ -85,11 +85,11 @@ label Day18_MC:
 
     r "Unlike you, I actually believe we can swap back. I bet you're having the time of your life as me, so you don't worry too much about the bigger picture as always, but some of us want to right what's wrong."
 
-    show rumi 2 scared at one
+    show rumi scared at one
 
     mc "Wait, hold up. Don't start thinking I don't want to swap back either here, I've already made it perfectly clear several times that your life sucks."
 
-    show rumi 2 think at one
+    show rumi think at one
 
     r "Well if it sucks so much then why are you spending your useless brain power on video games if you've managed to hack your way into my computer and phone, huh?"
 
@@ -109,24 +109,24 @@ label Day18_MC:
 
     mc "Fuck no she didn't! She's been going through hell and you only made it worse! I can only say that it's pure luck she's even wanted to talk to me recently!"
 
-    show rumi 2 scared at one
+    show rumi scared at one
 
     r "What?! You're talking with Katrina?!"
 
     mc "As if it concerns a self-centered douchebag like you who I talk to-"
 
-    show rumi 2 think at one
+    show rumi think at one
 
     r "You are {b}not{/b} talking to her while we are swapped! Do you fucking understand?!"
 
-    show rumi 2 think at two_right with ease
+    show rumi think at two_right with ease
     show pg scared at two_left with moveinleft
 
     pg "What the hell is going on in here?"
 
     mc "It's none of your business Rumi! Absolutely, none of your business."
 
-    show rumi 2 scared at two_right
+    show rumi scared at two_right
 
     r "You piece of fucking shit! I knew it, the moment I started to trust you just a little bit, you begin backstabbing me just like her!"
 
@@ -138,7 +138,7 @@ label Day18_MC:
 
     mc "...If you want to stop anyone, then stop her! I am tired of her constant whining about how I am misusing {i}my own{/i} life."
 
-    show rumi 2 think at two_right
+    show rumi think at two_right
 
     r "This isn't your life! It's {i}{b}my{/b}{/i} life!"
 
@@ -158,7 +158,7 @@ label Day18_MC:
 
     pg "Did you two idiots finally come to your fucking senses then?"
 
-    show rumi 2 scared at two_right
+    show rumi scared at two_right
 
     r "Angela, don't you dare call me an id-"
 
@@ -170,7 +170,7 @@ label Day18_MC:
 
     pg "{size=+5}{b}So calm the fuck down, both of you!{/b}{/size}"
 
-    show rumi 2 think at two_right
+    show rumi think at two_right
 
     r "..."
 
@@ -194,7 +194,7 @@ label Day18_MC:
 
     pg "Good. Are we fine?"
 
-    show rumi 2 think at one with ease
+    show rumi think at one with ease
 
     r "Hmph."
     mc "Right back at you."
